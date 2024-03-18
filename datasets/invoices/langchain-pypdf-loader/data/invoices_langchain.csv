@@ -1,0 +1,2524 @@
+source_identifier,template_id,element_identifier,FEATURE_full_prompt,TRUTH_answer
+71906c46b8be5927af9ce9b28f5598f2d57ee384c55180e2d8f8a0c5adbaf3ea,65ef0d5f9012fa0ca62df5d0,general0,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What is the invoice total?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION. In the answer please first provide the meta ID (for the main question use 'main question' instead) in brackets and then the answer. If there are several possible answers to the question (with different meta values), structure your answer into multiple answer blocks of the same format, one after the other separated by new lines.
+(meta0): What is the currency?  possible values (separated by $ symbols): $ USD $, $ EUR $, $ Other $
+(meta1): What is the VAT included in the total?  possible values: any percentage value 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    One possible answer block could be (there can be more than one in your response): (main question): 123
+(meta0): $ USD $
+(meta1): 19%
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: Tax Invoice / Receipt 
+VAT Number: EU372001951
+SummaryInvoice Number: AT-215508940 
+ 
+Date Issued: Dec 28, 2022
+SimFin Analytics GmbH 
+Pfälzer Ufer 4 
+Halle (Saale) ST 06108 
+Germany Billing Contact: 
+Thomas Flassbeck 
+SimFin Analytics GmbH 
+t.flassbeck@simfin.com 
+ 
+Technical Contact: 
+Thomas Flassbeck 
+SimFin Analytics GmbH 
+t.flassbeck@simfin.com 
+ 
+Total Paid: USD 47.90 Date Paid: Dec 28, 2022
+ 
+ 
+ 
+OFFICIAL RECEIPT
+Invoice Total: USD 47.90
+Payment Received: -USD 47.90
+Amount Now Due: USD 0.00
+Credit Card Number: xxxxxxxxxxxx1488
+Cardholder's Name: Thomas Flassbeck
+Thank you for your payment!
+ 
+For information on our refund policy and other purchasing FAQs, see 
+https://www.atlassian.com/licensing/purchase-licensing
+Atlassian Pty Ltd, Level 6, 341 George St, Sydney NSW 2000, Australia 
+ 
+Got questions? Contact us. 
+https://www.atlassian.com/contactInvoice Serial#: 0 
+ 
+Page 1 of 3
+[1]: Tax Invoice / Receipt 
+VAT Number: EU372001951
+DetailsInvoice Number: AT-215508940 
+ 
+Date Issued: Dec 28, 2022
+Qty Product Unit Price Adjustment(s) Total
+1Confluence (Cloud) Standard 7 Users (Monthly Payments) Renewal 
+Site Address: simfin.atlassian.net
+Support Entitlement Number: SEN-30954762
+Entitlement Number: E-3XX-FH3-J9C-VW8
+Licensed To: SimFin Analytics GmbH
+Billing Period: Dec 28, 2022 - Jan 28, 2023USD 40.25 USD 40.25
+Total Ex. Tax USD 40.25
+ 19.01% VAT USD 7.65
+Total Amount Paid USD 47.90
+Additional Notes
+ 
+The VAT exclusive total on this invoice is EUR 37.89. The amount of VAT on this invoice is EUR 7.20 at 19.01%.
+ 
+As we work to provide you with an upgraded billing experience, we’re making some changes. Entitlement number (EN) is a new ID for your entitlement.
+As a part of these upgrades, EN will replace SEN as your primary ID. During this transition, you can use SEN or EN as your ID.
+Atlassian Pty Ltd, Level 6, 341 George St, Sydney NSW 2000, Australia 
+ 
+Got questions? Contact us. 
+https://www.atlassian.com/contactInvoice Serial#: 0 
+ 
+Page 2 of 3
+[2]: Tax Invoice / Receipt 
+VAT Number: EU372001951
+Licensing & SupportInvoice Number: AT-215508940 
+ 
+Date Issued: Dec 28, 2022
+Support Requests related to licensing or Atlassian software can be initiated at https://www.atlassian.com/resources/support.
+For support requests related to third party software please contact the third party vendor.
+Usage of Atlassian products and services are subject to the Atlassian Cloud Terms of Service, and Privacy Policy.
+Usage of third party apps purchased through the Atlassian Marketplace is subject to the Atlassian Marketplace Terms of Use.
+Specific details on Atlassian's support policy are available at https://confluence.atlassian.com/support/atlassian-support-offerings-193299636.html.
+Next steps for JIRA, Confluence, and Marketplace app legacy license holders are available in the Atlassian licensing FAQ.
+Software maintenance covers access to any support* and software product updates for your software license.
+After your software maintenance period expires, you will no longer be able to access support or software updates, including security patches. Renewing
+your software maintenance is done purely at your discretion, and can be renewed in advance of your maintenance period expiration to ensure
+uninterrupted access to the support services and software and security updates.
+You can continue to use your software after the active maintenance period expires. However, do keep in mind that software maintenance renewals
+commence from the expiration of the last active software maintenance period.
+* Support covers technical service requests for implementation and configuration assistance, upgrade assistance, post-implementation product issues.
+A technical service request is defined as assistance with one issue, problem, or question relating to the use or installation of a Atlassian product,
+regardless of the number of communications required.
+Support does not cover the following:
+Development requests, including custom code development or support for third party plugins
+Database integrity or database performance issues, including tuning and optimisation of the database
+Network topology or environment issues
+Application server issues not directly related to the Atlassian product implementation, configuration or operation
+Service requests or issues referred via Atlassian forums
+Atlassian Pty Ltd, Level 6, 341 George St, Sydney NSW 2000, Australia 
+ 
+Got questions? Contact us. 
+https://www.atlassian.com/contactInvoice Serial#: 0 
+ 
+Page 3 of 3
+
+                    ","(main question): 47.9
+(meta0): $ USD $
+(meta1): 0%
+Sources: [4],[0],[0]"
+71906c46b8be5927af9ce9b28f5598f2d57ee384c55180e2d8f8a0c5adbaf3ea,65ef0d5f9012fa0ca62df5d0,general1,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: Who is the issuer of the invoice?  Additional info: Note that usually the issuer of the invoice will be a company, not a natural person. possible values: any text 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    Your answer could look like this: answer to question
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: Tax Invoice / Receipt 
+VAT Number: EU372001951
+SummaryInvoice Number: AT-215508940 
+ 
+Date Issued: Dec 28, 2022
+SimFin Analytics GmbH 
+Pfälzer Ufer 4 
+Halle (Saale) ST 06108 
+Germany Billing Contact: 
+Thomas Flassbeck 
+SimFin Analytics GmbH 
+t.flassbeck@simfin.com 
+ 
+Technical Contact: 
+Thomas Flassbeck 
+SimFin Analytics GmbH 
+t.flassbeck@simfin.com 
+ 
+Total Paid: USD 47.90 Date Paid: Dec 28, 2022
+ 
+ 
+ 
+OFFICIAL RECEIPT
+Invoice Total: USD 47.90
+Payment Received: -USD 47.90
+Amount Now Due: USD 0.00
+Credit Card Number: xxxxxxxxxxxx1488
+Cardholder's Name: Thomas Flassbeck
+Thank you for your payment!
+ 
+For information on our refund policy and other purchasing FAQs, see 
+https://www.atlassian.com/licensing/purchase-licensing
+Atlassian Pty Ltd, Level 6, 341 George St, Sydney NSW 2000, Australia 
+ 
+Got questions? Contact us. 
+https://www.atlassian.com/contactInvoice Serial#: 0 
+ 
+Page 1 of 3
+[1]: Tax Invoice / Receipt 
+VAT Number: EU372001951
+DetailsInvoice Number: AT-215508940 
+ 
+Date Issued: Dec 28, 2022
+Qty Product Unit Price Adjustment(s) Total
+1Confluence (Cloud) Standard 7 Users (Monthly Payments) Renewal 
+Site Address: simfin.atlassian.net
+Support Entitlement Number: SEN-30954762
+Entitlement Number: E-3XX-FH3-J9C-VW8
+Licensed To: SimFin Analytics GmbH
+Billing Period: Dec 28, 2022 - Jan 28, 2023USD 40.25 USD 40.25
+Total Ex. Tax USD 40.25
+ 19.01% VAT USD 7.65
+Total Amount Paid USD 47.90
+Additional Notes
+ 
+The VAT exclusive total on this invoice is EUR 37.89. The amount of VAT on this invoice is EUR 7.20 at 19.01%.
+ 
+As we work to provide you with an upgraded billing experience, we’re making some changes. Entitlement number (EN) is a new ID for your entitlement.
+As a part of these upgrades, EN will replace SEN as your primary ID. During this transition, you can use SEN or EN as your ID.
+Atlassian Pty Ltd, Level 6, 341 George St, Sydney NSW 2000, Australia 
+ 
+Got questions? Contact us. 
+https://www.atlassian.com/contactInvoice Serial#: 0 
+ 
+Page 2 of 3
+[2]: Tax Invoice / Receipt 
+VAT Number: EU372001951
+Licensing & SupportInvoice Number: AT-215508940 
+ 
+Date Issued: Dec 28, 2022
+Support Requests related to licensing or Atlassian software can be initiated at https://www.atlassian.com/resources/support.
+For support requests related to third party software please contact the third party vendor.
+Usage of Atlassian products and services are subject to the Atlassian Cloud Terms of Service, and Privacy Policy.
+Usage of third party apps purchased through the Atlassian Marketplace is subject to the Atlassian Marketplace Terms of Use.
+Specific details on Atlassian's support policy are available at https://confluence.atlassian.com/support/atlassian-support-offerings-193299636.html.
+Next steps for JIRA, Confluence, and Marketplace app legacy license holders are available in the Atlassian licensing FAQ.
+Software maintenance covers access to any support* and software product updates for your software license.
+After your software maintenance period expires, you will no longer be able to access support or software updates, including security patches. Renewing
+your software maintenance is done purely at your discretion, and can be renewed in advance of your maintenance period expiration to ensure
+uninterrupted access to the support services and software and security updates.
+You can continue to use your software after the active maintenance period expires. However, do keep in mind that software maintenance renewals
+commence from the expiration of the last active software maintenance period.
+* Support covers technical service requests for implementation and configuration assistance, upgrade assistance, post-implementation product issues.
+A technical service request is defined as assistance with one issue, problem, or question relating to the use or installation of a Atlassian product,
+regardless of the number of communications required.
+Support does not cover the following:
+Development requests, including custom code development or support for third party plugins
+Database integrity or database performance issues, including tuning and optimisation of the database
+Network topology or environment issues
+Application server issues not directly related to the Atlassian product implementation, configuration or operation
+Service requests or issues referred via Atlassian forums
+Atlassian Pty Ltd, Level 6, 341 George St, Sydney NSW 2000, Australia 
+ 
+Got questions? Contact us. 
+https://www.atlassian.com/contactInvoice Serial#: 0 
+ 
+Page 3 of 3
+
+                    ","Atlassian Pty Ltd
+Sources: [8],[0]"
+71906c46b8be5927af9ce9b28f5598f2d57ee384c55180e2d8f8a0c5adbaf3ea,65ef0d5f9012fa0ca62df5d0,general2,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What's the date of the invoice?  possible values: date in the format: YYYY-MM-DD 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    Your answer could look like this: 2023-11-24
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: Tax Invoice / Receipt 
+VAT Number: EU372001951
+SummaryInvoice Number: AT-215508940 
+ 
+Date Issued: Dec 28, 2022
+SimFin Analytics GmbH 
+Pfälzer Ufer 4 
+Halle (Saale) ST 06108 
+Germany Billing Contact: 
+Thomas Flassbeck 
+SimFin Analytics GmbH 
+t.flassbeck@simfin.com 
+ 
+Technical Contact: 
+Thomas Flassbeck 
+SimFin Analytics GmbH 
+t.flassbeck@simfin.com 
+ 
+Total Paid: USD 47.90 Date Paid: Dec 28, 2022
+ 
+ 
+ 
+OFFICIAL RECEIPT
+Invoice Total: USD 47.90
+Payment Received: -USD 47.90
+Amount Now Due: USD 0.00
+Credit Card Number: xxxxxxxxxxxx1488
+Cardholder's Name: Thomas Flassbeck
+Thank you for your payment!
+ 
+For information on our refund policy and other purchasing FAQs, see 
+https://www.atlassian.com/licensing/purchase-licensing
+Atlassian Pty Ltd, Level 6, 341 George St, Sydney NSW 2000, Australia 
+ 
+Got questions? Contact us. 
+https://www.atlassian.com/contactInvoice Serial#: 0 
+ 
+Page 1 of 3
+[1]: Tax Invoice / Receipt 
+VAT Number: EU372001951
+DetailsInvoice Number: AT-215508940 
+ 
+Date Issued: Dec 28, 2022
+Qty Product Unit Price Adjustment(s) Total
+1Confluence (Cloud) Standard 7 Users (Monthly Payments) Renewal 
+Site Address: simfin.atlassian.net
+Support Entitlement Number: SEN-30954762
+Entitlement Number: E-3XX-FH3-J9C-VW8
+Licensed To: SimFin Analytics GmbH
+Billing Period: Dec 28, 2022 - Jan 28, 2023USD 40.25 USD 40.25
+Total Ex. Tax USD 40.25
+ 19.01% VAT USD 7.65
+Total Amount Paid USD 47.90
+Additional Notes
+ 
+The VAT exclusive total on this invoice is EUR 37.89. The amount of VAT on this invoice is EUR 7.20 at 19.01%.
+ 
+As we work to provide you with an upgraded billing experience, we’re making some changes. Entitlement number (EN) is a new ID for your entitlement.
+As a part of these upgrades, EN will replace SEN as your primary ID. During this transition, you can use SEN or EN as your ID.
+Atlassian Pty Ltd, Level 6, 341 George St, Sydney NSW 2000, Australia 
+ 
+Got questions? Contact us. 
+https://www.atlassian.com/contactInvoice Serial#: 0 
+ 
+Page 2 of 3
+[2]: Tax Invoice / Receipt 
+VAT Number: EU372001951
+Licensing & SupportInvoice Number: AT-215508940 
+ 
+Date Issued: Dec 28, 2022
+Support Requests related to licensing or Atlassian software can be initiated at https://www.atlassian.com/resources/support.
+For support requests related to third party software please contact the third party vendor.
+Usage of Atlassian products and services are subject to the Atlassian Cloud Terms of Service, and Privacy Policy.
+Usage of third party apps purchased through the Atlassian Marketplace is subject to the Atlassian Marketplace Terms of Use.
+Specific details on Atlassian's support policy are available at https://confluence.atlassian.com/support/atlassian-support-offerings-193299636.html.
+Next steps for JIRA, Confluence, and Marketplace app legacy license holders are available in the Atlassian licensing FAQ.
+Software maintenance covers access to any support* and software product updates for your software license.
+After your software maintenance period expires, you will no longer be able to access support or software updates, including security patches. Renewing
+your software maintenance is done purely at your discretion, and can be renewed in advance of your maintenance period expiration to ensure
+uninterrupted access to the support services and software and security updates.
+You can continue to use your software after the active maintenance period expires. However, do keep in mind that software maintenance renewals
+commence from the expiration of the last active software maintenance period.
+* Support covers technical service requests for implementation and configuration assistance, upgrade assistance, post-implementation product issues.
+A technical service request is defined as assistance with one issue, problem, or question relating to the use or installation of a Atlassian product,
+regardless of the number of communications required.
+Support does not cover the following:
+Development requests, including custom code development or support for third party plugins
+Database integrity or database performance issues, including tuning and optimisation of the database
+Network topology or environment issues
+Application server issues not directly related to the Atlassian product implementation, configuration or operation
+Service requests or issues referred via Atlassian forums
+Atlassian Pty Ltd, Level 6, 341 George St, Sydney NSW 2000, Australia 
+ 
+Got questions? Contact us. 
+https://www.atlassian.com/contactInvoice Serial#: 0 
+ 
+Page 3 of 3
+
+                    ","2022-12-28
+Sources: [12],[0],[0]"
+cbbd23870cc59fe0e14c5f60dea1df1ceba2aec89fd995d1271c5b06e32ad9de,65ef0d5f9012fa0ca62df5d0,general0,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What is the invoice total?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION. In the answer please first provide the meta ID (for the main question use 'main question' instead) in brackets and then the answer. If there are several possible answers to the question (with different meta values), structure your answer into multiple answer blocks of the same format, one after the other separated by new lines.
+(meta0): What is the currency?  possible values (separated by $ symbols): $ USD $, $ EUR $, $ Other $
+(meta1): What is the VAT included in the total?  possible values: any percentage value 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    One possible answer block could be (there can be more than one in your response): (main question): 123
+(meta0): $ USD $
+(meta1): 19%
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: Printout: www.fakturaXL.pl Page: 1/1Issued on: 2022-09-27, Pcim
+VAT Invoice no. FS/22/09/51
+Date of sale: 2022-09-27
+Method of payment: Bank transfer
+Due date: 2022-10-04
+Seller:
+SwissDev Greg Janusz Tomasik
+Pcim 938
+32-432 Pcim
+Poland
+VAT no.: PL6812077987
+gregory@swissdevjobs.chBuyer:
+SimFin Analytics GmbH
+Pfälzer Ufer 4
+06108 Halle
+Germany
+VAT no.: DE303303712
+INVOICE ITEMS
+No. Item name or type of service Qty Unit net price Net amount Tax Tax value Gross value
+1GermanTechJobs - 1 credit 1 pcs. 390.00 390.00 np 0.00 390.00
+SUMMARY
+Net amount VAT rate Tax Gross value
+390.00 np 0.00 390.00
+Total: 390.00 EUR
+1855.07 PLN 0.00 EUR
+0.00 PLN390.00 EUR
+1855.07 PLN
+In words: three hundred ninety and 0.00 EUR
+Bank account: Bank: Alior Bank, ALBPPLPW
+IBAN: PL22249010570000990215139125
+Payment should be made in EUR
+VAT applicable on a reverse charge basis
+Remarks: Rate of exchange EUR/PLN 4.7566, NBP foreign exchange reference rates no 186/A/NBP/2022 / as at
+2022-09-26
+Exchanged value: 1855.07 PLN
+Invoice without recipient's signature Signature of the authorised Seller
+Janusz Tomasik
+
+                    ","(main question): 390.0
+(meta0): $ EUR $
+(meta1): 0%
+Sources: [11],[0],[0]"
+cbbd23870cc59fe0e14c5f60dea1df1ceba2aec89fd995d1271c5b06e32ad9de,65ef0d5f9012fa0ca62df5d0,general1,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: Who is the issuer of the invoice?  Additional info: Note that usually the issuer of the invoice will be a company, not a natural person. possible values: any text 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    Your answer could look like this: answer to question
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: Printout: www.fakturaXL.pl Page: 1/1Issued on: 2022-09-27, Pcim
+VAT Invoice no. FS/22/09/51
+Date of sale: 2022-09-27
+Method of payment: Bank transfer
+Due date: 2022-10-04
+Seller:
+SwissDev Greg Janusz Tomasik
+Pcim 938
+32-432 Pcim
+Poland
+VAT no.: PL6812077987
+gregory@swissdevjobs.chBuyer:
+SimFin Analytics GmbH
+Pfälzer Ufer 4
+06108 Halle
+Germany
+VAT no.: DE303303712
+INVOICE ITEMS
+No. Item name or type of service Qty Unit net price Net amount Tax Tax value Gross value
+1GermanTechJobs - 1 credit 1 pcs. 390.00 390.00 np 0.00 390.00
+SUMMARY
+Net amount VAT rate Tax Gross value
+390.00 np 0.00 390.00
+Total: 390.00 EUR
+1855.07 PLN 0.00 EUR
+0.00 PLN390.00 EUR
+1855.07 PLN
+In words: three hundred ninety and 0.00 EUR
+Bank account: Bank: Alior Bank, ALBPPLPW
+IBAN: PL22249010570000990215139125
+Payment should be made in EUR
+VAT applicable on a reverse charge basis
+Remarks: Rate of exchange EUR/PLN 4.7566, NBP foreign exchange reference rates no 186/A/NBP/2022 / as at
+2022-09-26
+Exchanged value: 1855.07 PLN
+Invoice without recipient's signature Signature of the authorised Seller
+Janusz Tomasik
+
+                    ","SwissDev
+Sources: [1]"
+cbbd23870cc59fe0e14c5f60dea1df1ceba2aec89fd995d1271c5b06e32ad9de,65ef0d5f9012fa0ca62df5d0,general2,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What's the date of the invoice?  possible values: date in the format: YYYY-MM-DD 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    Your answer could look like this: 2023-11-24
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: Printout: www.fakturaXL.pl Page: 1/1Issued on: 2022-09-27, Pcim
+VAT Invoice no. FS/22/09/51
+Date of sale: 2022-09-27
+Method of payment: Bank transfer
+Due date: 2022-10-04
+Seller:
+SwissDev Greg Janusz Tomasik
+Pcim 938
+32-432 Pcim
+Poland
+VAT no.: PL6812077987
+gregory@swissdevjobs.chBuyer:
+SimFin Analytics GmbH
+Pfälzer Ufer 4
+06108 Halle
+Germany
+VAT no.: DE303303712
+INVOICE ITEMS
+No. Item name or type of service Qty Unit net price Net amount Tax Tax value Gross value
+1GermanTechJobs - 1 credit 1 pcs. 390.00 390.00 np 0.00 390.00
+SUMMARY
+Net amount VAT rate Tax Gross value
+390.00 np 0.00 390.00
+Total: 390.00 EUR
+1855.07 PLN 0.00 EUR
+0.00 PLN390.00 EUR
+1855.07 PLN
+In words: three hundred ninety and 0.00 EUR
+Bank account: Bank: Alior Bank, ALBPPLPW
+IBAN: PL22249010570000990215139125
+Payment should be made in EUR
+VAT applicable on a reverse charge basis
+Remarks: Rate of exchange EUR/PLN 4.7566, NBP foreign exchange reference rates no 186/A/NBP/2022 / as at
+2022-09-26
+Exchanged value: 1855.07 PLN
+Invoice without recipient's signature Signature of the authorised Seller
+Janusz Tomasik
+
+                    ","2022-09-27
+Sources: [0],[0]"
+80cffb1deaa5788a33cac8c0041645cb3105baf3cacb5480bfa0aef7180fd8a4,65ef0d5f9012fa0ca62df5d0,general0,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What is the invoice total?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION. In the answer please first provide the meta ID (for the main question use 'main question' instead) in brackets and then the answer. If there are several possible answers to the question (with different meta values), structure your answer into multiple answer blocks of the same format, one after the other separated by new lines.
+(meta0): What is the currency?  possible values (separated by $ symbols): $ USD $, $ EUR $, $ Other $
+(meta1): What is the VAT included in the total?  possible values: any percentage value 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    One possible answer block could be (there can be more than one in your response): (main question): 123
+(meta0): $ USD $
+(meta1): 19%
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: Electronic Document Page 1 of 1
+ 
+Invoice FI15636047324
+Original
+ 
+To
+SimFin Analytics GmbH
+Felix Wolf
+Pfälzer Ufer 4
+Halle (Saale), Sachsen-Anhalt, 60108
+Germany
+Tax ID DE355369209Date issued
+Mar 4, 2023
+Order number
+FO81B7F30FF82
+ 
+Service Quantity Unit price (EUR) Total (EUR)
+Infographic Design 1 197.28 197.28
+Service Fee 1 10.85 10.85
+Total (EUR) 208.13
+ 
+Method Date Total (EUR)
+Paid with Card Mar 4, 2023 208.13
+ 
+Purchased on Fiverr.com through Fiverr Limited
+Have an invoice or billing question? Contact us
+ 
+Fiverr International Ltd.
+It Starts Here.
+8 Eliezer Kaplan St., Tel Aviv, Israel 6473409
+Company no: 514440874; Withheld tax file: 917369274; VAT ID Consol. Busn no: 558327284
+
+                    ","(main question): 208.13
+(meta0): $ EUR $
+(meta1): 0%
+Sources: [0],[4],[6]"
+80cffb1deaa5788a33cac8c0041645cb3105baf3cacb5480bfa0aef7180fd8a4,65ef0d5f9012fa0ca62df5d0,general1,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: Who is the issuer of the invoice?  Additional info: Note that usually the issuer of the invoice will be a company, not a natural person. possible values: any text 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    Your answer could look like this: answer to question
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: Electronic Document Page 1 of 1
+ 
+Invoice FI15636047324
+Original
+ 
+To
+SimFin Analytics GmbH
+Felix Wolf
+Pfälzer Ufer 4
+Halle (Saale), Sachsen-Anhalt, 60108
+Germany
+Tax ID DE355369209Date issued
+Mar 4, 2023
+Order number
+FO81B7F30FF82
+ 
+Service Quantity Unit price (EUR) Total (EUR)
+Infographic Design 1 197.28 197.28
+Service Fee 1 10.85 10.85
+Total (EUR) 208.13
+ 
+Method Date Total (EUR)
+Paid with Card Mar 4, 2023 208.13
+ 
+Purchased on Fiverr.com through Fiverr Limited
+Have an invoice or billing question? Contact us
+ 
+Fiverr International Ltd.
+It Starts Here.
+8 Eliezer Kaplan St., Tel Aviv, Israel 6473409
+Company no: 514440874; Withheld tax file: 917369274; VAT ID Consol. Busn no: 558327284
+
+                    ","Fiverr International Ltd
+Sources: [9],[10]"
+80cffb1deaa5788a33cac8c0041645cb3105baf3cacb5480bfa0aef7180fd8a4,65ef0d5f9012fa0ca62df5d0,general2,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What's the date of the invoice?  possible values: date in the format: YYYY-MM-DD 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    Your answer could look like this: 2023-11-24
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: Electronic Document Page 1 of 1
+ 
+Invoice FI15636047324
+Original
+ 
+To
+SimFin Analytics GmbH
+Felix Wolf
+Pfälzer Ufer 4
+Halle (Saale), Sachsen-Anhalt, 60108
+Germany
+Tax ID DE355369209Date issued
+Mar 4, 2023
+Order number
+FO81B7F30FF82
+ 
+Service Quantity Unit price (EUR) Total (EUR)
+Infographic Design 1 197.28 197.28
+Service Fee 1 10.85 10.85
+Total (EUR) 208.13
+ 
+Method Date Total (EUR)
+Paid with Card Mar 4, 2023 208.13
+ 
+Purchased on Fiverr.com through Fiverr Limited
+Have an invoice or billing question? Contact us
+ 
+Fiverr International Ltd.
+It Starts Here.
+8 Eliezer Kaplan St., Tel Aviv, Israel 6473409
+Company no: 514440874; Withheld tax file: 917369274; VAT ID Consol. Busn no: 558327284
+
+                    ","2023-03-04
+Sources: [13],[0]"
+81f2b7f5d83ef2f28699af842bb1f113211553a9c7f2d3fd815447681ad83fb6,65ef0d5f9012fa0ca62df5d0,general0,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What is the invoice total?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION. In the answer please first provide the meta ID (for the main question use 'main question' instead) in brackets and then the answer. If there are several possible answers to the question (with different meta values), structure your answer into multiple answer blocks of the same format, one after the other separated by new lines.
+(meta0): What is the currency?  possible values (separated by $ symbols): $ USD $, $ EUR $, $ Other $
+(meta1): What is the VAT included in the total?  possible values: any percentage value 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    One possible answer block could be (there can be more than one in your response): (main question): 123
+(meta0): $ USD $
+(meta1): 19%
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: 7 6 2 5 3 8 1 5   0 0 0 4  ·  € 9 9 . 0 0  d u e  A p r i l  1 3 ,  2 0 2 3 P a g e  1  o f  1I n v o i c e
+I n v o i c e  n u m b e r 7 6 2 5 3 8 1 5   0 0 0 4
+D a t e  o f  i s s u e A p r i l  1 3 ,  2 0 2 3
+D a t e  d u e A p r i l  1 3 ,  2 0 2 3
+V A T  N u m b e r D E 3 5 5 3 6 9 2 0 9
+S t o r y b l o k  G m b H
+P e t e r - B e h r e n s - P l a t z  2
+A   4 0 2 0  L i n z
+A u s t r i a
+  4 3  6 6 0  3 1 4 5 7 4 1
+s u b s c r i p t i o n @ s t o r y b l o k . c o mB i l l  t o
+S i m F i n  A n a l y t i c s  G m b H
+P f ä l z e r  U f e r  4
+0 6 1 0 8  H a l l e    S a a l e )
+G e r m a n y
+f . w o l f @ s i m f i n . c o m
+D E  V A T D E 3 5 5 3 6 9 2 0 9S h i p  t o
+S i m F i n  A n a l y t i c s  G m b H  |
+S i m F i n  A n a l y t i c s  G m b H
+P f ä l z e r  U f e r  4
+0 6 1 0 8  H a l l e    S a a l e )
+G e r m a n y
+€ 9 9 . 0 0  d u e  A p r i l  1 3 ,  2 0 2 3
+P a y  o n l i n e
+D e s c r i p t i o n Q t y U n i t  p r i c e T a x A m o u n t
+E n t r y  ( p e r  s p a c e )
+A p r  1 3  –  M a y  1 3 ,  2 0 2 31 € 9 9 . 0 0 0 % € 9 9 . 0 0
+ 
+S u b t o t a l € 9 9 . 0 0
+T o t a l € 9 9 . 0 0
+A m o u n t  d u e € 9 9 . 0 0
+T h a n k s  f o r  y o u r  b u s i n e s s !  
+  V A T  o f  S t o r y b l o k  G m b H  A T U 7 2 7 0 6 1 2 8  
+  1    T a x  t o  b e  p a i d  o n  r e v e r s e  c h a r g e  b a s i s
+   1  
+
+                    ","(main question): 99.0
+(meta0): $ EUR $
+(meta1): 0%
+Sources: [8]"
+81f2b7f5d83ef2f28699af842bb1f113211553a9c7f2d3fd815447681ad83fb6,65ef0d5f9012fa0ca62df5d0,general1,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: Who is the issuer of the invoice?  Additional info: Note that usually the issuer of the invoice will be a company, not a natural person. possible values: any text 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    Your answer could look like this: answer to question
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: 7 6 2 5 3 8 1 5   0 0 0 4  ·  € 9 9 . 0 0  d u e  A p r i l  1 3 ,  2 0 2 3 P a g e  1  o f  1I n v o i c e
+I n v o i c e  n u m b e r 7 6 2 5 3 8 1 5   0 0 0 4
+D a t e  o f  i s s u e A p r i l  1 3 ,  2 0 2 3
+D a t e  d u e A p r i l  1 3 ,  2 0 2 3
+V A T  N u m b e r D E 3 5 5 3 6 9 2 0 9
+S t o r y b l o k  G m b H
+P e t e r - B e h r e n s - P l a t z  2
+A   4 0 2 0  L i n z
+A u s t r i a
+  4 3  6 6 0  3 1 4 5 7 4 1
+s u b s c r i p t i o n @ s t o r y b l o k . c o mB i l l  t o
+S i m F i n  A n a l y t i c s  G m b H
+P f ä l z e r  U f e r  4
+0 6 1 0 8  H a l l e    S a a l e )
+G e r m a n y
+f . w o l f @ s i m f i n . c o m
+D E  V A T D E 3 5 5 3 6 9 2 0 9S h i p  t o
+S i m F i n  A n a l y t i c s  G m b H  |
+S i m F i n  A n a l y t i c s  G m b H
+P f ä l z e r  U f e r  4
+0 6 1 0 8  H a l l e    S a a l e )
+G e r m a n y
+€ 9 9 . 0 0  d u e  A p r i l  1 3 ,  2 0 2 3
+P a y  o n l i n e
+D e s c r i p t i o n Q t y U n i t  p r i c e T a x A m o u n t
+E n t r y  ( p e r  s p a c e )
+A p r  1 3  –  M a y  1 3 ,  2 0 2 31 € 9 9 . 0 0 0 % € 9 9 . 0 0
+ 
+S u b t o t a l € 9 9 . 0 0
+T o t a l € 9 9 . 0 0
+A m o u n t  d u e € 9 9 . 0 0
+T h a n k s  f o r  y o u r  b u s i n e s s !  
+  V A T  o f  S t o r y b l o k  G m b H  A T U 7 2 7 0 6 1 2 8  
+  1    T a x  t o  b e  p a i d  o n  r e v e r s e  c h a r g e  b a s i s
+   1  
+
+                    ","Storyblok GmbH
+Sources: [4]"
+81f2b7f5d83ef2f28699af842bb1f113211553a9c7f2d3fd815447681ad83fb6,65ef0d5f9012fa0ca62df5d0,general2,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What's the date of the invoice?  possible values: date in the format: YYYY-MM-DD 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    Your answer could look like this: 2023-11-24
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: 7 6 2 5 3 8 1 5   0 0 0 4  ·  € 9 9 . 0 0  d u e  A p r i l  1 3 ,  2 0 2 3 P a g e  1  o f  1I n v o i c e
+I n v o i c e  n u m b e r 7 6 2 5 3 8 1 5   0 0 0 4
+D a t e  o f  i s s u e A p r i l  1 3 ,  2 0 2 3
+D a t e  d u e A p r i l  1 3 ,  2 0 2 3
+V A T  N u m b e r D E 3 5 5 3 6 9 2 0 9
+S t o r y b l o k  G m b H
+P e t e r - B e h r e n s - P l a t z  2
+A   4 0 2 0  L i n z
+A u s t r i a
+  4 3  6 6 0  3 1 4 5 7 4 1
+s u b s c r i p t i o n @ s t o r y b l o k . c o mB i l l  t o
+S i m F i n  A n a l y t i c s  G m b H
+P f ä l z e r  U f e r  4
+0 6 1 0 8  H a l l e    S a a l e )
+G e r m a n y
+f . w o l f @ s i m f i n . c o m
+D E  V A T D E 3 5 5 3 6 9 2 0 9S h i p  t o
+S i m F i n  A n a l y t i c s  G m b H  |
+S i m F i n  A n a l y t i c s  G m b H
+P f ä l z e r  U f e r  4
+0 6 1 0 8  H a l l e    S a a l e )
+G e r m a n y
+€ 9 9 . 0 0  d u e  A p r i l  1 3 ,  2 0 2 3
+P a y  o n l i n e
+D e s c r i p t i o n Q t y U n i t  p r i c e T a x A m o u n t
+E n t r y  ( p e r  s p a c e )
+A p r  1 3  –  M a y  1 3 ,  2 0 2 31 € 9 9 . 0 0 0 % € 9 9 . 0 0
+ 
+S u b t o t a l € 9 9 . 0 0
+T o t a l € 9 9 . 0 0
+A m o u n t  d u e € 9 9 . 0 0
+T h a n k s  f o r  y o u r  b u s i n e s s !  
+  V A T  o f  S t o r y b l o k  G m b H  A T U 7 2 7 0 6 1 2 8  
+  1    T a x  t o  b e  p a i d  o n  r e v e r s e  c h a r g e  b a s i s
+   1  
+
+                    ","2023-04-13
+Sources: [2],[0]"
+0d9a9b075b051f5d25958a033f2b56d749be83899561e3e9eac44ae118170ff2,65ef0d5f9012fa0ca62df5d0,general0,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What is the invoice total?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION. In the answer please first provide the meta ID (for the main question use 'main question' instead) in brackets and then the answer. If there are several possible answers to the question (with different meta values), structure your answer into multiple answer blocks of the same format, one after the other separated by new lines.
+(meta0): What is the currency?  possible values (separated by $ symbols): $ USD $, $ EUR $, $ Other $
+(meta1): What is the VAT included in the total?  possible values: any percentage value 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    One possible answer block could be (there can be more than one in your response): (main question): 123
+(meta0): $ USD $
+(meta1): 19%
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: 5 3 4 0 D F 5 3   0 0 0 1  ·  $ 2 9 9 . 0 0  d u e  D e c e m b e r  2 1 ,  2 0 2 2 P a g e  1  o f  1I n v o i c e
+I n v o i c e  n u m b e r 5 3 4 0 D F 5 3   0 0 0 1
+D a t e  o f  i s s u e D e c e m b e r  2 1 ,  2 0 2 2
+D a t e  d u e D e c e m b e r  2 1 ,  2 0 2 2U s e r p i l o t ,  I n c .
+U s e r p i l o t ,  I n c .
+1 8 8 7  W h i t n e y  M e s a  D r  # 9 9 9 5
+H e n d e r s o n ,  N e v a d a  8 9 0 1 4
+U n i t e d  S t a t e s
+  1  7 0 2   7 1 0   8 2 1 3
+a c c o u n t i n g @ u s e r p i l o t . c oB i l l  t o
+S i m F i n  A n a l y t i c s  G m b H
+f . w o l f @ s i m f i n . c o m
+$ 2 9 9 . 0 0  d u e  D e c e m b e r  2 1 ,  2 0 2 2
+P a y  o n l i n e
+D e s c r i p t i o n Q t y U n i t  p r i c e A m o u n t
+S t a n d a r d
+D e c  2 1 ,  2 0 2 2  –  J a n  2 1 ,  2 0 2 31 $ 2 9 9 . 0 0 $ 2 9 9 . 0 0
+ 
+S u b t o t a l $ 2 9 9 . 0 0
+T o t a l $ 2 9 9 . 0 0
+A m o u n t  d u e $ 2 9 9 . 0 0
+
+                    ","(main question): 299.0
+(meta0): $ USD $
+(meta1): 0%
+Sources: [6],[0],[0]"
+0d9a9b075b051f5d25958a033f2b56d749be83899561e3e9eac44ae118170ff2,65ef0d5f9012fa0ca62df5d0,general1,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: Who is the issuer of the invoice?  Additional info: Note that usually the issuer of the invoice will be a company, not a natural person. possible values: any text 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    Your answer could look like this: answer to question
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: 5 3 4 0 D F 5 3   0 0 0 1  ·  $ 2 9 9 . 0 0  d u e  D e c e m b e r  2 1 ,  2 0 2 2 P a g e  1  o f  1I n v o i c e
+I n v o i c e  n u m b e r 5 3 4 0 D F 5 3   0 0 0 1
+D a t e  o f  i s s u e D e c e m b e r  2 1 ,  2 0 2 2
+D a t e  d u e D e c e m b e r  2 1 ,  2 0 2 2U s e r p i l o t ,  I n c .
+U s e r p i l o t ,  I n c .
+1 8 8 7  W h i t n e y  M e s a  D r  # 9 9 9 5
+H e n d e r s o n ,  N e v a d a  8 9 0 1 4
+U n i t e d  S t a t e s
+  1  7 0 2   7 1 0   8 2 1 3
+a c c o u n t i n g @ u s e r p i l o t . c oB i l l  t o
+S i m F i n  A n a l y t i c s  G m b H
+f . w o l f @ s i m f i n . c o m
+$ 2 9 9 . 0 0  d u e  D e c e m b e r  2 1 ,  2 0 2 2
+P a y  o n l i n e
+D e s c r i p t i o n Q t y U n i t  p r i c e A m o u n t
+S t a n d a r d
+D e c  2 1 ,  2 0 2 2  –  J a n  2 1 ,  2 0 2 31 $ 2 9 9 . 0 0 $ 2 9 9 . 0 0
+ 
+S u b t o t a l $ 2 9 9 . 0 0
+T o t a l $ 2 9 9 . 0 0
+A m o u n t  d u e $ 2 9 9 . 0 0
+
+                    ","Userpilot, Inc
+Sources: [4],[0]"
+0d9a9b075b051f5d25958a033f2b56d749be83899561e3e9eac44ae118170ff2,65ef0d5f9012fa0ca62df5d0,general2,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What's the date of the invoice?  possible values: date in the format: YYYY-MM-DD 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    Your answer could look like this: 2023-11-24
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: 5 3 4 0 D F 5 3   0 0 0 1  ·  $ 2 9 9 . 0 0  d u e  D e c e m b e r  2 1 ,  2 0 2 2 P a g e  1  o f  1I n v o i c e
+I n v o i c e  n u m b e r 5 3 4 0 D F 5 3   0 0 0 1
+D a t e  o f  i s s u e D e c e m b e r  2 1 ,  2 0 2 2
+D a t e  d u e D e c e m b e r  2 1 ,  2 0 2 2U s e r p i l o t ,  I n c .
+U s e r p i l o t ,  I n c .
+1 8 8 7  W h i t n e y  M e s a  D r  # 9 9 9 5
+H e n d e r s o n ,  N e v a d a  8 9 0 1 4
+U n i t e d  S t a t e s
+  1  7 0 2   7 1 0   8 2 1 3
+a c c o u n t i n g @ u s e r p i l o t . c oB i l l  t o
+S i m F i n  A n a l y t i c s  G m b H
+f . w o l f @ s i m f i n . c o m
+$ 2 9 9 . 0 0  d u e  D e c e m b e r  2 1 ,  2 0 2 2
+P a y  o n l i n e
+D e s c r i p t i o n Q t y U n i t  p r i c e A m o u n t
+S t a n d a r d
+D e c  2 1 ,  2 0 2 2  –  J a n  2 1 ,  2 0 2 31 $ 2 9 9 . 0 0 $ 2 9 9 . 0 0
+ 
+S u b t o t a l $ 2 9 9 . 0 0
+T o t a l $ 2 9 9 . 0 0
+A m o u n t  d u e $ 2 9 9 . 0 0
+
+                    ","2022-12-21
+Sources: [2],[0]"
+4212cabbb43594b143f5164716c4ef81f43e18999077f21878b6fe3e3398f2cb,65ef0d5f9012fa0ca62df5d0,general0,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What is the invoice total?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION. In the answer please first provide the meta ID (for the main question use 'main question' instead) in brackets and then the answer. If there are several possible answers to the question (with different meta values), structure your answer into multiple answer blocks of the same format, one after the other separated by new lines.
+(meta0): What is the currency?  possible values (separated by $ symbols): $ USD $, $ EUR $, $ Other $
+(meta1): What is the VAT included in the total?  possible values: any percentage value 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    One possible answer block could be (there can be more than one in your response): (main question): 123
+(meta0): $ USD $
+(meta1): 19%
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: RechnungRechnung #: 67389368Datum: 31/08/2022Fällig am: 31/08/2022Rechnung an:SimFin Analytics GmbHPfälzer Ufer 406108 HalleDeutschlandt.ﬂassbeck@simﬁn.comGesamtbetrag: 80,65 EURAusstehender Betrag: 0,00 EURBeschreibung / MemoBetragAugust 2022 Sponsored Jobs on Indeed.com80,65EUR80,65EURV AT @ 0% on 80.650,00EUR0,00EURGesamtbetrag80,65EURDer Empfänger dieser Dienstleistung wird die Umsatzsteuer nach Bedarf auf Basis des Reverse-Charge-Verfahrens berechnen.BEZAHLTE RECHNUNGDIESE RECHNUNG IST FÜR IHRE UNTERLAGENDatum: 31/08/2022Zahlungsbedingungen: Zahlbar bei ErhaltFällig am: 31/08/2022Indeed Ireland Operations Ltd124 St. Stephen's GreenDublin 2IrelandV AT# IE 98 209 58WRechnung | Indeed.comhttps://billing.indeed.com/invoice?id=67389368
+1 von 102.09.22, 16:20
+
+                    ","(main question): 80.65
+(meta0): $ EUR $
+(meta1): 0%
+Sources: [5],[6],[15]"
+4212cabbb43594b143f5164716c4ef81f43e18999077f21878b6fe3e3398f2cb,65ef0d5f9012fa0ca62df5d0,general1,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: Who is the issuer of the invoice?  Additional info: Note that usually the issuer of the invoice will be a company, not a natural person. possible values: any text 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    Your answer could look like this: answer to question
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: RechnungRechnung #: 67389368Datum: 31/08/2022Fällig am: 31/08/2022Rechnung an:SimFin Analytics GmbHPfälzer Ufer 406108 HalleDeutschlandt.ﬂassbeck@simﬁn.comGesamtbetrag: 80,65 EURAusstehender Betrag: 0,00 EURBeschreibung / MemoBetragAugust 2022 Sponsored Jobs on Indeed.com80,65EUR80,65EURV AT @ 0% on 80.650,00EUR0,00EURGesamtbetrag80,65EURDer Empfänger dieser Dienstleistung wird die Umsatzsteuer nach Bedarf auf Basis des Reverse-Charge-Verfahrens berechnen.BEZAHLTE RECHNUNGDIESE RECHNUNG IST FÜR IHRE UNTERLAGENDatum: 31/08/2022Zahlungsbedingungen: Zahlbar bei ErhaltFällig am: 31/08/2022Indeed Ireland Operations Ltd124 St. Stephen's GreenDublin 2IrelandV AT# IE 98 209 58WRechnung | Indeed.comhttps://billing.indeed.com/invoice?id=67389368
+1 von 102.09.22, 16:20
+
+                    ","Indeed Ireland Operations Ltd
+Sources: [1]"
+4212cabbb43594b143f5164716c4ef81f43e18999077f21878b6fe3e3398f2cb,65ef0d5f9012fa0ca62df5d0,general2,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What's the date of the invoice?  possible values: date in the format: YYYY-MM-DD 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    Your answer could look like this: 2023-11-24
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: RechnungRechnung #: 67389368Datum: 31/08/2022Fällig am: 31/08/2022Rechnung an:SimFin Analytics GmbHPfälzer Ufer 406108 HalleDeutschlandt.ﬂassbeck@simﬁn.comGesamtbetrag: 80,65 EURAusstehender Betrag: 0,00 EURBeschreibung / MemoBetragAugust 2022 Sponsored Jobs on Indeed.com80,65EUR80,65EURV AT @ 0% on 80.650,00EUR0,00EURGesamtbetrag80,65EURDer Empfänger dieser Dienstleistung wird die Umsatzsteuer nach Bedarf auf Basis des Reverse-Charge-Verfahrens berechnen.BEZAHLTE RECHNUNGDIESE RECHNUNG IST FÜR IHRE UNTERLAGENDatum: 31/08/2022Zahlungsbedingungen: Zahlbar bei ErhaltFällig am: 31/08/2022Indeed Ireland Operations Ltd124 St. Stephen's GreenDublin 2IrelandV AT# IE 98 209 58WRechnung | Indeed.comhttps://billing.indeed.com/invoice?id=67389368
+1 von 102.09.22, 16:20
+
+                    ","2022-08-31
+Sources: [7],[0]"
+1fd7fdbd88d78aa6e80737b8757290b78570679fbb926995db362f38a0d161ea,65ef0d5f9012fa0ca62df5d0,general0,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What is the invoice total?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION. In the answer please first provide the meta ID (for the main question use 'main question' instead) in brackets and then the answer. If there are several possible answers to the question (with different meta values), structure your answer into multiple answer blocks of the same format, one after the other separated by new lines.
+(meta0): What is the currency?  possible values (separated by $ symbols): $ USD $, $ EUR $, $ Other $
+(meta1): What is the VAT included in the total?  possible values: any percentage value 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    One possible answer block could be (there can be more than one in your response): (main question): 123
+(meta0): $ USD $
+(meta1): 19%
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: 4 2 A 5 D E 5 5   0 0 7 1  ·  € 2 3 . 0 0  d u e  A p r i l  2 9 ,  2 0 2 3 P a g e  1  o f  1I n v o i c e
+I n v o i c e  n u m b e r 4 2 A 5 D E 5 5   0 0 7 1
+D a t e  o f  i s s u e A p r i l  2 9 ,  2 0 2 3
+D a t e  d u e A p r i l  2 9 ,  2 0 2 3
+S q u e a k y  B . V .
+D e b u s s y s t r a a t  4 3
+2 3 2 4 K H  L e i d e n
+N e t h e r l a n d s
+h e l l o @ s q u e a k y . a iB i l l  t o
+S i m F i n  A n a l y t i c s  G m b H
+P f ä l z e r  U f e r  4
+0 6 1 0 8  H a l l e    S a a l e )
+G e r m a n y
+f . w o l f @ s i m f i n . c o m
+D E  V A T D E 3 5 5 3 6 9 2 0 9
+€ 2 3 . 0 0  d u e  A p r i l  2 9 ,  2 0 2 3
+P a y  o n l i n e
+D e s c r i p t i o n Q t y U n i t  p r i c e A m o u n t
+S t a r t e r
+A p r  2 8  –  M a y  2 8 ,  2 0 2 31 € 2 3 . 0 0 € 2 3 . 0 0
+ 
+S u b t o t a l € 2 3 . 0 0
+T o t a l € 2 3 . 0 0
+A m o u n t  d u e € 2 3 . 0 0
+
+                    ","(main question): 23.0
+(meta0): $ EUR $
+(meta1): 0%
+Sources: [6],[0],[0]"
+1fd7fdbd88d78aa6e80737b8757290b78570679fbb926995db362f38a0d161ea,65ef0d5f9012fa0ca62df5d0,general1,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: Who is the issuer of the invoice?  Additional info: Note that usually the issuer of the invoice will be a company, not a natural person. possible values: any text 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    Your answer could look like this: answer to question
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: 4 2 A 5 D E 5 5   0 0 7 1  ·  € 2 3 . 0 0  d u e  A p r i l  2 9 ,  2 0 2 3 P a g e  1  o f  1I n v o i c e
+I n v o i c e  n u m b e r 4 2 A 5 D E 5 5   0 0 7 1
+D a t e  o f  i s s u e A p r i l  2 9 ,  2 0 2 3
+D a t e  d u e A p r i l  2 9 ,  2 0 2 3
+S q u e a k y  B . V .
+D e b u s s y s t r a a t  4 3
+2 3 2 4 K H  L e i d e n
+N e t h e r l a n d s
+h e l l o @ s q u e a k y . a iB i l l  t o
+S i m F i n  A n a l y t i c s  G m b H
+P f ä l z e r  U f e r  4
+0 6 1 0 8  H a l l e    S a a l e )
+G e r m a n y
+f . w o l f @ s i m f i n . c o m
+D E  V A T D E 3 5 5 3 6 9 2 0 9
+€ 2 3 . 0 0  d u e  A p r i l  2 9 ,  2 0 2 3
+P a y  o n l i n e
+D e s c r i p t i o n Q t y U n i t  p r i c e A m o u n t
+S t a r t e r
+A p r  2 8  –  M a y  2 8 ,  2 0 2 31 € 2 3 . 0 0 € 2 3 . 0 0
+ 
+S u b t o t a l € 2 3 . 0 0
+T o t a l € 2 3 . 0 0
+A m o u n t  d u e € 2 3 . 0 0
+
+                    ","Squeaky B.V
+Sources: [4]"
+1fd7fdbd88d78aa6e80737b8757290b78570679fbb926995db362f38a0d161ea,65ef0d5f9012fa0ca62df5d0,general2,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What's the date of the invoice?  possible values: date in the format: YYYY-MM-DD 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    Your answer could look like this: 2023-11-24
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: 4 2 A 5 D E 5 5   0 0 7 1  ·  € 2 3 . 0 0  d u e  A p r i l  2 9 ,  2 0 2 3 P a g e  1  o f  1I n v o i c e
+I n v o i c e  n u m b e r 4 2 A 5 D E 5 5   0 0 7 1
+D a t e  o f  i s s u e A p r i l  2 9 ,  2 0 2 3
+D a t e  d u e A p r i l  2 9 ,  2 0 2 3
+S q u e a k y  B . V .
+D e b u s s y s t r a a t  4 3
+2 3 2 4 K H  L e i d e n
+N e t h e r l a n d s
+h e l l o @ s q u e a k y . a iB i l l  t o
+S i m F i n  A n a l y t i c s  G m b H
+P f ä l z e r  U f e r  4
+0 6 1 0 8  H a l l e    S a a l e )
+G e r m a n y
+f . w o l f @ s i m f i n . c o m
+D E  V A T D E 3 5 5 3 6 9 2 0 9
+€ 2 3 . 0 0  d u e  A p r i l  2 9 ,  2 0 2 3
+P a y  o n l i n e
+D e s c r i p t i o n Q t y U n i t  p r i c e A m o u n t
+S t a r t e r
+A p r  2 8  –  M a y  2 8 ,  2 0 2 31 € 2 3 . 0 0 € 2 3 . 0 0
+ 
+S u b t o t a l € 2 3 . 0 0
+T o t a l € 2 3 . 0 0
+A m o u n t  d u e € 2 3 . 0 0
+
+                    ","2023-04-29
+Sources: [2],[0]"
+47d047dbb6180582d6067fc02b921b51893da220b367600b0e21a9c921e42877,65ef0d5f9012fa0ca62df5d0,general0,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What is the invoice total?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION. In the answer please first provide the meta ID (for the main question use 'main question' instead) in brackets and then the answer. If there are several possible answers to the question (with different meta values), structure your answer into multiple answer blocks of the same format, one after the other separated by new lines.
+(meta0): What is the currency?  possible values (separated by $ symbols): $ USD $, $ EUR $, $ Other $
+(meta1): What is the VAT included in the total?  possible values: any percentage value 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    One possible answer block could be (there can be more than one in your response): (main question): 123
+(meta0): $ USD $
+(meta1): 19%
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: Medienpilot GmbH & Co. KG
+Am Saueracker 23
+91244 Reichenschwand
+Tel: 09151 7269906
+info@medienpilot.deVertreten durch:
+Medienpilot Verwaltungs GmbH (Amtsgericht
+Nürnberg, HRB 35148) diese vertreten durch die
+Geschäftsführer Detlev Dornhöfer, Thomas Wiegand,
+Christian DüllRegistergericht:
+Amtsgericht Nürnberg,
+HRA 18230
+UStID DE318745729Kontoverbindung:
+Bank: Commerzbank
+IBAN: DE12760400610762361400
+BIC: COBADEFFXXXMedienpilot GmbH & Co. KG • Am Saueracker 23 • 91244 Reichenschwand
+SimFin Analytics GmbH
+Pfälzer Ufer 4
+06108 Halle (Saale)
+Germany
+Seite 1 von 1Rechnung
+Reichenschwand 04.07.2023
+Rechnungs-Nr 02581
+Vorgang A1807
+Ihre Kundennr. 10138
+Ansprechpartner Thomas Wiegand
+Referenz 06/2023
+Lieferdatum, 30.06.2023
+Sehr geehrte Damen und Herren,
+unsere Leistungen stellen wir wie folgt in Rechnung:
+01.06.2023 - 30.06.2023
+#Beschreibung Menge Einzelpreis Gesamt
+1Dienstleistung, Beratung und Entwicklung
+Beratung und Entwicklung in den Bereichen Online-
+Marketing, -Konzeption, -Strategie und -Technik1,00Std. 100,00 € 100,00 €
+Zwischensumme (zzgl. MwSt.) 100,00 €
+zzgl. 19,0% MwSt. aus 100,00 € 19,00 €
+Gesamtbetrag 119,00 €
+Zahlbar innerhalb von 14 Tage rein netto.
+Vielen Dank für Ihren Auftrag.
+Bei Fragen stehen wir Ihnen jederzeit gerne zur Verfügung.
+Powered by TCPDF (www.tcpdf.org)
+
+                    ","(main question): 119.0
+(meta0): $ EUR $
+(meta1): 19%
+Sources: [22]"
+47d047dbb6180582d6067fc02b921b51893da220b367600b0e21a9c921e42877,65ef0d5f9012fa0ca62df5d0,general1,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: Who is the issuer of the invoice?  Additional info: Note that usually the issuer of the invoice will be a company, not a natural person. possible values: any text 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    Your answer could look like this: answer to question
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: Medienpilot GmbH & Co. KG
+Am Saueracker 23
+91244 Reichenschwand
+Tel: 09151 7269906
+info@medienpilot.deVertreten durch:
+Medienpilot Verwaltungs GmbH (Amtsgericht
+Nürnberg, HRB 35148) diese vertreten durch die
+Geschäftsführer Detlev Dornhöfer, Thomas Wiegand,
+Christian DüllRegistergericht:
+Amtsgericht Nürnberg,
+HRA 18230
+UStID DE318745729Kontoverbindung:
+Bank: Commerzbank
+IBAN: DE12760400610762361400
+BIC: COBADEFFXXXMedienpilot GmbH & Co. KG • Am Saueracker 23 • 91244 Reichenschwand
+SimFin Analytics GmbH
+Pfälzer Ufer 4
+06108 Halle (Saale)
+Germany
+Seite 1 von 1Rechnung
+Reichenschwand 04.07.2023
+Rechnungs-Nr 02581
+Vorgang A1807
+Ihre Kundennr. 10138
+Ansprechpartner Thomas Wiegand
+Referenz 06/2023
+Lieferdatum, 30.06.2023
+Sehr geehrte Damen und Herren,
+unsere Leistungen stellen wir wie folgt in Rechnung:
+01.06.2023 - 30.06.2023
+#Beschreibung Menge Einzelpreis Gesamt
+1Dienstleistung, Beratung und Entwicklung
+Beratung und Entwicklung in den Bereichen Online-
+Marketing, -Konzeption, -Strategie und -Technik1,00Std. 100,00 € 100,00 €
+Zwischensumme (zzgl. MwSt.) 100,00 €
+zzgl. 19,0% MwSt. aus 100,00 € 19,00 €
+Gesamtbetrag 119,00 €
+Zahlbar innerhalb von 14 Tage rein netto.
+Vielen Dank für Ihren Auftrag.
+Bei Fragen stehen wir Ihnen jederzeit gerne zur Verfügung.
+Powered by TCPDF (www.tcpdf.org)
+
+                    ","Medienpilot GmbH & Co. KG
+Sources: [0],[0],[0]"
+47d047dbb6180582d6067fc02b921b51893da220b367600b0e21a9c921e42877,65ef0d5f9012fa0ca62df5d0,general2,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What's the date of the invoice?  possible values: date in the format: YYYY-MM-DD 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    Your answer could look like this: 2023-11-24
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: Medienpilot GmbH & Co. KG
+Am Saueracker 23
+91244 Reichenschwand
+Tel: 09151 7269906
+info@medienpilot.deVertreten durch:
+Medienpilot Verwaltungs GmbH (Amtsgericht
+Nürnberg, HRB 35148) diese vertreten durch die
+Geschäftsführer Detlev Dornhöfer, Thomas Wiegand,
+Christian DüllRegistergericht:
+Amtsgericht Nürnberg,
+HRA 18230
+UStID DE318745729Kontoverbindung:
+Bank: Commerzbank
+IBAN: DE12760400610762361400
+BIC: COBADEFFXXXMedienpilot GmbH & Co. KG • Am Saueracker 23 • 91244 Reichenschwand
+SimFin Analytics GmbH
+Pfälzer Ufer 4
+06108 Halle (Saale)
+Germany
+Seite 1 von 1Rechnung
+Reichenschwand 04.07.2023
+Rechnungs-Nr 02581
+Vorgang A1807
+Ihre Kundennr. 10138
+Ansprechpartner Thomas Wiegand
+Referenz 06/2023
+Lieferdatum, 30.06.2023
+Sehr geehrte Damen und Herren,
+unsere Leistungen stellen wir wie folgt in Rechnung:
+01.06.2023 - 30.06.2023
+#Beschreibung Menge Einzelpreis Gesamt
+1Dienstleistung, Beratung und Entwicklung
+Beratung und Entwicklung in den Bereichen Online-
+Marketing, -Konzeption, -Strategie und -Technik1,00Std. 100,00 € 100,00 €
+Zwischensumme (zzgl. MwSt.) 100,00 €
+zzgl. 19,0% MwSt. aus 100,00 € 19,00 €
+Gesamtbetrag 119,00 €
+Zahlbar innerhalb von 14 Tage rein netto.
+Vielen Dank für Ihren Auftrag.
+Bei Fragen stehen wir Ihnen jederzeit gerne zur Verfügung.
+Powered by TCPDF (www.tcpdf.org)
+
+                    ","2023-07-04
+Sources: [16]"
+a8e5ed8893a293e1c656c658a6bc83b5e298dc1c779d42a64e696034f3927e1b,65ef0d5f9012fa0ca62df5d0,general0,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What is the invoice total?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION. In the answer please first provide the meta ID (for the main question use 'main question' instead) in brackets and then the answer. If there are several possible answers to the question (with different meta values), structure your answer into multiple answer blocks of the same format, one after the other separated by new lines.
+(meta0): What is the currency?  possible values (separated by $ symbols): $ USD $, $ EUR $, $ Other $
+(meta1): What is the VAT included in the total?  possible values: any percentage value 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    One possible answer block could be (there can be more than one in your response): (main question): 123
+(meta0): $ USD $
+(meta1): 19%
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: InvoiceInvoice number: 4836212534
+Details
+.............................................................. 4836212534 Invoice number
+.............................................................. Oct 31, 2023 Invoice date
+.............................................................. 6634-1561-0171 Billing ID
+.............................................................. simfin.com Domain nameGoogle W orkspace
+€83.20 Total in EUR
+Summar y for Oct 1, 2023 - Oct 31, 2023
+€83.20 Subt otal in EUR
+€0.00 VAT (0%)
+€83.20 Total in EURGoogle Cloud EMEA Limited
+Velasco
+Clanwilliam Place
+Dublin 2
+Ireland
+VAT number: IE3668997OH
+Bill t o
+Thomas Flassbeck
+SimFin Analytics GmbH
+Pfälz er Uf er 4
+06108 Halle (Saale)
+Germany
+Services subject t o the r everse char ge - V AT to be accounted for b y the r ecipient as per Ar ticle 196 of Council Dir ectiv e 2006/112/EC
+You will be aut omatically char ged for any amount due.
+Page 1 of 2
+[1]: €83.20 Subt otal in EUR
+€0.00 VAT (0%)
+€83.20 Total in EURSubscription Description Inter val Quantity Amount(€)
+Google W orkspace Business Standar d Usage Oct 1 - Oct 31 8 83.20
+Need help understanding the char ges on y our inv oice? Click her e for detailed explanations
+https:/ /suppor t.google.com/a?p=gsuite-bills-and-char gesInvoice Invoice number: 4836212534
+Page 2 of 2
+
+                    ","(main question): 83.2
+(meta0): $ EUR $
+(meta1): 0%
+Sources: [23],[0],[0],[0],[0],[0],[0]"
+a8e5ed8893a293e1c656c658a6bc83b5e298dc1c779d42a64e696034f3927e1b,65ef0d5f9012fa0ca62df5d0,general1,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: Who is the issuer of the invoice?  Additional info: Note that usually the issuer of the invoice will be a company, not a natural person. possible values: any text 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    Your answer could look like this: answer to question
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: InvoiceInvoice number: 4836212534
+Details
+.............................................................. 4836212534 Invoice number
+.............................................................. Oct 31, 2023 Invoice date
+.............................................................. 6634-1561-0171 Billing ID
+.............................................................. simfin.com Domain nameGoogle W orkspace
+€83.20 Total in EUR
+Summar y for Oct 1, 2023 - Oct 31, 2023
+€83.20 Subt otal in EUR
+€0.00 VAT (0%)
+€83.20 Total in EURGoogle Cloud EMEA Limited
+Velasco
+Clanwilliam Place
+Dublin 2
+Ireland
+VAT number: IE3668997OH
+Bill t o
+Thomas Flassbeck
+SimFin Analytics GmbH
+Pfälz er Uf er 4
+06108 Halle (Saale)
+Germany
+Services subject t o the r everse char ge - V AT to be accounted for b y the r ecipient as per Ar ticle 196 of Council Dir ectiv e 2006/112/EC
+You will be aut omatically char ged for any amount due.
+Page 1 of 2
+[1]: €83.20 Subt otal in EUR
+€0.00 VAT (0%)
+€83.20 Total in EURSubscription Description Inter val Quantity Amount(€)
+Google W orkspace Business Standar d Usage Oct 1 - Oct 31 8 83.20
+Need help understanding the char ges on y our inv oice? Click her e for detailed explanations
+https:/ /suppor t.google.com/a?p=gsuite-bills-and-char gesInvoice Invoice number: 4836212534
+Page 2 of 2
+
+                    ","Google Cloud EMEA Limited
+Sources: [11],[12],[13],[14],[15],[16]"
+a8e5ed8893a293e1c656c658a6bc83b5e298dc1c779d42a64e696034f3927e1b,65ef0d5f9012fa0ca62df5d0,general2,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What's the date of the invoice?  possible values: date in the format: YYYY-MM-DD 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    Your answer could look like this: 2023-11-24
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: InvoiceInvoice number: 4836212534
+Details
+.............................................................. 4836212534 Invoice number
+.............................................................. Oct 31, 2023 Invoice date
+.............................................................. 6634-1561-0171 Billing ID
+.............................................................. simfin.com Domain nameGoogle W orkspace
+€83.20 Total in EUR
+Summar y for Oct 1, 2023 - Oct 31, 2023
+€83.20 Subt otal in EUR
+€0.00 VAT (0%)
+€83.20 Total in EURGoogle Cloud EMEA Limited
+Velasco
+Clanwilliam Place
+Dublin 2
+Ireland
+VAT number: IE3668997OH
+Bill t o
+Thomas Flassbeck
+SimFin Analytics GmbH
+Pfälz er Uf er 4
+06108 Halle (Saale)
+Germany
+Services subject t o the r everse char ge - V AT to be accounted for b y the r ecipient as per Ar ticle 196 of Council Dir ectiv e 2006/112/EC
+You will be aut omatically char ged for any amount due.
+Page 1 of 2
+[1]: €83.20 Subt otal in EUR
+€0.00 VAT (0%)
+€83.20 Total in EURSubscription Description Inter val Quantity Amount(€)
+Google W orkspace Business Standar d Usage Oct 1 - Oct 31 8 83.20
+Need help understanding the char ges on y our inv oice? Click her e for detailed explanations
+https:/ /suppor t.google.com/a?p=gsuite-bills-and-char gesInvoice Invoice number: 4836212534
+Page 2 of 2
+
+                    ","2023-10-31
+Sources: [5],[0],[0],[0]"
+32f3b8a2778d0c0f81c920b7076f99df9f5f5ef0e38ff9656ef85d19494142df,65ef0d5f9012fa0ca62df5d0,general0,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What is the invoice total?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION. In the answer please first provide the meta ID (for the main question use 'main question' instead) in brackets and then the answer. If there are several possible answers to the question (with different meta values), structure your answer into multiple answer blocks of the same format, one after the other separated by new lines.
+(meta0): What is the currency?  possible values (separated by $ symbols): $ USD $, $ EUR $, $ Other $
+(meta1): What is the VAT included in the total?  possible values: any percentage value 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    One possible answer block could be (there can be more than one in your response): (main question): 123
+(meta0): $ USD $
+(meta1): 19%
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: BILLED	TO:
+PRODUCT(S)	PROVIDED	BY:
+Felix	Wolf
+SimFin	Analytics	GmbH
+Pfälzer	Ufer	4
+Halle	
+06108
+GERMANY	
+Phone:	+49	345	960	044	30
+E-mail:	f.wolf@simfin.com
+VAT	number:	DE355369209
+Semrush	Inc.
+www.semrush.com
+800	Boylston	Street,	Suite	2475
+Boston,	MA	02199,	USA
+mail@semrush.com
++1	(800)	815	-	9959
+VAT	number:	EU203000373
+SALE:
+	2530418
+BILLING	METHOD:
+	credit	card
+PAYMENT	CURRENCY:
+	USD
+PAYMENT	
+DATE:
+	2023-04-23
+ACTIVATION	
+DATE:
+	2023-04-23	
+INVOICE:
+#XZZ5672cdf32cf60900LFNLZ7EASNE4T
+PRODUCT
+AMOUNT
+USD
+EUR
+PRO	1	month	Recurring
+119.95
+109.15
+PURCHASES
+119.95
+109.15
+VAT	(19%)
+0.00
+0.00
+TOTAL	AT	CHECKOUT
+119.95
+109.15
+All	payments	are	taken	in	USD.
+	The	amount	in	your	local	currency	should	be	used	for	reference	only.	
+VAT	Reverse	Charge	Notes
+No	VAT	charged.	Customer	provided	VAT	registration	number	and	may	be	responsible	for	VAT	fees.
+
+                    ","(main question): 119.95
+(meta0): $ USD $
+(meta1): 0%
+Sources: [8],[0],[0]"
+32f3b8a2778d0c0f81c920b7076f99df9f5f5ef0e38ff9656ef85d19494142df,65ef0d5f9012fa0ca62df5d0,general1,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: Who is the issuer of the invoice?  Additional info: Note that usually the issuer of the invoice will be a company, not a natural person. possible values: any text 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    Your answer could look like this: answer to question
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: BILLED	TO:
+PRODUCT(S)	PROVIDED	BY:
+Felix	Wolf
+SimFin	Analytics	GmbH
+Pfälzer	Ufer	4
+Halle	
+06108
+GERMANY	
+Phone:	+49	345	960	044	30
+E-mail:	f.wolf@simfin.com
+VAT	number:	DE355369209
+Semrush	Inc.
+www.semrush.com
+800	Boylston	Street,	Suite	2475
+Boston,	MA	02199,	USA
+mail@semrush.com
++1	(800)	815	-	9959
+VAT	number:	EU203000373
+SALE:
+	2530418
+BILLING	METHOD:
+	credit	card
+PAYMENT	CURRENCY:
+	USD
+PAYMENT	
+DATE:
+	2023-04-23
+ACTIVATION	
+DATE:
+	2023-04-23	
+INVOICE:
+#XZZ5672cdf32cf60900LFNLZ7EASNE4T
+PRODUCT
+AMOUNT
+USD
+EUR
+PRO	1	month	Recurring
+119.95
+109.15
+PURCHASES
+119.95
+109.15
+VAT	(19%)
+0.00
+0.00
+TOTAL	AT	CHECKOUT
+119.95
+109.15
+All	payments	are	taken	in	USD.
+	The	amount	in	your	local	currency	should	be	used	for	reference	only.	
+VAT	Reverse	Charge	Notes
+No	VAT	charged.	Customer	provided	VAT	registration	number	and	may	be	responsible	for	VAT	fees.
+
+                    ","Semrush Inc.
+Sources: [12],[13]"
+32f3b8a2778d0c0f81c920b7076f99df9f5f5ef0e38ff9656ef85d19494142df,65ef0d5f9012fa0ca62df5d0,general2,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What's the date of the invoice?  possible values: date in the format: YYYY-MM-DD 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    Your answer could look like this: 2023-11-24
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: BILLED	TO:
+PRODUCT(S)	PROVIDED	BY:
+Felix	Wolf
+SimFin	Analytics	GmbH
+Pfälzer	Ufer	4
+Halle	
+06108
+GERMANY	
+Phone:	+49	345	960	044	30
+E-mail:	f.wolf@simfin.com
+VAT	number:	DE355369209
+Semrush	Inc.
+www.semrush.com
+800	Boylston	Street,	Suite	2475
+Boston,	MA	02199,	USA
+mail@semrush.com
++1	(800)	815	-	9959
+VAT	number:	EU203000373
+SALE:
+	2530418
+BILLING	METHOD:
+	credit	card
+PAYMENT	CURRENCY:
+	USD
+PAYMENT	
+DATE:
+	2023-04-23
+ACTIVATION	
+DATE:
+	2023-04-23	
+INVOICE:
+#XZZ5672cdf32cf60900LFNLZ7EASNE4T
+PRODUCT
+AMOUNT
+USD
+EUR
+PRO	1	month	Recurring
+119.95
+109.15
+PURCHASES
+119.95
+109.15
+VAT	(19%)
+0.00
+0.00
+TOTAL	AT	CHECKOUT
+119.95
+109.15
+All	payments	are	taken	in	USD.
+	The	amount	in	your	local	currency	should	be	used	for	reference	only.	
+VAT	Reverse	Charge	Notes
+No	VAT	charged.	Customer	provided	VAT	registration	number	and	may	be	responsible	for	VAT	fees.
+
+                    ","2023-04-23
+Sources: [5]"
+c3968f1afbdd6d0688a38c7644c8b6555453a50e354fb17a783ce4bfc37ae574,65ef0d5f9012fa0ca62df5d0,general0,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What is the invoice total?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION. In the answer please first provide the meta ID (for the main question use 'main question' instead) in brackets and then the answer. If there are several possible answers to the question (with different meta values), structure your answer into multiple answer blocks of the same format, one after the other separated by new lines.
+(meta0): What is the currency?  possible values (separated by $ symbols): $ USD $, $ EUR $, $ Other $
+(meta1): What is the VAT included in the total?  possible values: any percentage value 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    One possible answer block could be (there can be more than one in your response): (main question): 123
+(meta0): $ USD $
+(meta1): 19%
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: B 1 7 2 F B 3 7   0 0 0 3  ·  $ 1 9 . 0 0  d u e  A p r i l  1 6 ,  2 0 2 3 P a g e  1  o f  1I n v o i c e
+I n v o i c e  n u m b e r B 1 7 2 F B 3 7   0 0 0 3
+D a t e  o f  i s s u e A p r i l  1 6 ,  2 0 2 3
+D a t e  d u e A p r i l  1 6 ,  2 0 2 3
+N a t u r a l s o f t  L i m i t e d
+9 3 5   6 3 8 8  N o .  3  R o a d
+R i c h m o n d  B r i t i s h  C o l u m b i a  V 6 Y  0 L 4
+C a n a d a
+s a l e s @ n a t u r a l r e a d e r s . c o m
+C A  B N 8 3 0 8 1 5 2 7 0B i l l  t o
+F e l i x  W o l f
+P f ä l z e r  U f e r  4
+0 6 1 0 8  H a l l e
+G e r m a n y
+f . w o l f @ s i m f i n . c o m
+$ 1 9 . 0 0  d u e  A p r i l  1 6 ,  2 0 2 3
+P a y  o n l i n e
+D e s c r i p t i o n Q t y U n i t  p r i c e A m o u n t
+P l u s  P l a n
+A p r  1 6  –  M a y  1 6 ,  2 0 2 31 $ 1 9 . 0 0 $ 1 9 . 0 0
+ 
+S u b t o t a l $ 1 9 . 0 0
+T o t a l $ 1 9 . 0 0
+A m o u n t  d u e $ 1 9 . 0 0
+
+                    ","(main question): 19.0
+(meta0): $ USD $
+(meta1): 0%
+Sources: [7],[0],[0]"
+c3968f1afbdd6d0688a38c7644c8b6555453a50e354fb17a783ce4bfc37ae574,65ef0d5f9012fa0ca62df5d0,general1,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: Who is the issuer of the invoice?  Additional info: Note that usually the issuer of the invoice will be a company, not a natural person. possible values: any text 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    Your answer could look like this: answer to question
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: B 1 7 2 F B 3 7   0 0 0 3  ·  $ 1 9 . 0 0  d u e  A p r i l  1 6 ,  2 0 2 3 P a g e  1  o f  1I n v o i c e
+I n v o i c e  n u m b e r B 1 7 2 F B 3 7   0 0 0 3
+D a t e  o f  i s s u e A p r i l  1 6 ,  2 0 2 3
+D a t e  d u e A p r i l  1 6 ,  2 0 2 3
+N a t u r a l s o f t  L i m i t e d
+9 3 5   6 3 8 8  N o .  3  R o a d
+R i c h m o n d  B r i t i s h  C o l u m b i a  V 6 Y  0 L 4
+C a n a d a
+s a l e s @ n a t u r a l r e a d e r s . c o m
+C A  B N 8 3 0 8 1 5 2 7 0B i l l  t o
+F e l i x  W o l f
+P f ä l z e r  U f e r  4
+0 6 1 0 8  H a l l e
+G e r m a n y
+f . w o l f @ s i m f i n . c o m
+$ 1 9 . 0 0  d u e  A p r i l  1 6 ,  2 0 2 3
+P a y  o n l i n e
+D e s c r i p t i o n Q t y U n i t  p r i c e A m o u n t
+P l u s  P l a n
+A p r  1 6  –  M a y  1 6 ,  2 0 2 31 $ 1 9 . 0 0 $ 1 9 . 0 0
+ 
+S u b t o t a l $ 1 9 . 0 0
+T o t a l $ 1 9 . 0 0
+A m o u n t  d u e $ 1 9 . 0 0
+
+                    ","Naturalsoft Limited
+Sources: [4]"
+c3968f1afbdd6d0688a38c7644c8b6555453a50e354fb17a783ce4bfc37ae574,65ef0d5f9012fa0ca62df5d0,general2,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What's the date of the invoice?  possible values: date in the format: YYYY-MM-DD 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    Your answer could look like this: 2023-11-24
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: B 1 7 2 F B 3 7   0 0 0 3  ·  $ 1 9 . 0 0  d u e  A p r i l  1 6 ,  2 0 2 3 P a g e  1  o f  1I n v o i c e
+I n v o i c e  n u m b e r B 1 7 2 F B 3 7   0 0 0 3
+D a t e  o f  i s s u e A p r i l  1 6 ,  2 0 2 3
+D a t e  d u e A p r i l  1 6 ,  2 0 2 3
+N a t u r a l s o f t  L i m i t e d
+9 3 5   6 3 8 8  N o .  3  R o a d
+R i c h m o n d  B r i t i s h  C o l u m b i a  V 6 Y  0 L 4
+C a n a d a
+s a l e s @ n a t u r a l r e a d e r s . c o m
+C A  B N 8 3 0 8 1 5 2 7 0B i l l  t o
+F e l i x  W o l f
+P f ä l z e r  U f e r  4
+0 6 1 0 8  H a l l e
+G e r m a n y
+f . w o l f @ s i m f i n . c o m
+$ 1 9 . 0 0  d u e  A p r i l  1 6 ,  2 0 2 3
+P a y  o n l i n e
+D e s c r i p t i o n Q t y U n i t  p r i c e A m o u n t
+P l u s  P l a n
+A p r  1 6  –  M a y  1 6 ,  2 0 2 31 $ 1 9 . 0 0 $ 1 9 . 0 0
+ 
+S u b t o t a l $ 1 9 . 0 0
+T o t a l $ 1 9 . 0 0
+A m o u n t  d u e $ 1 9 . 0 0
+
+                    ","2023-04-16
+Sources: [2],[0]"
+095331e7f8aec7422fd364016149f45d2ee9864836391103b171c588bbedd779,65ef0d5f9012fa0ca62df5d0,general0,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What is the invoice total?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION. In the answer please first provide the meta ID (for the main question use 'main question' instead) in brackets and then the answer. If there are several possible answers to the question (with different meta values), structure your answer into multiple answer blocks of the same format, one after the other separated by new lines.
+(meta0): What is the currency?  possible values (separated by $ symbols): $ USD $, $ EUR $, $ Other $
+(meta1): What is the VAT included in the total?  possible values: any percentage value 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    One possible answer block could be (there can be more than one in your response): (main question): 123
+(meta0): $ USD $
+(meta1): 19%
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: Papoo Software & Media GmbH – Auguststr. 4 – 53229 Bonn        
+Papoo Software & Media GmbH, Auguststr. 4, 53229 Bonn, Geschäftsführer: Dr. Carsten Euwens | HRB 22721 Bonn Steuernummer: 206/5941/1357 | Ust-ID: DE310616179 | Telefon : 0228 / 53 66 37 26 | Telefax: 0228 / 336 79 54 | Web: www.ccm19.deE-Mail: info@ccm19.de | Bankverbindung: Sparkasse KölnBonn, BIC: COLSDE33XXX, IBAN: DE33 3705 0198 1933 6229 44 CCM19 – Cookie Consent Management
+Papoo Software & Media GmbHDr. Carsten Euwens
+Auguststr. 4
+53229 Bonn
+Telefon:     0228 / 53 66 37 26E-Mail:   info@ccm19.de 
+URL:  https://www.ccm19.de
+SimFin Analytics GmbH
+Felix Wolf
+Pfälzer Ufer 4
+06108 Halle
+DeutschlandLieferdatum:
+RechnungsNr:
+KundenNr:
+Datum:
+Ihre USt-IdNr.:01.11.2023
+70128793
+34034
+01.11.2023
+DE303303712
+R E C H N U N G / L I E F E R S C H E I N
+ID Produkt Preis Rabatt Menge Summe
+65-38-37 Business Tarif  Business Tarif CCM19 -
+enthalten sind die gewählten Impressionen
+und Domains, sowie die auf der Webseite
+aufgeführten Funktionen, Laufzeit wie
+aufgeführt. Zahlweise: Zum jeweiligen
+Buchungstag, kündbar bis 1 Tag vor Ende der
+Laufzeit.
+Abrechnungszeitraum: Jährlich
+Anzahl der Domains: 5 Domains inkl. /
+100.000 Impressionen pro Monat170,42 1 170,42
+Gesamtnetto (EUR) 170,42
+zzgl. 19 % Ust. 32,38
+Summe brutto (in EURO) 202,80
+Zahlungsbedingungen:
+Zahlung mit Kreditkarte
+Versandart:
+Versandkostenfrei
+
+                    ","(main question): 202.80
+(meta0): $ EUR $
+(meta1): 19%
+Sources: [15],[16]"
+095331e7f8aec7422fd364016149f45d2ee9864836391103b171c588bbedd779,65ef0d5f9012fa0ca62df5d0,general1,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: Who is the issuer of the invoice?  Additional info: Note that usually the issuer of the invoice will be a company, not a natural person. possible values: any text 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    Your answer could look like this: answer to question
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: Papoo Software & Media GmbH – Auguststr. 4 – 53229 Bonn        
+Papoo Software & Media GmbH, Auguststr. 4, 53229 Bonn, Geschäftsführer: Dr. Carsten Euwens | HRB 22721 Bonn Steuernummer: 206/5941/1357 | Ust-ID: DE310616179 | Telefon : 0228 / 53 66 37 26 | Telefax: 0228 / 336 79 54 | Web: www.ccm19.deE-Mail: info@ccm19.de | Bankverbindung: Sparkasse KölnBonn, BIC: COLSDE33XXX, IBAN: DE33 3705 0198 1933 6229 44 CCM19 – Cookie Consent Management
+Papoo Software & Media GmbHDr. Carsten Euwens
+Auguststr. 4
+53229 Bonn
+Telefon:     0228 / 53 66 37 26E-Mail:   info@ccm19.de 
+URL:  https://www.ccm19.de
+SimFin Analytics GmbH
+Felix Wolf
+Pfälzer Ufer 4
+06108 Halle
+DeutschlandLieferdatum:
+RechnungsNr:
+KundenNr:
+Datum:
+Ihre USt-IdNr.:01.11.2023
+70128793
+34034
+01.11.2023
+DE303303712
+R E C H N U N G / L I E F E R S C H E I N
+ID Produkt Preis Rabatt Menge Summe
+65-38-37 Business Tarif  Business Tarif CCM19 -
+enthalten sind die gewählten Impressionen
+und Domains, sowie die auf der Webseite
+aufgeführten Funktionen, Laufzeit wie
+aufgeführt. Zahlweise: Zum jeweiligen
+Buchungstag, kündbar bis 1 Tag vor Ende der
+Laufzeit.
+Abrechnungszeitraum: Jährlich
+Anzahl der Domains: 5 Domains inkl. /
+100.000 Impressionen pro Monat170,42 1 170,42
+Gesamtnetto (EUR) 170,42
+zzgl. 19 % Ust. 32,38
+Summe brutto (in EURO) 202,80
+Zahlungsbedingungen:
+Zahlung mit Kreditkarte
+Versandart:
+Versandkostenfrei
+
+                    ","Papoo Software & Media GmbH
+Sources: [0],[0],[0],[0]"
+095331e7f8aec7422fd364016149f45d2ee9864836391103b171c588bbedd779,65ef0d5f9012fa0ca62df5d0,general2,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What's the date of the invoice?  possible values: date in the format: YYYY-MM-DD 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    Your answer could look like this: 2023-11-24
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: Papoo Software & Media GmbH – Auguststr. 4 – 53229 Bonn        
+Papoo Software & Media GmbH, Auguststr. 4, 53229 Bonn, Geschäftsführer: Dr. Carsten Euwens | HRB 22721 Bonn Steuernummer: 206/5941/1357 | Ust-ID: DE310616179 | Telefon : 0228 / 53 66 37 26 | Telefax: 0228 / 336 79 54 | Web: www.ccm19.deE-Mail: info@ccm19.de | Bankverbindung: Sparkasse KölnBonn, BIC: COLSDE33XXX, IBAN: DE33 3705 0198 1933 6229 44 CCM19 – Cookie Consent Management
+Papoo Software & Media GmbHDr. Carsten Euwens
+Auguststr. 4
+53229 Bonn
+Telefon:     0228 / 53 66 37 26E-Mail:   info@ccm19.de 
+URL:  https://www.ccm19.de
+SimFin Analytics GmbH
+Felix Wolf
+Pfälzer Ufer 4
+06108 Halle
+DeutschlandLieferdatum:
+RechnungsNr:
+KundenNr:
+Datum:
+Ihre USt-IdNr.:01.11.2023
+70128793
+34034
+01.11.2023
+DE303303712
+R E C H N U N G / L I E F E R S C H E I N
+ID Produkt Preis Rabatt Menge Summe
+65-38-37 Business Tarif  Business Tarif CCM19 -
+enthalten sind die gewählten Impressionen
+und Domains, sowie die auf der Webseite
+aufgeführten Funktionen, Laufzeit wie
+aufgeführt. Zahlweise: Zum jeweiligen
+Buchungstag, kündbar bis 1 Tag vor Ende der
+Laufzeit.
+Abrechnungszeitraum: Jährlich
+Anzahl der Domains: 5 Domains inkl. /
+100.000 Impressionen pro Monat170,42 1 170,42
+Gesamtnetto (EUR) 170,42
+zzgl. 19 % Ust. 32,38
+Summe brutto (in EURO) 202,80
+Zahlungsbedingungen:
+Zahlung mit Kreditkarte
+Versandart:
+Versandkostenfrei
+
+                    ","2023-11-01
+Sources: [12],[0]"
+b8e5df7bdd684639871117d08d33fc0baadaf3cca66c8ec36374831a4f57d12a,65ef0d5f9012fa0ca62df5d0,general0,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What is the invoice total?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION. In the answer please first provide the meta ID (for the main question use 'main question' instead) in brackets and then the answer. If there are several possible answers to the question (with different meta values), structure your answer into multiple answer blocks of the same format, one after the other separated by new lines.
+(meta0): What is the currency?  possible values (separated by $ symbols): $ USD $, $ EUR $, $ Other $
+(meta1): What is the VAT included in the total?  possible values: any percentage value 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    One possible answer block could be (there can be more than one in your response): (main question): 123
+(meta0): $ USD $
+(meta1): 19%
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: /0 /1 /2 /3 /4 /2 /0 /1 /5 □ /7 /7 /8 /3 /9 /10 /11 /12 /13 /14 /15 /16 □ /17 □ /18 /16 /19 /20 /21 /19 /11 /22 /22
+/23 /22 /22 /24 /25 /8 /26 /26 /19 /24 /24 /2 /22 /16 /19 /20 /27 /19 /11 /22 /22 /2 /15 /13 /20 /26 /19 /28 /20 /14 /11 /26 /15 /13 /20 /24 /19 /11 /14 /16 /25 /26 /7 /9 /7 /0 /29 /4 /0 /26 /14 /11 /12 /13 /14 /15 /16 /25 /26 /30 /23 /31 /32 /30 /33 /12 /34 /7 /26 /7
+
+                    ","(main question): 48.0
+(meta0): $ USD $
+(meta1): 0%
+Sources: [6],[0]"
+b8e5df7bdd684639871117d08d33fc0baadaf3cca66c8ec36374831a4f57d12a,65ef0d5f9012fa0ca62df5d0,general1,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: Who is the issuer of the invoice?  Additional info: Note that usually the issuer of the invoice will be a company, not a natural person. possible values: any text 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    Your answer could look like this: answer to question
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: /0 /1 /2 /3 /4 /2 /0 /1 /5 □ /7 /7 /8 /3 /9 /10 /11 /12 /13 /14 /15 /16 □ /17 □ /18 /16 /19 /20 /21 /19 /11 /22 /22
+/23 /22 /22 /24 /25 /8 /26 /26 /19 /24 /24 /2 /22 /16 /19 /20 /27 /19 /11 /22 /22 /2 /15 /13 /20 /26 /19 /28 /20 /14 /11 /26 /15 /13 /20 /24 /19 /11 /14 /16 /25 /26 /7 /9 /7 /0 /29 /4 /0 /26 /14 /11 /12 /13 /14 /15 /16 /25 /26 /30 /23 /31 /32 /30 /33 /12 /34 /7 /26 /7
+
+                    ","TeamGantt
+Sources: [14],[0],[0]"
+b8e5df7bdd684639871117d08d33fc0baadaf3cca66c8ec36374831a4f57d12a,65ef0d5f9012fa0ca62df5d0,general2,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What's the date of the invoice?  possible values: date in the format: YYYY-MM-DD 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    Your answer could look like this: 2023-11-24
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: /0 /1 /2 /3 /4 /2 /0 /1 /5 □ /7 /7 /8 /3 /9 /10 /11 /12 /13 /14 /15 /16 □ /17 □ /18 /16 /19 /20 /21 /19 /11 /22 /22
+/23 /22 /22 /24 /25 /8 /26 /26 /19 /24 /24 /2 /22 /16 /19 /20 /27 /19 /11 /22 /22 /2 /15 /13 /20 /26 /19 /28 /20 /14 /11 /26 /15 /13 /20 /24 /19 /11 /14 /16 /25 /26 /7 /9 /7 /0 /29 /4 /0 /26 /14 /11 /12 /13 /14 /15 /16 /25 /26 /30 /23 /31 /32 /30 /33 /12 /34 /7 /26 /7
+
+                    ","2023-05-11
+Sources: [1]"
+aaa938341e84278f4c212f2a34d22230c8e2ff3f93f7f65def0883ea2e41e7b8,65ef0d5f9012fa0ca62df5d0,general0,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What is the invoice total?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION. In the answer please first provide the meta ID (for the main question use 'main question' instead) in brackets and then the answer. If there are several possible answers to the question (with different meta values), structure your answer into multiple answer blocks of the same format, one after the other separated by new lines.
+(meta0): What is the currency?  possible values (separated by $ symbols): $ USD $, $ EUR $, $ Other $
+(meta1): What is the VAT included in the total?  possible values: any percentage value 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    One possible answer block could be (there can be more than one in your response): (main question): 123
+(meta0): $ USD $
+(meta1): 19%
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: Calendly LLC
+88 N Avondale Rd, #603
+Avondale Estates, Georgia 30002
+United StatesINVOICE
+Invoice #—3189846
+Invoice Date—Sep 13, 2022
+Invoice Amount —$144.00 (USD)
+Customer ID—
+16BQW0THJ6n0471Rd
+PAID
+BILLED TO
+GermanySUBSCRIPTION
+ID—16CHvBTHJ6ned47kJ
+Billing Period—Sep 13, 2022 to Sep 13, 2023
+Next Billing Date —Sep 13, 2023
+ 
+DESCRIPTION UNITS UNIT PRICEAMOUNT (USD)
+ 
+Professional Yearly 1$144.00$144.00
+  
+Total$144.00
+Payments ($144.00)
+    
+Amount Due ( USD)$0.00
+    
+PAYMENTS
+$144.00 was paid on 13 Sep, 2022 06:04 EDT by MasterCard card ending 3227.
+Powered by Chargebee
+
+                    ","(main question): 144.0
+(meta0): $ USD $
+(meta1): 0%
+Sources: [10],[0],[0]"
+aaa938341e84278f4c212f2a34d22230c8e2ff3f93f7f65def0883ea2e41e7b8,65ef0d5f9012fa0ca62df5d0,general1,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: Who is the issuer of the invoice?  Additional info: Note that usually the issuer of the invoice will be a company, not a natural person. possible values: any text 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    Your answer could look like this: answer to question
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: Calendly LLC
+88 N Avondale Rd, #603
+Avondale Estates, Georgia 30002
+United StatesINVOICE
+Invoice #—3189846
+Invoice Date—Sep 13, 2022
+Invoice Amount —$144.00 (USD)
+Customer ID—
+16BQW0THJ6n0471Rd
+PAID
+BILLED TO
+GermanySUBSCRIPTION
+ID—16CHvBTHJ6ned47kJ
+Billing Period—Sep 13, 2022 to Sep 13, 2023
+Next Billing Date —Sep 13, 2023
+ 
+DESCRIPTION UNITS UNIT PRICEAMOUNT (USD)
+ 
+Professional Yearly 1$144.00$144.00
+  
+Total$144.00
+Payments ($144.00)
+    
+Amount Due ( USD)$0.00
+    
+PAYMENTS
+$144.00 was paid on 13 Sep, 2022 06:04 EDT by MasterCard card ending 3227.
+Powered by Chargebee
+
+                    ","Calendly LLC
+Sources: [0]"
+aaa938341e84278f4c212f2a34d22230c8e2ff3f93f7f65def0883ea2e41e7b8,65ef0d5f9012fa0ca62df5d0,general2,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What's the date of the invoice?  possible values: date in the format: YYYY-MM-DD 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    Your answer could look like this: 2023-11-24
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: Calendly LLC
+88 N Avondale Rd, #603
+Avondale Estates, Georgia 30002
+United StatesINVOICE
+Invoice #—3189846
+Invoice Date—Sep 13, 2022
+Invoice Amount —$144.00 (USD)
+Customer ID—
+16BQW0THJ6n0471Rd
+PAID
+BILLED TO
+GermanySUBSCRIPTION
+ID—16CHvBTHJ6ned47kJ
+Billing Period—Sep 13, 2022 to Sep 13, 2023
+Next Billing Date —Sep 13, 2023
+ 
+DESCRIPTION UNITS UNIT PRICEAMOUNT (USD)
+ 
+Professional Yearly 1$144.00$144.00
+  
+Total$144.00
+Payments ($144.00)
+    
+Amount Due ( USD)$0.00
+    
+PAYMENTS
+$144.00 was paid on 13 Sep, 2022 06:04 EDT by MasterCard card ending 3227.
+Powered by Chargebee
+
+                    ","2022-09-13
+Sources: [13],[0],[0],[0]"
+4d1a07b1721a88501f20be724d744845fd9d63a27287de9f59ffbcb06d838022,65ef0d5f9012fa0ca62df5d0,general0,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What is the invoice total?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION. In the answer please first provide the meta ID (for the main question use 'main question' instead) in brackets and then the answer. If there are several possible answers to the question (with different meta values), structure your answer into multiple answer blocks of the same format, one after the other separated by new lines.
+(meta0): What is the currency?  possible values (separated by $ symbols): $ USD $, $ EUR $, $ Other $
+(meta1): What is the VAT included in the total?  possible values: any percentage value 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    One possible answer block could be (there can be more than one in your response): (main question): 123
+(meta0): $ USD $
+(meta1): 19%
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: Invoice
+Netlify , Inc.
+512 2nd Street, Suite 200  
+San Francisco, CA 94107Invoice Number:
+Invoice Date:
+Currency:INV04789023
+2023-1 1-13
+USD
+Bill T o:
+Thomas Martin Flassbeck  
+Pfälzer Ufer 4
+Halle (Saale), Niedersachsen
+06108
+t.flassbeck@simfin.com
+Charge Details
+Charge NameService
+PeriodQty Unit Price Subtotal Tax Total
+Pro team plan11/13/2023 -
+12/12/20231.0 19.0 19.00 0.00 19.00
+Extra members on
+Pro team plan --
+Proration Credit11/03/2023 -
+11/12/20232.0 19.0 -12.26 0.00 -12.26
+Extra members on
+Pro team plan --
+Proration11/03/2023 -
+11/12/20231.0 19.0 6.13 0.00 6.13
+Extra members on
+Pro team plan11/13/2023 -
+12/12/20231.0 19.0 19.00 0.00 19.00
+Functions Pro
+Usage10/13/2023 -
+11/12/20231.0 25.0 25.00 0.00 25.00
+Git Contributors11/12/2023 -
+11/12/20231.0 19.0 19.00 0.00 19.00
+Invoice T otal
+Customer Notes: Subtotal:
+Tax:
+Total:
+Invoice Balance:75.87
+0.00
+75.87
+0.00
+PAID
+[1]: Invoice
+Payment Details
+Transaction
+TypeTransaction
+DateTransaction
+NumberPayment
+Method T ypePayment
+Method
+NumberApplied
+Amount
+Payment 11/13/2023 P-01964705 CreditCard ************1488 -$75.87
+PAID
+
+                    ","(main question): 75.87
+(meta0): $ USD $
+(meta1): 0%
+Sources: [31],[0],[0],[0]"
+4d1a07b1721a88501f20be724d744845fd9d63a27287de9f59ffbcb06d838022,65ef0d5f9012fa0ca62df5d0,general1,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: Who is the issuer of the invoice?  Additional info: Note that usually the issuer of the invoice will be a company, not a natural person. possible values: any text 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    Your answer could look like this: answer to question
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: Invoice
+Netlify , Inc.
+512 2nd Street, Suite 200  
+San Francisco, CA 94107Invoice Number:
+Invoice Date:
+Currency:INV04789023
+2023-1 1-13
+USD
+Bill T o:
+Thomas Martin Flassbeck  
+Pfälzer Ufer 4
+Halle (Saale), Niedersachsen
+06108
+t.flassbeck@simfin.com
+Charge Details
+Charge NameService
+PeriodQty Unit Price Subtotal Tax Total
+Pro team plan11/13/2023 -
+12/12/20231.0 19.0 19.00 0.00 19.00
+Extra members on
+Pro team plan --
+Proration Credit11/03/2023 -
+11/12/20232.0 19.0 -12.26 0.00 -12.26
+Extra members on
+Pro team plan --
+Proration11/03/2023 -
+11/12/20231.0 19.0 6.13 0.00 6.13
+Extra members on
+Pro team plan11/13/2023 -
+12/12/20231.0 19.0 19.00 0.00 19.00
+Functions Pro
+Usage10/13/2023 -
+11/12/20231.0 25.0 25.00 0.00 25.00
+Git Contributors11/12/2023 -
+11/12/20231.0 19.0 19.00 0.00 19.00
+Invoice T otal
+Customer Notes: Subtotal:
+Tax:
+Total:
+Invoice Balance:75.87
+0.00
+75.87
+0.00
+PAID
+[1]: Invoice
+Payment Details
+Transaction
+TypeTransaction
+DateTransaction
+NumberPayment
+Method T ypePayment
+Method
+NumberApplied
+Amount
+Payment 11/13/2023 P-01964705 CreditCard ************1488 -$75.87
+PAID
+
+                    ","Netlify, Inc
+Sources: [0]"
+4d1a07b1721a88501f20be724d744845fd9d63a27287de9f59ffbcb06d838022,65ef0d5f9012fa0ca62df5d0,general2,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What's the date of the invoice?  possible values: date in the format: YYYY-MM-DD 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    Your answer could look like this: 2023-11-24
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: Invoice
+Netlify , Inc.
+512 2nd Street, Suite 200  
+San Francisco, CA 94107Invoice Number:
+Invoice Date:
+Currency:INV04789023
+2023-1 1-13
+USD
+Bill T o:
+Thomas Martin Flassbeck  
+Pfälzer Ufer 4
+Halle (Saale), Niedersachsen
+06108
+t.flassbeck@simfin.com
+Charge Details
+Charge NameService
+PeriodQty Unit Price Subtotal Tax Total
+Pro team plan11/13/2023 -
+12/12/20231.0 19.0 19.00 0.00 19.00
+Extra members on
+Pro team plan --
+Proration Credit11/03/2023 -
+11/12/20232.0 19.0 -12.26 0.00 -12.26
+Extra members on
+Pro team plan --
+Proration11/03/2023 -
+11/12/20231.0 19.0 6.13 0.00 6.13
+Extra members on
+Pro team plan11/13/2023 -
+12/12/20231.0 19.0 19.00 0.00 19.00
+Functions Pro
+Usage10/13/2023 -
+11/12/20231.0 25.0 25.00 0.00 25.00
+Git Contributors11/12/2023 -
+11/12/20231.0 19.0 19.00 0.00 19.00
+Invoice T otal
+Customer Notes: Subtotal:
+Tax:
+Total:
+Invoice Balance:75.87
+0.00
+75.87
+0.00
+PAID
+[1]: Invoice
+Payment Details
+Transaction
+TypeTransaction
+DateTransaction
+NumberPayment
+Method T ypePayment
+Method
+NumberApplied
+Amount
+Payment 11/13/2023 P-01964705 CreditCard ************1488 -$75.87
+PAID
+
+                    ","2023-11-13
+Sources: [31]"
