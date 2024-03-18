@@ -3,9 +3,13 @@ parsee-core version used: 0.1.3.11
 
 This dataset was created on the basis of 15 sample invoices (PDF files).
 
-All PDF files are publicly accessible on parsee.ai, to access them copy the "source_identifier" (first column) and paste it in this URL (replace '{SOURCE_IDENTIFIER}' with the actual identifier): https://app.parsee.ai/documents/view/{SOURCE_IDENTIFIER}
+All PDF files are publicly accessible on parsee.ai, to access them copy the "source_identifier" (first column) and paste it in this URL (replace '{SOURCE_IDENTIFIER}' with the actual identifier):
 
-So for example: https://app.parsee.ai/documents/view/1fd7fdbd88d78aa6e80737b8757290b78570679fbb926995db362f38a0d161ea
+https://app.parsee.ai/documents/view/{SOURCE_IDENTIFIER}
+
+So for example:
+
+https://app.parsee.ai/documents/view/1fd7fdbd88d78aa6e80737b8757290b78570679fbb926995db362f38a0d161ea
 
 # Methodology
 
