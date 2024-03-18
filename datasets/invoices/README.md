@@ -1,0 +1,12 @@
+# Extracting Structured Data from Invoices - Parsee PDF Reader vs. Langchain PyPDF Loader
+
+With the datasets in this folder we want to test how the results of an LLM for extracting structured data from invoices differs for different document loaders.
+
+Both datasets have their own Readme's with more info about the methodology, notebooks for the creation of the dataset and evaluation results:
+* [Parsee Loader](./parsee-loader/README.md)
+* [Langchain Loader](./langchain-pypdf-loader/README.md)
+
+## TLDR
+Even though the Parsee PDF Reader was not initially designed for invoices (which have often quite fractured text pieces and tables that are difficult to structure properly), it is still able to outperform the langchain PyPDF reader with a total accuracy of 88% vs. 82% for the langchain reader.
+
+![final results](final_results.png)

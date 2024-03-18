@@ -1,4 +1,4 @@
-# Invoice Sample Dataset - Parsee Loader
+# Invoice Dataset - Parsee Loader
 parsee-core version used: 0.1.3.11
 
 This dataset was created on the basis of 15 sample invoices (PDF files).
