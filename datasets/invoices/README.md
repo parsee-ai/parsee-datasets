@@ -6,6 +6,8 @@ Both datasets have their own Readme's with more info about the methodology, note
 * [Parsee Loader](./parsee-loader/README.md)
 * [Langchain Loader](./langchain-pypdf-loader/README.md)
 
+The extraction template used is this one (in the files the template ID might be different as it was run locally): https://app.parsee.ai/template/65f959afe34036446ee859ff
+
 ## TLDR
 Even though the Parsee PDF Reader was not initially designed for invoices (which have often quite fractured text pieces and tables that are difficult to structure properly), it is still able to outperform the langchain PyPDF reader with a total accuracy of 88% vs. 82% for the langchain reader.
 
