@@ -1,0 +1,1228 @@
+source_identifier,template_id,element_identifier,FEATURE_full_prompt,TRUTH_answer
+e6770bda9a6943b6b13e083e1641b1bb030aa59fdfb3b1323b6cc69c938c3df9,65f95cc2e34036446ee85a00,revenues,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What are the total revenues of the company?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION. In the answer please first provide the meta ID (for the main question use 'main question' instead) in brackets and then the answer. If there are several possible answers to the question (with different meta values), structure your answer into multiple answer blocks of the same format, one after the other separated by new lines.
+(meta0): What is the unit?  possible values (separated by $ symbols): $ none $, $ thousands $, $ millions $, $ billions $
+(meta1): What is the currency?  possible values (separated by $ symbols): $ EUR $, $ USD $, $ Other $
+(meta2): As per the end of date? The end date of the respective period possible values: date in the format: YYYY-MM-DD
+(meta3): What is the duration of the period in months?  possible values: positive integer 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    One possible answer block could be (there can be more than one in your response): (main question): 123
+(meta0): $ none $
+(meta1): $ EUR $
+(meta2): 2023-11-24
+(meta3): 123
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: Quarterly Statement as of March 31, 2021   Developments within the Group and R&D 3
+2021
+20212020
+2020Merck Group 
+Key figures
+€ million Q1 2021 Q1 2020 Change
+Net sales   
+2SHUDWLQJUHVXOW(%,7  
+0DUJLQRIQHWVDOHV 
+(%,7'$  
+0DUJLQRIQHWVDOHV 
+(%,7'$SUH   
+0DUJLQRIQHWVDOHV 
+3UR¿WDIWHUWD[   
+(DUQLQJVSHUVKDUH¼   
+(DUQLQJVSHUVKDUHSUH¼  
+2SHUDWLQJFDVKÀRZ   !
+1RWGH¿QHGE\,QWHUQDWLRQDO)LQDQFLDO5HSRUWLQJ6WDQGDUGV ,)56MERCK – IN BRIEF
+Q1
+Q1Q2
+Q2Q3
+Q3Q4
+Q4Jan.-Dec.
+Jan.-Dec.4,631
+1,511Merck Group  
+Net sales by quarter
+€ million
+Merck Group  
+EBITDA pre1 by quarter
+€ million4,370
+1,1814,119
+1,0744,447
+1,7014,599
+1,24517,534
+5,201
+1RWGH¿QHGE\,QWHUQDWLRQDO)LQDQFLDO5HSRUWLQJ6WDQGDUGV,)56
+
+                    ","(main question): 4370.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): n/a
+(meta3): 3
+Sources: [2]
+
+(main question): 4631.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): n/a
+(meta3): 3
+Sources: [2]"
+b392facd72f6b3f79e012c0a8d86e970c3a93597f10dde1fdc41a13f47a91085,65f95cc2e34036446ee85a00,revenues,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What are the total revenues of the company?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION. In the answer please first provide the meta ID (for the main question use 'main question' instead) in brackets and then the answer. If there are several possible answers to the question (with different meta values), structure your answer into multiple answer blocks of the same format, one after the other separated by new lines.
+(meta0): What is the unit?  possible values (separated by $ symbols): $ none $, $ thousands $, $ millions $, $ billions $
+(meta1): What is the currency?  possible values (separated by $ symbols): $ EUR $, $ USD $, $ Other $
+(meta2): As per the end of date? The end date of the respective period possible values: date in the format: YYYY-MM-DD
+(meta3): What is the duration of the period in months?  possible values: positive integer 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    One possible answer block could be (there can be more than one in your response): (main question): 123
+(meta0): $ none $
+(meta1): $ EUR $
+(meta2): 2023-11-24
+(meta3): 123
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: Consolidated Statement of Income 
+D.O1 
+Note 2021 2020 
+In millions of euros 
+Revenue 133,893 121,778 
+Cost of sales -103,218 -101,592 
+Gross profit 30,675 20,186 
+Selling expenses -9,194 -8,966 
+General administrative expenses -2,808 -2,507 
+Research and non-capitalised development costs -5,467 -4,839 
+Other operating income 2,888 2,384 
+Other operating expense -1,735 -591 
+14 747 Profit on equity-method investments, net 1,352 
+Other financial income/expense, net 317 -323 
+Earnings before interest and taxes (EBIT) 35 16,028 6,091 
+Interest income 212 224 
+Interest expense -429 -358 
+5,957 Profit of continuing operations, before taxes 15,811 
+Income taxes 10 -4,761 -1,926 
+Profit of continuing operations 11,050 4,031 
+Profit/loss of discontinued operations, after taxes 12,346 -22 
+Net profit 23,396 4,009 
+thereof profit attributable to non-controlling interests 390 382 
+3,627 thereof profit attributable to shareholders of Mercedes-Benz Group AG 23,006 
+thereof continuing operations 10,695 3,656 
+thereof discontinued operations 12,341 -29 
+Earnings per share (in euros) 
+for profit attributable to shareholders of Mercedes-Benz Group AG 37 
+Basic 21.50 3.39 
+thereof continuing operations 10.00 3.42 
+thereof discontinued operations 11.50 -0.03 
+Diluted 21.50 3.39 
+10.00 3.42 thereof continuing operations 
+thereof discontinued operations 11.50 -0.03 
+The accompanying notes are an integral part of these Consolidated Financial Statements.
+
+                    ","(main question): 121778.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2020-12-31
+(meta3): 12
+Sources: [3]
+
+(main question): 133893.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2021-12-31
+(meta3): 12
+Sources: [3]"
+52797846fd59351e0d8dac987efb1ef0b69bcc4276e601e17d16f1045ba427a3,65f95cc2e34036446ee85a00,revenues,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What are the total revenues of the company?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION. In the answer please first provide the meta ID (for the main question use 'main question' instead) in brackets and then the answer. If there are several possible answers to the question (with different meta values), structure your answer into multiple answer blocks of the same format, one after the other separated by new lines.
+(meta0): What is the unit?  possible values (separated by $ symbols): $ none $, $ thousands $, $ millions $, $ billions $
+(meta1): What is the currency?  possible values (separated by $ symbols): $ EUR $, $ USD $, $ Other $
+(meta2): As per the end of date? The end date of the respective period possible values: date in the format: YYYY-MM-DD
+(meta3): What is the duration of the period in months?  possible values: positive integer 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    One possible answer block could be (there can be more than one in your response): (main question): 123
+(meta0): $ none $
+(meta1): $ EUR $
+(meta2): 2023-11-24
+(meta3): 123
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: Selected financial da ta o f the G roup
+millions o f €
+Q1 2021 Q1 2020 Change % FY 2020
+Revenue and earningsa
+Net revenue 26,390 19,943 32.3 100,999
+Of which: domes tic % 23.6 30.3 24.5
+Of which: in terna tional % 76.4 69.7 75.5
+Profit (l oss) from oper ations (EBIT) 3,519 2,511 40.1 12,804
+Net profit (l oss) 936 916 2.2 4,158
+Net profit (l oss) (adjus ted for special f actors) 1,201 1,284 (6.5) 5,715
+EBITD A 10,361 6,940 49.3 38,633
+EBITD AAL 8,798 5,921 48.6 33,178
+EBITD A (adjus ted for special f actors) 10,698 7,563 41.5 40,374
+EBITD AAL ( adjus ted for special f actors) 9,245 6,544 41.3 35,017
+EBITD AAL mar gin ( adjus ted for special f actors) % 35.0 32.8 34.7
+Earnings per shar e (basic/dilut ed) € 0.20 0.19 5.3 0.88
+Adjus ted earnings per shar e (basic/dilut ed) € 0.25 0.27 (7.4) 1.20
+Statemen t of financial position
+Total asse ts 273, 901 173,646 57.7 264,917
+Shar ehol ders’ equity 77,484 45,878 68.9 72,550
+Equity r atio % 28.3 26.4 27.4
+Net deb t 129,530 77,394 67.4 120,227
+Cash fl owa
+Net cash fr om oper ating a ctivities 8,30 7 3,960 n.a. 23,7 43
+Cash cape x (12,272 ) (3,57 0) n.a. (18,6 94)
+Cash cape x (be fore spectrum in vestmen t) (4,283) (3,353) (27.7) (16,980 )
+Free cash fl ow (be fore dividend pa ymen ts and spectrum in vestmen t)b4,072 2,29 4 77.5 10,756
+Free cash fl ow AL (be fore dividend pa ymen ts and spectrum in vestmen t)b2,585 1,287 n.a. 6,288
+Net cash used in in vesting a ctivities (12,373) (2,706) n.a. (22,64 9)
+Net cash fr om ( used in ) financing a ctivities 588 (2,56 2) n.a. 7,561
+aSprin t has been included in Deutsche T elekom’s consolida ted financial s tatemen ts as a full y consolida ted subsidiary since April 1, 2020 . This tr ansa ction a ffects the compar ability o f the
+figur es for the curr ent period with the prior -year figur es. F or further in forma tion on the tr ansa ction, pl ease r efer to the section “ Changes in the composition o f the G roup and o ther
+transa ctions ” in the in terim consolida ted financial s tatemen ts.
+bBefore interest paymen ts for zero-coupon bonds in the fir st quart er of 2020 .
+millions
+Mar.31, 2021 Dec. 31, 2020Change
+Mar.31, 2021/
+Dec. 31, 2020
+% Mar.31, 2020Change
+Mar.31, 2021/
+Mar.31, 2020
+%
+Fixed-ne twork and mobil e cus tomer s
+Mobile cus tomer sa, b242.9 241.5 0.6 185.2 31.1
+Fixed-ne twork lines 27.4 27.4 0.1 27.4 (0.2)
+Broadband cus tomer sc21.9 21.7 0.5 21.2 3.2
+aSprin t has been included in Deutsche T elekom’s consolida ted financial s tatemen ts as a full y consolida ted subsidiary since April 1, 2020 . This tr ansa ction a ffects the compar ability o f the
+figur es for the curr ent period with the prior -year figur es. F or further in forma tion on the tr ansa ction, pl ease r efer to the section “ Changes in the composition o f the G roup and o ther
+transa ctions ” in the in terim consolida ted financial s tatemen ts.
+bIncluding T -Mobile US whol esal e cus tomer s.
+cExcluding whol esal e.
+The figur es sho wn in this r eport w ere rounded in a ccor dance with s tandar d business r ounding principl es. A s a r esul t, the t otal indica ted ma y no t be equal t o the pr ecise sum o f the individual
+figur es. Changes w ere cal cula ted on the basis o f millions f or gr eater pr ecision.=pq3
+Deutsche T elekom. I nterim G roup R eport Q1 2021.
+
+                    ","(main question): 100999.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2020-12-31
+(meta3): 12
+Sources: [2],[0]
+
+(main question): 19943.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2020-03-31
+(meta3): 3
+Sources: [2],[0],[0]
+
+(main question): 26390.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2021-03-31
+(meta3): 3
+Sources: [2],[0],[0]"
+a0b13a9b5956cc7a8740f8a1aad849cf37d7968302ab451db163a8e3d93e7e17,65f95cc2e34036446ee85a00,revenues,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What are the total revenues of the company?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION. In the answer please first provide the meta ID (for the main question use 'main question' instead) in brackets and then the answer. If there are several possible answers to the question (with different meta values), structure your answer into multiple answer blocks of the same format, one after the other separated by new lines.
+(meta0): What is the unit?  possible values (separated by $ symbols): $ none $, $ thousands $, $ millions $, $ billions $
+(meta1): What is the currency?  possible values (separated by $ symbols): $ EUR $, $ USD $, $ Other $
+(meta2): As per the end of date? The end date of the respective period possible values: date in the format: YYYY-MM-DD
+(meta3): What is the duration of the period in months?  possible values: positive integer 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    One possible answer block could be (there can be more than one in your response): (main question): 123
+(meta0): $ none $
+(meta1): $ EUR $
+(meta2): 2023-11-24
+(meta3): 123
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: Allianz Group Key Data 
+Change from 
+previous Three months ended March 31, 2011 2010 year 
+INCOME STATEMENT! 
+Total revenues? €mn 29,905 30,567 (2.2)% 
+Operating profit? €mn 1,660 1,732 (42)% 
+Net income €mn 915 1,603 (42.9)% 
+SEGMENTS* 
+Property-Casualty 
+€mn 1.8% Gross premiums written 14,251 13,994 
+Operating profit? €mn 663 712 (6.9)% 
+Combined ratio 101.3 100.4 0.9 pts 
+Life/Health' 
+Statutory premiums €mn 14,270 15,356 (2.1)% 
+Operating profit? €mn 702 835, (15.9)% 
+Cost-income ratio 96.1 95.7 0.4 pts 
+Asset Management 
+€mn 1,273 1,116 14.1% Operating revenues 
+Operating profit? €mn 528 466 13.3% 
+Cost-income ratio 58.5 58.2 03 pts 
+Corporate and Other 
+Total revenues €mn 151 128 18.0% 
+€mn Operating profit? (223) (251) (11.2)% 
+Cost-income ratio (Banking) 88.2 107.8 (19.6) pts 
+BALANCE SHEET"" 
+Total assets as of March 31,5 €mn 625,589 624,945 0.1% 
+Shareholders’ equity as of March 31,5 €mn 43,560 44,491 (Q2.1)% 
+€mn Non-controlling interests as of March 31,° 2,055 2,071 (0.8)% 
+SHARE INFORMATION 
+1.90 3.47 Basic earnings per share! (45.2)% 
+Diluted earnings per share"" 1.88 3.46 (45.2)% 
+Share price as of March 31,° 99.03 88.93 11.4% 
+€mn 11.4% Market capitalization as of March 31,° 45,009 40,419 
+OTHER DATA 
+Total assets under management as of March 31,° €bn 1,492 1,518 (1.)% 
+thereof: Third-party assets under management as of March 31,° €bn 1,138 1,164 (2.2)% 
+1 Figures for the first quarter of 2010 have been restated to reflect a change in Allianz Group's accounting policy. For further information please refer to note 2 of our condensed 
+consolidated interim financial statements. 
+Total revenues comprise statutory gross premiums written in Property-Casualty and Life/Health, operating revenues in Asset Management and total revenues in Corporate and 
+Other (Banking). 
+The Allianz Group uses operating profit as a key financial indicator to assess the performance of its business segments and the Group as a whole. 
+The Allianz Group operates and manages is activities through four segments: Property-Casualty, Life/Health, Asset Management and Corporate and Other. For further 
+information please refer to note 3 of our condensed consolidated interim financial statements, 
+2010 figures as of December 31, 2010.
+
+                    ","(main question): 29905.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2011-03-31
+(meta3): 3
+Sources: [1],[0]
+
+(main question): 30567.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2010-03-31
+(meta3): 3
+Sources: [1],[0]"
+7adff1352bb457b51f3fabfdeaf4be7f4585ba3bcc3d565db20f79b2e25cbe08,65f95cc2e34036446ee85a00,revenues,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What are the total revenues of the company?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION. In the answer please first provide the meta ID (for the main question use 'main question' instead) in brackets and then the answer. If there are several possible answers to the question (with different meta values), structure your answer into multiple answer blocks of the same format, one after the other separated by new lines.
+(meta0): What is the unit?  possible values (separated by $ symbols): $ none $, $ thousands $, $ millions $, $ billions $
+(meta1): What is the currency?  possible values (separated by $ symbols): $ EUR $, $ USD $, $ Other $
+(meta2): As per the end of date? The end date of the respective period possible values: date in the format: YYYY-MM-DD
+(meta3): What is the duration of the period in months?  possible values: positive integer 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    One possible answer block could be (there can be more than one in your response): (main question): 123
+(meta0): $ none $
+(meta1): $ EUR $
+(meta2): 2023-11-24
+(meta3): 123
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: Delivery Hero 2 | Annual Report 2020 Company | Combined Management Report | Consolidated Financial Statements | Further Information 
+CONSOLIDATED STATEMENT OF PROFIT 
+OR LOSS AND OTHER COMPREHENSIVE INCOME 
+for the period from January 1 to December 31, 2020 
+EUR million Note 2020 2019 EUR million Note 2020 2019 
+CONTINUING OPERATIONS OTHER COMPREHENSIVE INCOME (NET) 
+Revenue G.01. 2,471.9 1,237.6 Items not reclassified to profit or loss: 
+Cost of sales G.02. -1,977.8 -926.4 Remeasurement of net liability (asset) arising 
+on defined benefit pension plans F.10.d) -2.5 -1.3 
+494.2 311.2 Gross profit 
+Items reclassified to profit or loss in the future: 
+Marketing expenses G.03. -632.4 -495.2 
+Effect of movements in exchange rates F.10.d) 48.2 27.4 
+IT expenses G.04. -152.3 -94.8 
+Other comprehensive income -50.8 -28.7 © General administrative expenses G.05. 615.3 -373.5 
+Total comprehensive income for the period -1,453.5 201.5 
+G.06. 36.0 19.9 Other operating income 
+@ Net result for the period attributable to: 
+Other operating expenses G.07. 4.5 -6.7 
+Shareholders of the parent -1,404.6 231.4 
+Impairment losses on trade receivables 
+© and other receivables G.07. -19.7 -8.8 Non-controlling interests 1.9 -1.1 
+-894.2 -648.0 Total comprehensive income attributable to: Operating result 
+@) 202.7 Net interest result G.08. -73.2 9.4 Shareholders of the parent -1,459.2 
+Other financial result G.09. -334.4 93.7 Non-controlling interests 5.8 -1.1 
+© Share of profit or loss of associates Diluted and basic earnings per share from 
+accounted for using the equity method D.03.e) -86.7 -99.7 continuing operations in EUR -7.00 -3.62 
+-663.4 Diluted and basic earnings per share from Earnings before income taxes -1,388.5 
+1.22 continued and discontinued operations in EUR -7.00 
+Income taxes G.10. 14.2 -26.5 
+Net loss for the period from 
+continuing operations -1,402.7 -689.9 
+Net income for the period from 
+discontinued operations 920.2 
+Net result -1,402.7 230.2
+
+                    ","(main question): 1237.6
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2019-12-31
+(meta3): 12
+Sources: [3]
+
+(main question): 2471.9
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2020-12-31
+(meta3): 12
+Sources: [2],[0]"
+dc21f9866c3c66b5b00cfde313cfb3a4df2e72df5d58f57ee33ae45a041aa2e5,65f95cc2e34036446ee85a00,revenues,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What are the total revenues of the company?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION. In the answer please first provide the meta ID (for the main question use 'main question' instead) in brackets and then the answer. If there are several possible answers to the question (with different meta values), structure your answer into multiple answer blocks of the same format, one after the other separated by new lines.
+(meta0): What is the unit?  possible values (separated by $ symbols): $ none $, $ thousands $, $ millions $, $ billions $
+(meta1): What is the currency?  possible values (separated by $ symbols): $ EUR $, $ USD $, $ Other $
+(meta2): As per the end of date? The end date of the respective period possible values: date in the format: YYYY-MM-DD
+(meta3): What is the duration of the period in months?  possible values: positive integer 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    One possible answer block could be (there can be more than one in your response): (main question): 123
+(meta0): $ none $
+(meta1): $ EUR $
+(meta2): 2023-11-24
+(meta3): 123
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: Key facts and figures with year-on-year comparison 
+[T1] Selected consolidated financial information and key figures at a glance 
+Change against 
+previous year 
+2021 2020 in% in € million (unless stated otherwise) 
+Revenue and earnings 
+Revenue 4,188 3,977 5.3 
+thereof: commercial engine business"" 1,066 1,052 1.3 
+thereof: military engine business” 482 483 -0.2 
+thereof: commercial maintenance business"" 2,741 2,522 8.7 
+Gross profit 586 492 19.1 
+Earnings before interest and taxes (EBIT) 355 262 35.4 
+Net income 231 147 56.9 
+Adjusted earnings 
+Adjusted earnings before interest and taxes (adjusted EBIT) 468 416 12.6 
+Adjusted EBIT margin (in %) 11.2 10.5 
+Net income 342 294 16.0 
+Balance sheet 
+Total assets 8,304 8,104 2.5 
+2,760 2,635 4.8 Equity 
+33.2 32.5 Equity ratio (in %) 
+Net financial debt 673 781 -13.8 
+Cash flow 
+Cash flow from operating activities 567 386 47.1 
+Cash flow from investing activities -345 -245 -40.9 
+Free cash flow 240 105 7100 
+Cash flow from financing activities -276 504 <100 
+Number of employees at year end 
+Commercial and military engine business 6,497 6,409 1.4 
+Commercial maintenance business 4,011 3,904 2.7 
+Total number of employees 10,508 10,313 1.9 
+Share indicators 
+Earnings per share (in €) 
+Basic earnings per share 4.17 2.63 58.5 
+4.09 2.59 57.9 Diluted earnings per share 
+"") Before consolidation.
+
+                    ","(main question): 3977.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2020-12-31
+(meta3): 12
+Sources: [2]
+
+(main question): 4188.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2021-12-31
+(meta3): 12
+Sources: [2]"
+de52331b4939efb94a41adff3d8eeb699c16fff434df22be14a7ec76d5cd868b,65f95cc2e34036446ee85a00,revenues,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What are the total revenues of the company?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION. In the answer please first provide the meta ID (for the main question use 'main question' instead) in brackets and then the answer. If there are several possible answers to the question (with different meta values), structure your answer into multiple answer blocks of the same format, one after the other separated by new lines.
+(meta0): What is the unit?  possible values (separated by $ symbols): $ none $, $ thousands $, $ millions $, $ billions $
+(meta1): What is the currency?  possible values (separated by $ symbols): $ EUR $, $ USD $, $ Other $
+(meta2): As per the end of date? The end date of the respective period possible values: date in the format: YYYY-MM-DD
+(meta3): What is the duration of the period in months?  possible values: positive integer 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    One possible answer block could be (there can be more than one in your response): (main question): 123
+(meta0): $ none $
+(meta1): $ EUR $
+(meta2): 2023-11-24
+(meta3): 123
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: Deutsche Bank Deutsche Bank 
+Annual Report 2021 
+Deutsche Bank 
+Financial Summary 
+2021 2020 
+Group financial targets 
+Post-tax return on average tangible shareholders’ equity’ 3.8% 0.2 % 
+Costlincome ratio? 84.6 % 88.3 Y% 
+Common Equity Tier 1 capital ratio 13.2 % 13.6 % 
+49% 47% Leverage ratio (fully loaded) 
+Statement of Income 
+Total net revenues, in € bn. 25.4 24.0 
+0.5 1.8 Provision for credit losses, in € bn. 
+Total noninterest expenses, in € bn. 21.5 21.2 
+19.6 19.9 Adjusted costs ex. transformation charges, in € bn.> 
+Profit (loss) before tax, in € bn. 3.4 1.0 
+25 0.6 Profit (loss), in € bn. 
+Profit (loss) attributable to Deutsche Bank shareholders, in € bn. 1.9 0.1 
+Dec 31, 2021 Dec 31, 2020 
+Balance Sheet 
+Total assets, in € bn. 1,324 1,325 
+Net assets (adjusted), in € bn.* 1,002 963 
+Loans (gross of allowance for loan losses), in € bn. 476 432 
+Average Loans (gross of allowance for loan losses), in € bn. 446 438 
+604 568 Deposits, in € bn. 
+Allowance for loan losses, in € bn. 48 48 
+58 55 Shareholders’ equity, in € bn. 
+Resources 
+Risk-weighted assets, in € bn. 352 329 
+62 69 Thereof: Operational Risk RWA, in € bn. 
+Leverage exposure, in € bn. 1,125 1,078 
+52 49 Tangible shareholders’ equity (Tangible book value), in € bn.* 
+High-quality liquid assets (HQLA), in € bn. 207 213 
+241 243 Liquidity reserves in € bn. 
+Employees (full-time equivalent) 82,969 84,659 
+Branches 1,709 1,891 
+Ratios 
+Post-tax return on average shareholders’ equity' 3.4% 0.2 % 
+12 41 Provision for credit losses as bps of average loans. 
+Loan-to-deposit ratio 78.9 % 76.0 % 
+Leverage ratio (phase-in) 49% 4.8 % 
+Liquidity coverage ratio 133 % 145 % 
+Per Share information 
+Basic earings per share €0.96 €0.07 
+Diluted earnings per share €0.93 €0.07 
+Book value per basic share outstanding’ € 27.62 € 26.04 
+Tangible book value per basic share outstanding* € 24.73 € 23.19 
+* Based on profit (loss) attributable to Deutsche Bank shareholders after AT1 coupon. For further information, please refer to “Supplementary Information (Unaudited): Non- GAAP Financial Measures"" of this report. 2 Total noninterest expenses as a percentage of net interest income before provision for credit losses, plus noninterest income. 3 The reconciliation of adjusted costs is provided in section “Supplementary Information (Unaudited): Non-GAAP 1ancial Measures! Adjusted costs"" of this document. 
+* For further information please refer to “Supplementary Information (Unaudited): Non-GAAP Financial Measures"" of this report. 
+Due to rounding, numbers presented throughout this document may not sum precisely to the totals provided and percentages may not precisely reflect the absolute figures.
+
+                    ","(main question): 24.0
+(meta0): $ billions $
+(meta1): $ EUR $
+(meta2): 2020-12-31
+(meta3): 12
+Sources: [4],[0]
+
+(main question): 25.4
+(meta0): $ billions $
+(meta1): $ EUR $
+(meta2): 2021-12-31
+(meta3): 12
+Sources: [4],[0]"
+e728768d8ebb9cea4e96406352bed0838534a0080621519cd2cc8147828f9f18,65f95cc2e34036446ee85a00,revenues,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What are the total revenues of the company?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION. In the answer please first provide the meta ID (for the main question use 'main question' instead) in brackets and then the answer. If there are several possible answers to the question (with different meta values), structure your answer into multiple answer blocks of the same format, one after the other separated by new lines.
+(meta0): What is the unit?  possible values (separated by $ symbols): $ none $, $ thousands $, $ millions $, $ billions $
+(meta1): What is the currency?  possible values (separated by $ symbols): $ EUR $, $ USD $, $ Other $
+(meta2): As per the end of date? The end date of the respective period possible values: date in the format: YYYY-MM-DD
+(meta3): What is the duration of the period in months?  possible values: positive integer 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    One possible answer block could be (there can be more than one in your response): (main question): 123
+(meta0): $ none $
+(meta1): $ EUR $
+(meta2): 2023-11-24
+(meta3): 123
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: Henkel Annual Report 2021 
+= Contents 
+The Company Organic 
+sales growth 
+Shares and bonds Fiscal 2021 at a glance 
+Corporate governance 7.8% Key financials 
+Combined management report 
++/- 
+Consolidated financial statements in million euros 2017 2018 2019 2020 2021 2020-2021 Adjusted’ 
+Sales 20,029 19,899 20,114 19,250 20,066 4.2% EBIT margin 
+Further information Operating profit (EBIT) 3,055 3,116 2,899 2,019 2,213 9.6% 
+Adjusted’ operating profit (adjusted EBIT) 3,461 3,496 3,220 2,579 2,686 4.2% 
+Credits Return on sales (EBIT margin) 15.3% 15.7% 14.4% 10.5% 11.0% O.5pp 
+Adjusted’ return on sales (adjusted EBIT margin) 17.3% 17.6% 16.0% 13.4% 13.4% 0.0pp 13.4% Contacts Net income 2,541 2,330 2,103 1,424 1,629 14.5% 
+Attributable to non-controlling interests 22 16 18 16 5 - 
+Financial calendar Attributable to shareholders of 
+Henkel AG & Co. KGaA 2,519 2,314 2,085 1,408 1,634 16.1% Adjusted 
+EPS Earnings per preferred share (EPS) in euros 5.81 5.34 4.81 3.25 3.78 16.3% 
+Adjusted’ earnings per preferred share 
+in euros 5.85 6.01 5.43 4.26 4.56 (adjusted EPS) 7.0% 
+Return on capital employed (ROCE) 16.3% 15.5% 13.5% 9.6% 11.0% 4.56 in euros 177 1.83 1.83 1.83 1.83? 14pp 
+Dividend per ordinary share 
+Dividend per preferred share in euros 1.79 1.85 1.85 1.85 1.857 
+Pp = percentage points 
+Development of adjusted’ 
+EPS at constant exchange Sales by business unit 2021 Sales by region 2021 rates 
+1% = Adhesive Technologies 3% 1% = Emerging markets* 
+= Beauty Care = Western Europe 9.2% 33% 25% Laundry & Home Care North America 
+41% Corporate Japan/Australia/ 
+48% New Zealand 
+Dividend per preferred = Corporate 
+share? 
+we 18% —_ «1.85 
+' Adjusted for one-time expenses and income, and for restructuring expenses. 
+? Proposal to shareholders for the Annual General Meeting on April 4, 2022. 
+3 Sales and services not assignable to the individual business units. 
+* Eastern Europe, Africa/Middle East, Latin America, Asia (excluding Japan).
+
+                    ","(main question): 19250.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2020-12-31
+(meta3): 12
+Sources: [12]
+
+(main question): 19899
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2018-12-31
+(meta3): 12
+Sources: [12]
+
+(main question): 20029
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2017-12-31
+(meta3): 12
+Sources: [12]
+
+(main question): 20066.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2021-12-31
+(meta3): 12
+Sources: [12]
+
+(main question): 20114
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2019-12-31
+(meta3): 12
+Sources: [12]"
+912b2634f1ca842bc797e7f515a3268e0c2c5f93ff96bab80e72ce096dbdc619,65f95cc2e34036446ee85a00,revenues,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What are the total revenues of the company?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION. In the answer please first provide the meta ID (for the main question use 'main question' instead) in brackets and then the answer. If there are several possible answers to the question (with different meta values), structure your answer into multiple answer blocks of the same format, one after the other separated by new lines.
+(meta0): What is the unit?  possible values (separated by $ symbols): $ none $, $ thousands $, $ millions $, $ billions $
+(meta1): What is the currency?  possible values (separated by $ symbols): $ EUR $, $ USD $, $ Other $
+(meta2): As per the end of date? The end date of the respective period possible values: date in the format: YYYY-MM-DD
+(meta3): What is the duration of the period in months?  possible values: positive integer 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    One possible answer block could be (there can be more than one in your response): (main question): 123
+(meta0): $ none $
+(meta1): $ EUR $
+(meta2): 2023-11-24
+(meta3): 123
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: @ @© SELECTED FINANCIAL INFORMATION Deutsche Post DHL Group — Quarterly Statement as at 31 March 2021 9 
+INCOME STATEMENT 
+1 January to 31 March 
+€m 
+2020 2021 
+Revenue? 15,464 18,860 
+Other operating income 422 414 
+Changes in inventories and work performed and capitalised 20 37 
+Materials expense? -7,687 -9,583 
+Staff costs -5,528 -5,838 
+Depreciation, amortisation and impairment losses -1,021 -930 
+Other operating expenses -1,077 -1,049 
+-1 Net income/loss from investments accounted for using the equity method 
+Profit from operating acti ies (EBIT) 592 1,911 
+Financial income 85 30 
+Finance costs -207 -178 
+Foreign currency losses -29 -6 
+Net finance costs -151 -154 
+Profit before income taxes 441 1,757 
+Income taxes -106 -492 
+335 1,265 Consolidated net profit for the period 
+attributable to Deutsche Post AG shareholders 301 1,190 
+attributable to non-controlling interests 34 75 
+Basic earnings per share (€) 0.24 0.96 
+Diluted earnings per share (€) 0.24 0.94 
+1 Prior-year figures adjusted, © Segment reporting.
+
+                    ","(main question): 15464.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2020-12-31
+(meta3): 3
+Sources: [6]
+
+(main question): 18860.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2021-12-31
+(meta3): 3
+Sources: [6]"
+65fefe149d833d8a4f9625890644c49e264b776383675994dccb38ec57ff9d4e,65f95cc2e34036446ee85a00,revenues,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What are the total revenues of the company?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION. In the answer please first provide the meta ID (for the main question use 'main question' instead) in brackets and then the answer. If there are several possible answers to the question (with different meta values), structure your answer into multiple answer blocks of the same format, one after the other separated by new lines.
+(meta0): What is the unit?  possible values (separated by $ symbols): $ none $, $ thousands $, $ millions $, $ billions $
+(meta1): What is the currency?  possible values (separated by $ symbols): $ EUR $, $ USD $, $ Other $
+(meta2): As per the end of date? The end date of the respective period possible values: date in the format: YYYY-MM-DD
+(meta3): What is the duration of the period in months?  possible values: positive integer 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    One possible answer block could be (there can be more than one in your response): (main question): 123
+(meta0): $ none $
+(meta1): $ EUR $
+(meta2): 2023-11-24
+(meta3): 123
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: Consolidated Income Statement Quarterly Statement as of March 31, 2021 Supplemental Financial Information 37 
+Supplemental 
+Financial Information 
+Consolidated Income Statement 
+€ million Qa 2021 Qt 2020 
+Net sales 4,631 4,370 
+Cost of sales 1,721 1,654 
+Gross profit 2,910 2,716 
+Marketing and selling expenses 1,007 1,059 
+Administration expenses -273 -289 
+Research and development costs -574 -579 
+Impairment losses and reversals of impairment losses on financial assets (net) -6 6 
+Other operating income 132 112 
+-139 ~191 Other operating expenses 
+716 Operating result (EBIT)* 1,043 
+Finance income 24 14 
+Finance costs 84 112 
+Profit before income tax 984 617 
+Income tax -236 -159 
+Profit after tax 748 458 
+747 456 thereof: attributable to Merck KGaA shareholders (net income) 
+thereof: attributable to non-controlling interests 2 
+Earnings per share (in €) 
+Basic 1.72 1.05 
+Diluted 1.72 1.05 
+1 Not defined by International Financial Reporting Standard (IFRS).
+
+                    ","(main question): 4370.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2020-03-31
+(meta3): 3
+Sources: [6],[0]
+
+(main question): 4631.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2021-03-31
+(meta3): 3
+Sources: [6],[0]"
+775c36ece6c32bfafff3a763f75b2fc657549ddacd980daccbe8d4542ad1af6d,65f95cc2e34036446ee85a00,revenues,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What are the total revenues of the company?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION. In the answer please first provide the meta ID (for the main question use 'main question' instead) in brackets and then the answer. If there are several possible answers to the question (with different meta values), structure your answer into multiple answer blocks of the same format, one after the other separated by new lines.
+(meta0): What is the unit?  possible values (separated by $ symbols): $ none $, $ thousands $, $ millions $, $ billions $
+(meta1): What is the currency?  possible values (separated by $ symbols): $ EUR $, $ USD $, $ Other $
+(meta2): As per the end of date? The end date of the respective period possible values: date in the format: YYYY-MM-DD
+(meta3): What is the duration of the period in months?  possible values: positive integer 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    One possible answer block could be (there can be more than one in your response): (main question): 123
+(meta0): $ none $
+(meta1): $ EUR $
+(meta2): 2023-11-24
+(meta3): 123
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: adidas ANNUAL REPORT 2021 
+1 2 3 4 5 
+TO OUR SHAREHOLDERS GROUP MANAGEMENT REPORT GROUP MANAGEMENT REPORT CONSOLIDATED FINANCIAL ADDITIONAL INFORMATION 
+OUR COMPANY FINANCIAL REVIEW STATEMENTS 
+FINANCIAL HIGHLIGHTS 2021 (IFRS) 
+FINANCIAL HIGHLIGHTS 2021 (IFRS) 
+2021 2020 Change 
+Operating Highlights (€ in millions) 
+Net sales! 21,234 18,435 5% 
+10,765 9,222 17% Gross profit! 
+Other operating expenses? 8,892 8,580 4% 
+EBITDA' 3,066 1,967 6% 
+1,986 746 166% Operating profit! 
+Net income from continuing operations’ 1,492 461 223% 
+Net income attributable to shareholders? 2,116 432 390% 
+Key Ratios 
+Gross margin’ 50.7% 50.0% 0.7pp 
+41.9% 46.5% Other operating expenses in % of net sales! (4.7pp) 
+Operating margin’ 9.4% 4.0% 5.3pp 
+Effective tax rate! 19.4% 20.2% (0.8pp) 
+Net income attributable to shareholders in % of net sales'? 10.0% 2.3% 7.7 pp 
+Average operating working capital in % of net sales"" 20.0% 25.3% 5.3pp) 
+Equity ratio 34.0% 30.7% 3.3pp 
+1.0 1.6 na Adjusted net borrowings/EBITDA' 
+Financial leverage™* 39.4% 48.8% (9.4pp) 
+Return on equity’ 28.1% 6.7% 21.4pp 
+Balance Sheet and Cash Flow Data (€ in millions) 
+Total assets 22,137 21,053 5% 
+Inventories? 4,009 4,397 (9%) 
+Receivables and other current assets? 4,072 3,763 8% 
+Operating working capital? 3,890 3,960 (2%) 
+Shareholders’ equity 7519 6,454 Th 
+Capital expenditure® 667 442 51% 
+Net cash generated from operating activities’ 2,873 1,366 110% 
+Per Share of Common Stock (€) 
+Basic earnings’ TAT 2.31 223% 
+Diluted earnings! TAT 2.31 223% 
+14.79 7.00 111% Net cash generated from operating activities! 
+Dividend> 3.30 3.00 10% 
+Share price at year-end 253.20 297.90 (15%! 
+Other (at year-end) 
+Number of employees 61,401 62,285 (1% 
+Number of shares outstanding 191,594,855 195,066,060 (2%) 
+194,172,984 195,155,924 (1% Average number of shares 
+1.2021 and 2020 figures reflect continuing operations as a result of the reclassification of the Reebok business to discontinued operations. 
+2 Includes continuing and discontinued operations. 
+3.2021 figures reflect the reclassification of the Reebok business to assets or liabilities held for sale. 
+4 Based on shareholders’ equity. 
+5 Subject to Annual General Meeting approval. 
+6 Number of employees for 2021 excluding Reebok due to the expected divestiture of the Reebok business
+
+                    ","(main question): 18435.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2020-12-31
+(meta3): 12
+Sources: [8]
+
+(main question): 21234.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2021-12-31
+(meta3): 12
+Sources: [8]"
+a8f9dc45fc64a66a4d419ddb56399bcb79a74cb8948d35e8bfa06671f8c47318,65f95cc2e34036446ee85a00,revenues,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What are the total revenues of the company?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION. In the answer please first provide the meta ID (for the main question use 'main question' instead) in brackets and then the answer. If there are several possible answers to the question (with different meta values), structure your answer into multiple answer blocks of the same format, one after the other separated by new lines.
+(meta0): What is the unit?  possible values (separated by $ symbols): $ none $, $ thousands $, $ millions $, $ billions $
+(meta1): What is the currency?  possible values (separated by $ symbols): $ EUR $, $ USD $, $ Other $
+(meta2): As per the end of date? The end date of the respective period possible values: date in the format: YYYY-MM-DD
+(meta3): What is the duration of the period in months?  possible values: positive integer 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    One possible answer block could be (there can be more than one in your response): (main question): 123
+(meta0): $ none $
+(meta1): $ EUR $
+(meta2): 2023-11-24
+(meta3): 123
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: Bayer Half-Year Financial Report as of June 30, 2019 B Condensed Consolidated Interim Financial Statements 
+Bayer Group Consolidated Income Statements [* 
+Condensed Consolidated 
+Interim Financial Statements 
+as of June 30, 2019 
+Bayer Group Consolidated Income Statements 
+B1 
+€ million Q2 2018 Q2 2019 H1 2018 H1 2019 
+Net sales 9,481 11,485 18,619 24,500 
+Cost of goods sold (3,507) (4,399) (6,416) (9,655) 
+Gross profit 5,974 7,086 12,203 14,845 
+Selling expenses (2,942) (3,512) 6,451) (6,548) 
+Research and development expenses (1,267) (1,351) (2,307) (2,707) 
+General administration expenses (676) (935) (1,003) (2,104) 
+185 346 337 480 Other operating income 
+Other operating expenses (28) (708) (123) (1,090) 
+EBIT* 1,346 926 3,656 2,876 
+Equity-method income (loss) 27 (18) 98 (37) 
+Financial income 160 68 530 238 
+Financial expenses (610) (627) (821) (994) 
+Financial result (323) (477) (193) (793) 
+Income before income taxes 1,023 449 3,463 2,083 
+Income taxes (215) (44) (709) (442) 
+Income from continuing operations after income taxes 808 405 2,754 1,641 
+of which attributable to noncontrolling interest 6 1 6 (4) 
+of which attributable to Bayer AG stockholders 802 404 2,748 1,645 
+Income from discontinued operations after income taxes (8) - - ~ 
+of which attributable to noncontrolling interest = - - = 
+- = - of which attributable to Bayer AG stockholders (8) 
+Income after income taxes 800 405 2,754 1,641 
+of which attributable to noncontrolling interest 6 (4) 
+of which attributable to Bayer AG stockholders (net income) 794 404 2,748 1,645 
+Shares (million) 
+Weighted average number of shares? 915.69 981.73 900.70 980.95 
+€ 
+Earnings per share 
+From continuing operations 
+Basic 0.88 0.41 3.05 1.68 
+Diluted 0.88 0.41 3.05 1.68 
+From discontinued operations 
+Basic (0.01) 0.00 0.00 0.00 
+Diluted (0.01) 0.00 0.00 0.00 
+From continuing and discontinued operations 
+Basic 0.87 0.41 3.05 1.68 
+Diluted 0.87 0.41 3.05 1.68 
+2018 figures restated 
+* For definition see Annual Report 2018, A 2.4 “Alternative Performance Measures Used by the Bayer Group."" 
+? Weighted average number of shares (basic and diluted) restated for all periods prior to June 2018 to reflect the effect of the bonus component 
+of the subscription rights issued as part of the June 2018 capital increase
+
+                    ","(main question): 11485.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2019-06-30
+(meta3): 3
+Sources: [8]
+
+(main question): 18619
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2018-06-30
+(meta3): 6
+Sources: [8]
+
+(main question): 24500.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2019-06-30
+(meta3): 6
+Sources: [8]
+
+(main question): 9481
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2018-06-30
+(meta3): 3
+Sources: [8]"
+a7f677acf6972b2b6365cad3b16a30e3e53987f061f7fec83021c37e92d29cc8,65f95cc2e34036446ee85a00,revenues,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What are the total revenues of the company?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION. In the answer please first provide the meta ID (for the main question use 'main question' instead) in brackets and then the answer. If there are several possible answers to the question (with different meta values), structure your answer into multiple answer blocks of the same format, one after the other separated by new lines.
+(meta0): What is the unit?  possible values (separated by $ symbols): $ none $, $ thousands $, $ millions $, $ billions $
+(meta1): What is the currency?  possible values (separated by $ symbols): $ EUR $, $ USD $, $ Other $
+(meta2): As per the end of date? The end date of the respective period possible values: date in the format: YYYY-MM-DD
+(meta3): What is the duration of the period in months?  possible values: positive integer 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    One possible answer block could be (there can be more than one in your response): (main question): 123
+(meta0): $ none $
+(meta1): $ EUR $
+(meta2): 2023-11-24
+(meta3): 123
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: FRESENIUS MEDICAL CARE AG & Co. KGaA 
+Financial statements 
+Consolidated statements of income 
+(unaudited) 
+Consolidated statements of income 
+in € thousands (“THOUS”), except per share data 
+For the three months 
+ended March 31, 
+Note 2021 2020 
+Revenue: 
+Health care services 2a 3,325,459 3,594,663 
+Health care products 2a 884,666 893,133 
+4,210,125 4,487,796 
+Costs of revenue: 
+Health care services 2,568,382 2,707,649 
+Health care products 435,086 389,592 
+3,003,468 3,097,241 
+Gross profit 1,206,657 1,390,555 
+Operating (income) expenses: 
+Selling, general and administrative 711,515 809,917 
+Research and development 2b 48,645 45,917 
+i Income from equity method investees (27,756) (20,409) 
+474,253 555,130 Operating income 
+Other (income) expense: 
+Interest income (15,256) (8,751) 
+Interest expense 91,328 112,970 
+Income before income taxes 398,181 450,911 
+Income tax expense 93,847 100,542 
+Net income : 304,334 350,369 
+Net income attributable to noncontrolling interests . 55,388 67,650 
+Net income attributable to shareholders of FMC-AG & Co. KGaA 248,946 282,719 
+Basic earnings per share 2c 0.85 0.95 
+Diluted earnings per share 2c 0.85 0.95 
+See accompanying notes to unaudited consolidated financial statements. 
+27
+
+                    ","(main question): 4210125.0
+(meta0): $ thousands $
+(meta1): $ EUR $
+(meta2): 2021-03-31
+(meta3): 3
+Sources: [2],[0],[0],[0]
+
+(main question): 4487796.0
+(meta0): $ thousands $
+(meta1): $ EUR $
+(meta2): 2020-03-31
+(meta3): 3
+Sources: [2],[0],[0],[0]"
+c0714507ec87406229facbf5aa0f3cf3ac305b9162c39a9dc5f5780babadfc10,65f95cc2e34036446ee85a00,revenues,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What are the total revenues of the company?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION. In the answer please first provide the meta ID (for the main question use 'main question' instead) in brackets and then the answer. If there are several possible answers to the question (with different meta values), structure your answer into multiple answer blocks of the same format, one after the other separated by new lines.
+(meta0): What is the unit?  possible values (separated by $ symbols): $ none $, $ thousands $, $ millions $, $ billions $
+(meta1): What is the currency?  possible values (separated by $ symbols): $ EUR $, $ USD $, $ Other $
+(meta2): As per the end of date? The end date of the respective period possible values: date in the format: YYYY-MM-DD
+(meta3): What is the duration of the period in months?  possible values: positive integer 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    One possible answer block could be (there can be more than one in your response): (main question): 123
+(meta0): $ none $
+(meta1): $ EUR $
+(meta2): 2023-11-24
+(meta3): 123
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: KEY FIGURES 202) 
+Merck Group 
+Change 
+€ million 2021 2020 € million % 
+Net sales 19,687 17,534 2,152 12.3% 
+Operating result (EBIT)* 4,179 2,985 1,194 40.0% 
+Margin (% of net sales)* 21.2% 17.0% 
+EBITDA? 5,946 4,923 1,023 20.8% 
+Margin (% of net sales)* 30.2% 28.1% 
+EBITDA pre* 6,103 5,201 901 17.3% 
+Margin (% of net sales)* 31.0% 29.7% 
+Profit after tax 53.7% 3,065 1,994 1,071 
+Earnings per share (in €) 7.03 4.57 2.46 53.8% 
+Earnings per share pre (€)! 8.72 6.70 2.02 30.1% 
+32.7% Operating cash flow 4,616 3,477 1,138 
++ Not defined by International Financial Reporting Standards (IFRS). 2 Not defined by International Financial Reporting Standards (IFRS); EBITDA corresponds to operating result (EBIT) adjusted by depreciation, amortization, impairment losses, and reversals of impairment losses. 
+Merck Group Merck Group 
+Net sales EBITDA pret € million € million 
+2021 2021 39,687 603 
+2020 > 2020 > 
+2019 — Ce 2019 — 
+2018 2018 > Ca Se 3800 
+2017 + 2017 — Ck 
+‘Not defined by International Financial Reporting Standards (IFRS).
+
+                    ","(main question): 17534.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2020-12-31
+(meta3): 12
+Sources: [4],[0]
+
+(main question): 19687.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2021-12-31
+(meta3): 12
+Sources: [4],[0]"
+b4783c62aadf215f14aa4621ce1e4666c4929050aaf971cb2cef4097c585818a,65f95cc2e34036446ee85a00,revenues,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What are the total revenues of the company?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION. In the answer please first provide the meta ID (for the main question use 'main question' instead) in brackets and then the answer. If there are several possible answers to the question (with different meta values), structure your answer into multiple answer blocks of the same format, one after the other separated by new lines.
+(meta0): What is the unit?  possible values (separated by $ symbols): $ none $, $ thousands $, $ millions $, $ billions $
+(meta1): What is the currency?  possible values (separated by $ symbols): $ EUR $, $ USD $, $ Other $
+(meta2): As per the end of date? The end date of the respective period possible values: date in the format: YYYY-MM-DD
+(meta3): What is the duration of the period in months?  possible values: positive integer 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    One possible answer block could be (there can be more than one in your response): (main question): 123
+(meta0): $ none $
+(meta1): $ EUR $
+(meta2): 2023-11-24
+(meta3): 123
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: Bayer Financial Half-Year Report as of June 30, 2019 key Data / 3 
+Bayer Group Key Data 
+Full Year 
+€ million Q2 2018 Q2 2019 Change % H1 2018 H1 2019 Change % 2018 
+Sales +211 +31.6 9,481 11,485 18,619 24,500 39,586 
+Change 
++0.9 +24 +4.5% (adjusted for currency and portfolio effects) ' 
+Change in sales"" 
+Volume +9.9% +0.4% +6.4% +1.9% +5.3% 
+Price -1.4% +0.5% -1.38% +0.5% -0.8% 
+Currency -5.8% +1.2% -6.7% +1.2% -4.1% 
+Portfolio +6.1% + 19.0% +2.8% +28.0% +12.7% 
+Sales by region 
+3,603 3,750 +44 7,510 8,193 +9.1 14,143 Europe/Middle East/Africa 
+North America 2,887 4,200 +45.5 5,541 9,409 +69.8 11,569 
+Asia/Pacific 2,113 2,326 +10.1 4,040 4,530 +1241 8,115 
+Latin America 878 +37.7 + 55.0 1,209 1,528 2,368 5,759 
+EBITDA’ 2,031 2,486 +22.4 4,849 5,624 +16.0 10,266 
+Special items! (317) (441) (395) (1,491) 719 
+EBITDA before special items' 2,348 2,927 +24.7 5,244 7,115 +35.7 9,547 
+24.8% 25.5% 28.2% 29.0% 24.1% EBITDA margin before special items‘ 
+EBIT"" 1,346 926 -31.2 3,656 2,876 21.3 3,914 
+Special items! (362) (859) (440) (1,909) (2,566) 
++45 +16.8 EBIT before special items' 1,708 1,785 4,096 4,785 6,480 
+Financial result (323) (477) -47.7 (193) (793) (1,596) 
+Net income 
+(from continuing and discontinued operations) 794 404 -49.1 2,748 1,645 -40.1 1,695 
+Earnings per share' from continuing and 
+discontinued operations (€) 0.87 0.41 -52.9 3.05 1.68 -44.9 1.80 
+Core earnings per share' from continuing 
+operations (€) 1.53 1.62 +5.9 3.76 4.17 +10.9 5.94 
+Net cash provided by operating activities 
+(from continuing and discontinued operations) 2,240 1,600 — 28.6 2,898 2,679 -7.6 7,917 
+Cash outflows for capital expenditures 459 458 -0.2 808 853 +5.6 2,593 
+Research and development expenses 1,267 1,351 +6.6 2,307 2,707 +17.3 5,246 
+Depreciation, amortization and impairment 
+losses/loss reversals 685 +127.7 + 130.3 1,560 1,193 2,748 6,352 
+Number of employees at end of period? 124,055 115,498 -6.9 124,055 115,498 -6.9 116,998 
+Personnel expenses (including pension expenses) 2,566 3,029 +18.0 5,004 6,504 +30.0 11,548 
+2018 figures restated 
+‘For definition see Annual Report 2018, A 2.4 “Alternative Performance Measures Used by the Bayer Group.” 
+? Employees calculated as full-time equivalents (FTEs)
+
+                    ","(main question): 11485
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2019-06-30
+(meta3): 3
+Sources: [2]
+
+(main question): 18619
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2018-06-30
+(meta3): 6
+Sources: [2]
+
+(main question): 24500.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2019-06-30
+(meta3): 6
+Sources: [2]
+
+(main question): 39586.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2018-12-31
+(meta3): 12
+Sources: [2]
+
+(main question): 9481
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2018-06-30
+(meta3): 3
+Sources: [2]"

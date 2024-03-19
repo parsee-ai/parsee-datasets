@@ -1,0 +1,1814 @@
+source_identifier,template_id,element_identifier,FEATURE_full_prompt,TRUTH_answer
+775c36ece6c32bfafff3a763f75b2fc657549ddacd980daccbe8d4542ad1af6d,65f95cc2e34036446ee85a00,revenues,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What are the total revenues of the company?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION. In the answer please first provide the meta ID (for the main question use 'main question' instead) in brackets and then the answer. If there are several possible answers to the question (with different meta values), structure your answer into multiple answer blocks of the same format, one after the other separated by new lines.
+(meta0): What is the unit?  possible values (separated by $ symbols): $ none $, $ thousands $, $ millions $, $ billions $
+(meta1): What is the currency?  possible values (separated by $ symbols): $ EUR $, $ USD $, $ Other $
+(meta2): As per the end of date? The end date of the respective period possible values: date in the format: YYYY-MM-DD
+(meta3): What is the duration of the period in months?  possible values: positive integer 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    One possible answer block could be (there can be more than one in your response): (main question): 123
+(meta0): $ none $
+(meta1): $ EUR $
+(meta2): 2023-11-24
+(meta3): 123
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[8]: table: (row 0) 
+ (col 1): 2021 (col 2): 2020 (col 3): Change (row end);
+ (row 1) 
+ (col 0): Operating Highlights (€ in millions) (row end);
+ (row 2) 
+ (col 0): Net sales! (col 1): 21,234 (col 2): 18,435 (col 3): 5% (row end);
+ (row 3) 
+ (col 0): Gross profit! (col 1): 10,765 (col 2): 9,222 (col 3): 17% (row end);
+ (row 4) 
+ (col 0): Other operating expenses? (col 1): 8,892 (col 2): 8,580 (col 3): 4% (row end);
+ (row 5) 
+ (col 0): EBITDA' (col 1): 3,066 (col 2): 1,967 (col 3): 6% (row end);
+ (row 6) 
+ (col 0): Operating profit! (col 1): 1,986 (col 2): 746 (col 3): 166% (row end);
+ (row 7) 
+ (col 0): Net income from continuing operations’ (col 1): 1,492 (col 2): 461 (col 3): 223% (row end);
+ (row 8) 
+ (col 0): Net income attributable to shareholders? (col 1): 2,116 (col 2): 432 (col 3): 390% (row end);
+ (row 9) 
+ (col 0): Key Ratios (row end);
+ (row 10) 
+ (col 0): Gross margin’ (col 1): 50.7% (col 2): 50.0% (col 3): 0.7pp (row end);
+ (row 11) 
+ (col 0): Other operating expenses in % of net sales! (col 1): 41.9% (col 2): 46.5% (col 3): (4.7pp) (row end);
+ (row 12) 
+ (col 0): Operating margin’ (col 1): 9.4% (col 2): 4.0% (col 3): 5.3pp (row end);
+ (row 13) 
+ (col 0): Effective tax rate! (col 1): 19.4% (col 2): 20.2% (col 3): (0.8pp) (row end);
+ (row 14) 
+ (col 0): Net income attributable to shareholders in % of net sales'? (col 1): 10.0% (col 2): 2.3% (col 3): 7.7 pp (row end);
+ (row 15) 
+ (col 0): Average operating working capital in % of net sales"" (col 1): 20.0% (col 2): 25.3% (col 3): 5.3pp) (row end);
+ (row 16) 
+ (col 0): Equity ratio (col 1): 34.0% (col 2): 30.7% (col 3): 3.3pp (row end);
+ (row 17) 
+ (col 0): Adjusted net borrowings/EBITDA' (col 1): 1.0 (col 2): 1.6 (col 3): na (row end);
+ (row 18) 
+ (col 0): Financial leverage™* (col 1): 39.4% (col 2): 48.8% (col 3): (9.4pp) (row end);
+ (row 19) 
+ (col 0): Return on equity’ (col 1): 28.1% (col 2): 6.7% (col 3): 21.4pp (row end);
+ (row 20) 
+ (col 0): Balance Sheet and Cash Flow Data (€ in millions) (row end);
+ (row 21) 
+ (col 0): Total assets (col 1): 22,137 (col 2): 21,053 (col 3): 5% (row end);
+ (row 22) 
+ (col 0): Inventories? (col 1): 4,009 (col 2): 4,397 (col 3): (9%) (row end);
+ (row 23) 
+ (col 0): Receivables and other current assets? (col 1): 4,072 (col 2): 3,763 (col 3): 8% (row end);
+ (row 24) 
+ (col 0): Operating working capital? (col 1): 3,890 (col 2): 3,960 (col 3): (2%) (row end);
+ (row 25) 
+ (col 0): Shareholders’ equity (col 1): 7519 (col 2): 6,454 (col 3): Th (row end);
+ (row 26) 
+ (col 0): Capital expenditure® (col 1): 667 (col 2): 442 (col 3): 51% (row end);
+ (row 27) 
+ (col 0): Net cash generated from operating activities’ (col 1): 2,873 (col 2): 1,366 (col 3): 110% (row end);
+ (row 28) 
+ (col 0): Per Share of Common Stock (€) (row end);
+ (row 29) 
+ (col 0): Basic earnings’ (col 1): TAT (col 2): 2.31 (col 3): 223% (row end);
+ (row 30) 
+ (col 0): Diluted earnings! (col 1): TAT (col 2): 2.31 (col 3): 223% (row end);
+ (row 31) 
+ (col 0): Net cash generated from operating activities! (col 1): 14.79 (col 2): 7.00 (col 3): 111% (row end);
+ (row 32) 
+ (col 0): Dividend> (col 1): 3.30 (col 2): 3.00 (col 3): 10% (row end);
+ (row 33) 
+ (col 0): Share price at year-end (col 1): 253.20 (col 2): 297.90 (col 3): (15%! (row end);
+ (row 34) 
+ (col 0): Other (at year-end) (row end);
+ (row 35) 
+ (col 0): Number of employees (col 1): 61,401 (col 2): 62,285 (col 3): (1% (row end);
+ (row 36) 
+ (col 0): Number of shares outstanding (col 1): 191,594,855 (col 2): 195,066,060 (col 3): (2%) (row end);
+ (row 37) 
+ (col 0): Average number of shares (col 1): 194,172,984 (col 2): 195,155,924 (col 3): (1% (row end);
+
+[0]: adidas
+[1]: ANNUAL REPORT 2021
+[2]: 1
+[3]: 2
+[4]: 3
+[5]: TO OUR SHAREHOLDERS GROUP MANAGEMENT REPORT GROUP MANAGEMENT REPORT CONSOLIDATED FINANCIAL ADDITIONAL INFORMATION
+OUR COMPANY FINANCIAL REVIEW STATEMENTS
+[6]: FINANCIAL HIGHLIGHTS 2021 (IFRS)
+[7]: FINANCIAL HIGHLIGHTS 2021 (IFRS)
+[9]: 1.2021 and 2020 figures reflect continuing operations as a result of the reclassification of the Reebok business to discontinued operations.
+2 Includes continuing and discontinued operations.
+3.2021 figures reflect the reclassification of the Reebok business to assets or liabilities held for sale.
+4 Based on shareholders’ equity.
+5 Subject to Annual General Meeting approval.
+6 Number of employees for 2021 excluding Reebok due to the expected divestiture of the Reebok business
+[10]: 4
+[11]: 5
+
+                    ","(main question): 21234.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2021-12-31
+(meta3): 12
+Sources: [8]
+
+(main question): 18435.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2020-12-31
+(meta3): 12
+Sources: [8]"
+de52331b4939efb94a41adff3d8eeb699c16fff434df22be14a7ec76d5cd868b,65f95cc2e34036446ee85a00,revenues,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What are the total revenues of the company?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION. In the answer please first provide the meta ID (for the main question use 'main question' instead) in brackets and then the answer. If there are several possible answers to the question (with different meta values), structure your answer into multiple answer blocks of the same format, one after the other separated by new lines.
+(meta0): What is the unit?  possible values (separated by $ symbols): $ none $, $ thousands $, $ millions $, $ billions $
+(meta1): What is the currency?  possible values (separated by $ symbols): $ EUR $, $ USD $, $ Other $
+(meta2): As per the end of date? The end date of the respective period possible values: date in the format: YYYY-MM-DD
+(meta3): What is the duration of the period in months?  possible values: positive integer 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    One possible answer block could be (there can be more than one in your response): (main question): 123
+(meta0): $ none $
+(meta1): $ EUR $
+(meta2): 2023-11-24
+(meta3): 123
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[4]: table: (row 0) 
+ (col 0): Group financial targets (col 1): 2021 (col 2): 2020 (row end);
+ (row 1) 
+ (col 0): Post-tax return on average tangible shareholders’ equity’ (col 1): 3.8% (col 2): 0.2 % (row end);
+ (row 2) 
+ (col 0): Costlincome ratio? (col 1): 84.6 % (col 2): 88.3 Y% (row end);
+ (row 3) 
+ (col 0): Common Equity Tier 1 capital ratio (col 1): 13.2 % (col 2): 13.6 % (row end);
+ (row 4) 
+ (col 0): Leverage ratio (fully loaded) (col 1): 49% (col 2): 47% (row end);
+ (row 5) 
+ (col 0): Statement of Income (row end);
+ (row 6) 
+ (col 0): Total net revenues, in € bn. (col 1): 25.4 (col 2): 24.0 (row end);
+ (row 7) 
+ (col 0): Provision for credit losses, in € bn. (col 1): 0.5 (col 2): 1.8 (row end);
+ (row 8) 
+ (col 0): Total noninterest expenses, in € bn. (col 1): 21.5 (col 2): 21.2 (row end);
+ (row 9) 
+ (col 0): Adjusted costs ex. transformation charges, in € bn.> (col 1): 19.6 (col 2): 19.9 (row end);
+ (row 10) 
+ (col 0): Profit (loss) before tax, in € bn. (col 1): 3.4 (col 2): 1.0 (row end);
+ (row 11) 
+ (col 0): Profit (loss) , in € bn. (col 1): 25 (col 2): 0.6 (row end);
+ (row 12) 
+ (col 0): Profit (loss) attributable to Deutsche Bank shareholders, in € bn. (col 1): 1.9 (col 2): 0.1 (row end);
+ (row 13) 
+ (col 0): Balance Sheet (col 1): 31, 2021 (col 2): 31, 2020 (row end);
+ (row 14) 
+ (col 0): Total assets, in € bn. (col 1): 1,324 (col 2): 1,325 (row end);
+ (row 15) 
+ (col 0): Net assets (adjusted) , in € bn.* (col 1): 1,002 (col 2): 963 (row end);
+ (row 16) 
+ (col 0): Loans (gross of allowance for loan losses) , in € bn. (col 1): 476 (col 2): 432 (row end);
+ (row 17) 
+ (col 0): Average Loans (gross of allowance for loan losses) , in € bn. (col 1): 446 (col 2): 438 (row end);
+ (row 18) 
+ (col 0): Deposits, in € bn. (col 1): 604 (col 2): 568 (row end);
+ (row 19) 
+ (col 0): Allowance for loan losses, in € bn. (col 1): 48 (col 2): 48 (row end);
+ (row 20) 
+ (col 0): Shareholders’ equity, in € bn. (col 1): 58 (col 2): 55 (row end);
+ (row 21) 
+ (col 0): Resources (row end);
+ (row 22) 
+ (col 0): Risk-weighted assets, in € bn. (col 1): 352 (col 2): 329 (row end);
+ (row 23) 
+ (col 0): Thereof: Operational Risk RWA, in € bn. (col 1): 62 (col 2): 69 (row end);
+ (row 24) 
+ (col 0): Leverage exposure, in € bn. (col 1): 1,125 (col 2): 1,078 (row end);
+ (row 25) 
+ (col 0): Tangible shareholders’ equity (Tangible book value) , in € bn.* (col 1): 52 (col 2): 49 (row end);
+ (row 26) 
+ (col 0): High-quality liquid assets (HQLA) , in € bn. (col 1): 207 (col 2): 213 (row end);
+ (row 27) 
+ (col 0): Liquidity reserves in € bn. (col 1): 241 (col 2): 243 (row end);
+ (row 28) 
+ (col 0): Employees (full-time equivalent) (col 1): 82,969 (col 2): 84,659 (row end);
+ (row 29) 
+ (col 0): Branches (col 1): 1,709 (col 2): 1,891 (row end);
+ (row 30) 
+ (col 0): Ratios (row end);
+ (row 31) 
+ (col 0): Post-tax return on average shareholders’ equity' (col 1): 3.4% (col 2): 0.2 % (row end);
+ (row 32) 
+ (col 0): Provision for credit losses as bps of average loans. (col 1): 12 (col 2): 41 (row end);
+ (row 33) 
+ (col 0): Loan-to-deposit ratio (col 1): 78.9 % (col 2): 76.0 % (row end);
+ (row 34) 
+ (col 0): Leverage ratio (phase-in) (col 1): 49% (col 2): 4.8 % (row end);
+ (row 35) 
+ (col 0): Liquidity coverage ratio (col 1): 133 % (col 2): 145 % (row end);
+ (row 36) 
+ (col 0): Per Share information (row end);
+ (row 37) 
+ (col 0): Basic earings per share (col 1): €0.96 (col 2): €0.07 (row end);
+ (row 38) 
+ (col 0): Diluted earnings per share (col 1): €0.93 (col 2): €0.07 (row end);
+ (row 39) 
+ (col 0): Book value per basic share outstanding’ (col 1): € 27.62 (col 2): € 26.04 (row end);
+ (row 40) 
+ (col 0): Tangible book value per basic share outstanding* (col 1): € 24.73 (col 2): € 23.19 (row end);
+
+[0]: Deutsche Bank
+[1]: Deutsche Bank
+Annual Report 2021
+[2]: Deutsche Bank
+[3]: Financial Summary
+[5]: * Based on profit (loss) attributable to Deutsche Bank shareholders after AT1 coupon. For further information, please refer to “Supplementary Information (Unaudited) : Non-
+GAAP Financial Measures"" of this report. 2 Total noninterest expenses as a percentage of net interest income before provision for credit losses, plus noninterest income. 3 The reconciliation of adjusted costs is provided in section “Supplementary Information (Unaudited) : Non-GAAP 1ancial Measures! Adjusted costs"" of this document. * For further information please refer to “Supplementary Information (Unaudited) : Non-GAAP Financial Measures"" of this report.
+[6]: Due to rounding, numbers presented throughout this document may not sum precisely to the totals provided and percentages may not precisely reflect the absolute figures.
+[7]: Dec 31, 2021
+
+                    ","(main question): 25.4
+(meta0): $ billions $
+(meta1): $ EUR $
+(meta2): 2021-12-31
+(meta3): 12
+Sources: [4],[0]
+
+(main question): 24.0
+(meta0): $ billions $
+(meta1): $ EUR $
+(meta2): 2020-12-31
+(meta3): 12
+Sources: [4],[0]"
+65fefe149d833d8a4f9625890644c49e264b776383675994dccb38ec57ff9d4e,65f95cc2e34036446ee85a00,revenues,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What are the total revenues of the company?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION. In the answer please first provide the meta ID (for the main question use 'main question' instead) in brackets and then the answer. If there are several possible answers to the question (with different meta values), structure your answer into multiple answer blocks of the same format, one after the other separated by new lines.
+(meta0): What is the unit?  possible values (separated by $ symbols): $ none $, $ thousands $, $ millions $, $ billions $
+(meta1): What is the currency?  possible values (separated by $ symbols): $ EUR $, $ USD $, $ Other $
+(meta2): As per the end of date? The end date of the respective period possible values: date in the format: YYYY-MM-DD
+(meta3): What is the duration of the period in months?  possible values: positive integer 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    One possible answer block could be (there can be more than one in your response): (main question): 123
+(meta0): $ none $
+(meta1): $ EUR $
+(meta2): 2023-11-24
+(meta3): 123
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[6]: table: (row 0) 
+ (col 0): € million (col 1): Qa 2021 (col 2): Qt 2020 (row end);
+ (row 1) 
+ (col 0): Net sales (col 1): 4,631 (col 2): 4,370 (row end);
+ (row 2) 
+ (col 0): Cost of sales (col 1): 1,721 (col 2): 1,654 (row end);
+ (row 3) 
+ (col 0): Gross profit (col 1): 2,910 (col 2): 2,716 (row end);
+ (row 4) 
+ (col 0): Marketing and selling expenses (col 1): 1,007 (col 2): 1,059 (row end);
+ (row 5) 
+ (col 0): Administration expenses (col 1): -273 (col 2): -289 (row end);
+ (row 6) 
+ (col 0): Research and development costs (col 1): -574 (col 2): -579 (row end);
+ (row 7) 
+ (col 0): Impairment losses and reversals of impairment losses on financial assets (net) (col 1): -6 (col 2): 6 (row end);
+ (row 8) 
+ (col 0): Other operating income (col 1): 132 (col 2): 112 (row end);
+ (row 9) 
+ (col 0): Other operating expenses (col 1): -139 (col 2): ~191 (row end);
+ (row 10) 
+ (col 0): Operating result (EBIT) * (col 1): 1,043 (col 2): 716 (row end);
+ (row 11) 
+ (col 0): Finance income (col 1): 24 (col 2): 14 (row end);
+ (row 12) 
+ (col 0): Finance costs (col 1): 84 (col 2): 112 (row end);
+ (row 13) 
+ (col 0): Profit before income tax (col 1): 984 (col 2): 617 (row end);
+ (row 14) 
+ (col 0): Income tax (col 1): -236 (col 2): -159 (row end);
+ (row 15) 
+ (col 0): Profit after tax (col 1): 748 (col 2): 458 (row end);
+ (row 16) 
+ (col 0): thereof: attributable to Merck KGaA shareholders (net income) (col 1): 747 (col 2): 456 (row end);
+ (row 17) 
+ (col 0): thereof: attributable to non-controlling interests (col 2): 2 (row end);
+ (row 18) 
+ (col 0): Earnings per share (in €) (row end);
+ (row 19) 
+ (col 0): Basic (col 1): 1.72 (col 2): 1.05 (row end);
+ (row 20) 
+ (col 0): Diluted (col 1): 1.72 (col 2): 1.05 (row end);
+
+[8]: table: (row 0) 
+ (col 0): Consolidated Income Statement (col 1): 37 (row end);
+
+[0]: Quarterly Statement as of March 31, 2021
+[1]: Supplemental Financial Information
+[2]: Supplemental
+[3]: Financial
+[4]: Information
+[5]: Consolidated Income Statement
+[7]: 1 Not defined by International Financial Reporting Standard (IFRS) .
+
+                    ","(main question): 4631.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2021-03-31
+(meta3): 3
+Sources: [6],[0]
+
+(main question): 4370.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2020-03-31
+(meta3): 3
+Sources: [6],[0]"
+a8f9dc45fc64a66a4d419ddb56399bcb79a74cb8948d35e8bfa06671f8c47318,65f95cc2e34036446ee85a00,revenues,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What are the total revenues of the company?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION. In the answer please first provide the meta ID (for the main question use 'main question' instead) in brackets and then the answer. If there are several possible answers to the question (with different meta values), structure your answer into multiple answer blocks of the same format, one after the other separated by new lines.
+(meta0): What is the unit?  possible values (separated by $ symbols): $ none $, $ thousands $, $ millions $, $ billions $
+(meta1): What is the currency?  possible values (separated by $ symbols): $ EUR $, $ USD $, $ Other $
+(meta2): As per the end of date? The end date of the respective period possible values: date in the format: YYYY-MM-DD
+(meta3): What is the duration of the period in months?  possible values: positive integer 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    One possible answer block could be (there can be more than one in your response): (main question): 123
+(meta0): $ none $
+(meta1): $ EUR $
+(meta2): 2023-11-24
+(meta3): 123
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[8]: table: (row 0) 
+ (col 0): € million (col 1): Q2 2018 (col 2): Q2 2019 (col 3): H1 2018 (col 4): H1 2019 (row end);
+ (row 1) 
+ (col 0): Net sales (col 1): 9,481 (col 2): 11,485 (col 3): 18,619 (col 4): 24,500 (row end);
+ (row 2) 
+ (col 0): Cost of goods sold (col 1): (3,507) (col 2): (4,399) (col 3): (6,416) (col 4): (9,655) (row end);
+ (row 3) 
+ (col 0): Gross profit (col 1): 5,974 (col 2): 7,086 (col 3): 12,203 (col 4): 14,845 (row end);
+ (row 4) 
+ (col 0): Selling expenses (col 1): (2,942) (col 2): (3,512) (col 3): 6,451) (col 4): (6,548) (row end);
+ (row 5) 
+ (col 0): Research and development expenses (col 1): (1,267) (col 2): (1,351) (col 3): (2,307) (col 4): (2,707) (row end);
+ (row 6) 
+ (col 0): General administration expenses (col 1): (676) (col 2): (935) (col 3): (1,003) (col 4): (2,104) (row end);
+ (row 7) 
+ (col 0): Other operating income (col 1): 185 (col 2): 346 (col 3): 337 (col 4): 480 (row end);
+ (row 8) 
+ (col 0): Other operating expenses (col 1): (28) (col 2): (708) (col 3): (123) (col 4): (1,090) (row end);
+ (row 9) 
+ (col 0): EBIT* (col 1): 1,346 (col 2): 926 (col 3): 3,656 (col 4): 2,876 (row end);
+ (row 10) 
+ (col 0): Equity-method income (loss) (col 1): 27 (col 2): (18) (col 3): 98 (col 4): (37) (row end);
+ (row 11) 
+ (col 0): Financial income (col 1): 160 (col 2): 68 (col 3): 530 (col 4): 238 (row end);
+ (row 12) 
+ (col 0): Financial expenses (col 1): (610) (col 2): (627) (col 3): (821) (col 4): (994) (row end);
+ (row 13) 
+ (col 0): Financial result (col 1): (323) (col 2): (477) (col 3): (193) (col 4): (793) (row end);
+ (row 14) 
+ (col 0): Income before income taxes (col 1): 1,023 (col 2): 449 (col 3): 3,463 (col 4): 2,083 (row end);
+ (row 15) 
+ (col 0): Income taxes (col 1): (215) (col 2): (44) (col 3): (709) (col 4): (442) (row end);
+ (row 16) 
+ (col 0): Income from continuing operations after income taxes (col 1): 808 (col 2): 405 (col 3): 2,754 (col 4): 1,641 (row end);
+ (row 17) 
+ (col 0): of which attributable to noncontrolling interest (col 1): 6 (col 2): 1 (col 3): 6 (col 4): (4) (row end);
+ (row 18) 
+ (col 0): of which attributable to Bayer AG stockholders (col 1): 802 (col 2): 404 (col 3): 2,748 (col 4): 1,645 (row end);
+ (row 19) 
+ (col 0): Income from discontinued operations after income taxes (col 1): (8) (col 2): - (col 3): - (col 4): ~ (row end);
+ (row 20) 
+ (col 0): of which attributable to noncontrolling interest (col 1): = (col 2): - (col 3): - (col 4): = (row end);
+ (row 21) 
+ (col 0): of which attributable to Bayer AG stockholders (col 1): (8) (col 2): - (col 3): = (col 4): - (row end);
+ (row 22) 
+ (col 0): Income after income taxes (col 1): 800 (col 2): 405 (col 3): 2,754 (col 4): 1,641 (row end);
+ (row 23) 
+ (col 0): of which attributable to noncontrolling interest (col 1): 6 (col 4): (4) (row end);
+ (row 24) 
+ (col 0): of which attributable to Bayer AG stockholders (net income) (col 1): 794 (col 2): 404 (col 3): 2,748 (col 4): 1,645 (row end);
+ (row 25) 
+ (col 0): Shares (million) (row end);
+ (row 26) 
+ (col 0): Weighted average number of shares? (col 1): 915.69 (col 2): 981.73 (col 3): 900.70 (col 4): 980.95 (row end);
+
+[0]: Bayer Half-Year Financial Report as of June 30, 2019
+[1]: Condensed
+[2]: Consolidated
+[3]: Interim Financial Statements
+[4]: as of June
+[5]: 30,
+[6]: 2019
+[7]: Bayer Group Consolidated Income Statements
+[9]: €
+[10]: Earnings per share
+From continuing operations
+[12]: From discontinued
+[13]: From continuing and discontinued
+[14]: 2018 figures restated
+* For definition see Annual Report 2018, A 2.4 “Alternative Performance Measures Used
+[15]: by the Bayer Group.""
+? Weighted average number of shares (basic and diluted) restated for all periods prior to June 2018 to reflect the effect of the bonus component
+of the subscription rights issued as part of the June 2018 capital increase
+[16]: [*
+[17]: B Condensed Consolidated Interim Financial Statements
+Bayer Group Consolidated Income Statements
+[18]: B1
+[11]: table: (row 0) 
+ (col 0): Basic (col 1): 0.88 (col 2): 0.41 (col 3): 3.05 (col 4): 1.68 (row end);
+ (row 1) 
+ (col 0): Diluted (col 1): 0.88 (col 2): 0.41 (col 3): 3.05 (col 4): 1.68 (row end);
+ (row 2) 
+ (col 0): operations (row end);
+ (row 3) 
+ (col 0): Basic (col 1): (0.01) (col 2): 0.00 (col 3): 0.00 (col 4): 0.00 (row end);
+ (row 4) 
+ (col 0): Diluted (col 1): (0.01) (col 2): 0.00 (col 3): 0.00 (col 4): 0.00 (row end);
+ (row 5) 
+ (col 0): operations (row end);
+ (row 6) 
+ (col 0): Basic (col 1): 0.87 (col 2): 0.41 (col 3): 3.05 (col 4): 1.68 (row end);
+ (row 7) 
+ (col 0): Diluted (col 1): 0.87 (col 2): 0.41 (col 3): 3.05 (col 4): 1.68 (row end);
+
+
+                    ","(main question): 11485.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2019-06-30
+(meta3): 3
+Sources: [8]
+
+(main question): 24500.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2019-06-30
+(meta3): 6
+Sources: [8]
+
+(main question): 9481
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2018-06-30
+(meta3): 3
+Sources: [8]
+
+(main question): 18619
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2018-06-30
+(meta3): 6
+Sources: [8]"
+b4783c62aadf215f14aa4621ce1e4666c4929050aaf971cb2cef4097c585818a,65f95cc2e34036446ee85a00,revenues,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What are the total revenues of the company?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION. In the answer please first provide the meta ID (for the main question use 'main question' instead) in brackets and then the answer. If there are several possible answers to the question (with different meta values), structure your answer into multiple answer blocks of the same format, one after the other separated by new lines.
+(meta0): What is the unit?  possible values (separated by $ symbols): $ none $, $ thousands $, $ millions $, $ billions $
+(meta1): What is the currency?  possible values (separated by $ symbols): $ EUR $, $ USD $, $ Other $
+(meta2): As per the end of date? The end date of the respective period possible values: date in the format: YYYY-MM-DD
+(meta3): What is the duration of the period in months?  possible values: positive integer 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    One possible answer block could be (there can be more than one in your response): (main question): 123
+(meta0): $ none $
+(meta1): $ EUR $
+(meta2): 2023-11-24
+(meta3): 123
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: table: (row 0) 
+ (col 0): Bayer Financial Half-Year Report as of June 30, 2019 key Data (col 1): / 3 (row end);
+
+[2]: table: (row 0) 
+ (col 7): Full Year (row end);
+ (row 1) 
+ (col 0): € million (col 1): Q2 2018 (col 2): Q2 2019 (col 3): Change (col 4): H1 2018 (col 5): H1 2019 (col 6): Change (col 7): 2018 (row end);
+ (row 2) 
+ (col 0): Sales (col 1): 9,481 (col 2): 11,485 (col 3): +211 (col 4): 18,619 (col 5): 24,500 (col 6): +31.6 (col 7): 39,586 (row end);
+ (row 3) 
+ (col 0): Change (row end);
+ (row 4) 
+ (col 0): (adjusted for currency and portfolio effects) ' (col 3): +0.9 (col 6): +24 (col 7): +4.5% (row end);
+ (row 5) 
+ (col 0): Change in sales"" (row end);
+ (row 6) 
+ (col 0): Volume (col 1): +9.9% (col 2): +0.4% (col 4): +6.4% (col 5): +1.9% (col 7): +5.3% (row end);
+ (row 7) 
+ (col 0): Price (col 1): -1.4% (col 2): +0.5% (col 4): -1.38% (col 5): +0.5% (col 7): -0.8% (row end);
+ (row 8) 
+ (col 0): Currency (col 1): -5.8% (col 2): +1.2% (col 4): -6.7% (col 5): +1.2% (col 7): -4.1% (row end);
+ (row 9) 
+ (col 0): Portfolio (col 1): +6.1% (col 2): + 19.0% (col 4): +2.8% (col 5): +28.0% (col 7): +12.7% (row end);
+ (row 10) 
+ (col 0): Sales by region (row end);
+ (row 11) 
+ (col 0): Europe/Middle East/Africa (col 1): 3,603 (col 2): 3,750 (col 3): +44 (col 4): 7,510 (col 5): 8,193 (col 6): +9.1 (col 7): 14,143 (row end);
+ (row 12) 
+ (col 0): North America (col 1): 2,887 (col 2): 4,200 (col 3): +45.5 (col 4): 5,541 (col 5): 9,409 (col 6): +69.8 (col 7): 11,569 (row end);
+ (row 13) 
+ (col 0): Asia/Pacific (col 1): 2,113 (col 2): 2,326 (col 3): +10.1 (col 4): 4,040 (col 5): 4,530 (col 6): +1241 (col 7): 8,115 (row end);
+ (row 14) 
+ (col 0): Latin America (col 1): 878 (col 2): 1,209 (col 3): +37.7 (col 4): 1,528 (col 5): 2,368 (col 6): + 55.0 (col 7): 5,759 (row end);
+ (row 15) 
+ (col 0): EBITDA’ (col 1): 2,031 (col 2): 2,486 (col 3): +22.4 (col 4): 4,849 (col 5): 5,624 (col 6): +16.0 (col 7): 10,266 (row end);
+ (row 16) 
+ (col 0): Special items! (col 1): (317) (col 2): (441) (col 4): (395) (col 5): (1,491) (col 7): 719 (row end);
+ (row 17) 
+ (col 0): EBITDA before special items' (col 1): 2,348 (col 2): 2,927 (col 3): +24.7 (col 4): 5,244 (col 5): 7,115 (col 6): +35.7 (col 7): 9,547 (row end);
+ (row 18) 
+ (col 0): EBITDA margin before special items‘ (col 1): 24.8% (col 2): 25.5% (col 4): 28.2% (col 5): 29.0% (col 7): 24.1% (row end);
+ (row 19) 
+ (col 0): EBIT"" (col 1): 1,346 (col 2): 926 (col 3): -31.2 (col 4): 3,656 (col 5): 2,876 (col 6): 21.3 (col 7): 3,914 (row end);
+ (row 20) 
+ (col 0): Special items! (col 1): (362) (col 2): (859) (col 4): (440) (col 5): (1,909) (col 7): (2,566) (row end);
+ (row 21) 
+ (col 0): EBIT before special items' (col 1): 1,708 (col 2): 1,785 (col 3): +45 (col 4): 4,096 (col 5): 4,785 (col 6): +16.8 (col 7): 6,480 (row end);
+ (row 22) 
+ (col 0): Financial result (col 1): (323) (col 2): (477) (col 3): -47.7 (col 4): (193) (col 5): (793) (col 7): (1,596) (row end);
+ (row 23) 
+ (col 0): Net income (row end);
+ (row 24) 
+ (col 0): (from continuing and discontinued operations) (col 1): 794 (col 2): 404 (col 3): -49.1 (col 4): 2,748 (col 5): 1,645 (col 6): -40.1 (col 7): 1,695 (row end);
+ (row 25) 
+ (col 0): Earnings per share' from continuing and (row end);
+ (row 26) 
+ (col 0): discontinued operations (€) (col 1): 0.87 (col 2): 0.41 (col 3): -52.9 (col 4): 3.05 (col 5): 1.68 (col 6): -44.9 (col 7): 1.80 (row end);
+ (row 27) 
+ (col 0): Core earnings per share' from continuing (row end);
+ (row 28) 
+ (col 0): operations (€) (col 1): 1.53 (col 2): 1.62 (col 3): +5.9 (col 4): 3.76 (col 5): 4.17 (col 6): +10.9 (col 7): 5.94 (row end);
+ (row 29) 
+ (col 0): Net cash provided by operating activities (row end);
+ (row 30) 
+ (col 0): (from continuing and discontinued operations) (col 1): 2,240 (col 2): 1,600 (col 3): — 28.6 (col 4): 2,898 (col 5): 2,679 (col 6): -7.6 (col 7): 7,917 (row end);
+ (row 31) 
+ (col 0): Cash outflows for capital expenditures (col 1): 459 (col 2): 458 (col 3): -0.2 (col 4): 808 (col 5): 853 (col 6): +5.6 (col 7): 2,593 (row end);
+ (row 32) 
+ (col 0): Research and development expenses (col 1): 1,267 (col 2): 1,351 (col 3): +6.6 (col 4): 2,307 (col 5): 2,707 (col 6): +17.3 (col 7): 5,246 (row end);
+ (row 33) 
+ (col 0): Depreciation, amortization and impairment (row end);
+ (row 34) 
+ (col 0): losses/loss reversals (col 1): 685 (col 2): 1,560 (col 3): +127.7 (col 4): 1,193 (col 5): 2,748 (col 6): + 130.3 (col 7): 6,352 (row end);
+ (row 35) 
+ (col 0): Number of employees at end of period? (col 1): 124,055 (col 2): 115,498 (col 3): -6.9 (col 4): 124,055 (col 5): 115,498 (col 6): -6.9 (col 7): 116,998 (row end);
+ (row 36) 
+ (col 0): Personnel expenses (including pension expenses) (col 1): 2,566 (col 2): 3,029 (col 3): +18.0 (col 4): 5,004 (col 5): 6,504 (col 6): +30.0 (col 7): 11,548 (row end);
+ (row 37) 
+ (col 0): 2018 figures restated (row end);
+ (row 38) 
+ (col 0): ‘For definition see Annual Report 2018, (col 2): Used by the Bayer Group.” (col 3): by the Bayer Group.” (row end);
+
+[1]: Bayer Group Key Data
+[3]: A 2.4 “Alternative Performance Measures
+? Employees calculated as full-time equivalents (FTEs)
+
+                    ","(main question): 24500.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2019-06-30
+(meta3): 6
+Sources: [2]
+
+(main question): 39586.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2018-12-31
+(meta3): 12
+Sources: [2]
+
+(main question): 9481
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2018-06-30
+(meta3): 3
+Sources: [2]
+
+(main question): 11485
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2019-06-30
+(meta3): 3
+Sources: [2]
+
+(main question): 18619
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2018-06-30
+(meta3): 6
+Sources: [2]"
+a0b13a9b5956cc7a8740f8a1aad849cf37d7968302ab451db163a8e3d93e7e17,65f95cc2e34036446ee85a00,revenues,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What are the total revenues of the company?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION. In the answer please first provide the meta ID (for the main question use 'main question' instead) in brackets and then the answer. If there are several possible answers to the question (with different meta values), structure your answer into multiple answer blocks of the same format, one after the other separated by new lines.
+(meta0): What is the unit?  possible values (separated by $ symbols): $ none $, $ thousands $, $ millions $, $ billions $
+(meta1): What is the currency?  possible values (separated by $ symbols): $ EUR $, $ USD $, $ Other $
+(meta2): As per the end of date? The end date of the respective period possible values: date in the format: YYYY-MM-DD
+(meta3): What is the duration of the period in months?  possible values: positive integer 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    One possible answer block could be (there can be more than one in your response): (main question): 123
+(meta0): $ none $
+(meta1): $ EUR $
+(meta2): 2023-11-24
+(meta3): 123
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[0]: Allianz Group Key Data
+[2]: Figures for the first quarter of 2010 have been restated to reflect a change in Allianz Group's accounting policy. For further information please refer to note 2 of our condensed
+consolidated interim financial statements.
+Total revenues comprise statutory gross premiums written in Property-Casualty and Life/Health, operating revenues in Asset Management and total revenues in Corporate and
+Other (Banking) .
+The Allianz Group uses operating profit as a key financial indicator to assess the performance of its business segments and the Group as a whole.
+The Allianz Group operates and manages is activities through four segments: Property-Casualty, Life/Health, Asset Management and Corporate and Other. For further
+information please refer to note 3 of our condensed consolidated interim financial statements,
+2010 figures as of December 31, 2010.
+[3]: 1
+[1]: table: (row 0) 
+ (col 3): Change (row end);
+ (row 1) 
+ (col 3): from (row end);
+ (row 2) 
+ (col 3): previous (row end);
+ (row 3) 
+ (col 0): Three months ended March 31, (col 1): 2011 (col 2): 2010 (col 3): year (row end);
+ (row 4) 
+ (col 0): INCOME STATEMENT! (row end);
+ (row 5) 
+ (col 0): Total revenues? €mn (col 1): 29,905 (col 2): 30,567 (col 3): (2.2) % (row end);
+ (row 6) 
+ (col 0): Operating profit? €mn (col 1): 1,660 (col 2): 1,732 (col 3): (42) % (row end);
+ (row 7) 
+ (col 0): Net income €mn (col 1): 915 (col 2): 1,603 (col 3): (42.9) % (row end);
+ (row 8) 
+ (col 0): SEGMENTS* (row end);
+ (row 9) 
+ (col 0): Property-Casualty (row end);
+ (row 10) 
+ (col 0): Gross premiums written €mn (col 1): 14,251 (col 2): 13,994 (col 3): 1.8% (row end);
+ (row 11) 
+ (col 0): Operating profit? €mn (col 1): 663 (col 2): 712 (col 3): (6.9) % (row end);
+ (row 12) 
+ (col 0): Combined ratio (col 1): 101.3 (col 2): 100.4 (col 3): 0.9 pts (row end);
+ (row 13) 
+ (col 0): Life/Health' (row end);
+ (row 14) 
+ (col 0): Statutory premiums €mn (col 1): 14,270 (col 2): 15,356 (col 3): (2.1) % (row end);
+ (row 15) 
+ (col 0): Operating profit? €mn (col 1): 702 (col 2): 835, (col 3): (15.9) % (row end);
+ (row 16) 
+ (col 0): Cost-income ratio (col 1): 96.1 (col 2): 95.7 (col 3): 0.4 pts (row end);
+ (row 17) 
+ (col 0): Asset Management (row end);
+ (row 18) 
+ (col 0): Operating revenues €mn (col 1): 1,273 (col 2): 1,116 (col 3): 14.1% (row end);
+ (row 19) 
+ (col 0): Operating profit? €mn (col 1): 528 (col 2): 466 (col 3): 13.3% (row end);
+ (row 20) 
+ (col 0): Cost-income ratio (col 1): 58.5 (col 2): 58.2 (col 3): 03 pts (row end);
+ (row 21) 
+ (col 0): Corporate and Other (row end);
+ (row 22) 
+ (col 0): Total revenues €mn (col 1): 151 (col 2): 128 (col 3): 18.0% (row end);
+ (row 23) 
+ (col 0): Operating profit? €mn (col 1): (223) (col 2): (251) (col 3): (11.2) % (row end);
+ (row 24) 
+ (col 0): Cost-income ratio (Banking) (col 1): 88.2 (col 2): 107.8 (col 3): (19.6) pts (row end);
+ (row 25) 
+ (col 0): BALANCE SHEET"" (row end);
+ (row 26) 
+ (col 0): Total assets as of March 31,5 €mn (col 1): 625,589 (col 2): 624,945 (col 3): 0.1% (row end);
+ (row 27) 
+ (col 0): Shareholders’ equity as of March 31,5 €mn (col 1): 43,560 (col 2): 44,491 (col 3): (Q2.1) % (row end);
+ (row 28) 
+ (col 0): Non-controlling interests as of March 31,° €mn (col 1): 2,055 (col 2): 2,071 (col 3): (0.8) % (row end);
+ (row 29) 
+ (col 0): SHARE INFORMATION (row end);
+ (row 30) 
+ (col 0): Basic earnings per share! (col 1): 1.90 (col 2): 3.47 (col 3): (45.2) % (row end);
+ (row 31) 
+ (col 0): Diluted earnings per share"" (col 1): 1.88 (col 2): 3.46 (col 3): (45.2) % (row end);
+ (row 32) 
+ (col 0): Share price as of March 31,° (col 1): 99.03 (col 2): 88.93 (col 3): 11.4% (row end);
+ (row 33) 
+ (col 0): Market capitalization as of March 31,° €mn (col 1): 45,009 (col 2): 40,419 (col 3): 11.4% (row end);
+ (row 34) 
+ (col 0): OTHER DATA (row end);
+ (row 35) 
+ (col 0): Total assets under management as of March 31,° €bn (col 1): 1,492 (col 2): 1,518 (col 3): (1.) % (row end);
+ (row 36) 
+ (col 0): thereof: Third-party assets under management as of March 31,° €bn (col 1): 1,138 (col 2): 1,164 (col 3): (2.2) % (row end);
+
+
+                    ","(main question): 29905.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2011-03-31
+(meta3): 3
+Sources: [1],[0]
+
+(main question): 30567.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2010-03-31
+(meta3): 3
+Sources: [1],[0]"
+7adff1352bb457b51f3fabfdeaf4be7f4585ba3bcc3d565db20f79b2e25cbe08,65f95cc2e34036446ee85a00,revenues,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What are the total revenues of the company?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION. In the answer please first provide the meta ID (for the main question use 'main question' instead) in brackets and then the answer. If there are several possible answers to the question (with different meta values), structure your answer into multiple answer blocks of the same format, one after the other separated by new lines.
+(meta0): What is the unit?  possible values (separated by $ symbols): $ none $, $ thousands $, $ millions $, $ billions $
+(meta1): What is the currency?  possible values (separated by $ symbols): $ EUR $, $ USD $, $ Other $
+(meta2): As per the end of date? The end date of the respective period possible values: date in the format: YYYY-MM-DD
+(meta3): What is the duration of the period in months?  possible values: positive integer 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    One possible answer block could be (there can be more than one in your response): (main question): 123
+(meta0): $ none $
+(meta1): $ EUR $
+(meta2): 2023-11-24
+(meta3): 123
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[3]: table: (row 0) 
+ (col 0): EUR million Note (col 1): 2020 (col 2): 2019 (row end);
+ (row 1) 
+ (col 0): CONTINUING OPERATIONS (row end);
+ (row 2) 
+ (col 0): Revenue G.01. (col 1): 2,471.9 (col 2): 1,237.6 (row end);
+ (row 3) 
+ (col 0): Cost of sales G.02. (col 1): -1,977.8 (col 2): -926.4 (row end);
+ (row 4) 
+ (col 0): Gross profit (col 1): 494.2 (col 2): 311.2 (row end);
+ (row 5) 
+ (col 0): Marketing expenses G.03. (col 1): -632.4 (col 2): -495.2 (row end);
+ (row 6) 
+ (col 0): IT expenses G.04. (col 1): -152.3 (col 2): -94.8 (row end);
+ (row 7) 
+ (col 0): General administrative expenses G.05. (col 1): 615.3 (col 2): -373.5 (row end);
+ (row 8) 
+ (col 0): Other operating income G.06. (col 1): 36.0 (col 2): 19.9 (row end);
+ (row 9) 
+ (col 0): Other operating expenses G.07. (col 1): 4.5 (col 2): -6.7 (row end);
+ (row 10) 
+ (col 0): Impairment losses on trade receivables (row end);
+ (row 11) 
+ (col 0): and other receivables G.07. (col 1): -19.7 (col 2): -8.8 (row end);
+ (row 12) 
+ (col 0): Operating result (col 1): -894.2 (col 2): -648.0 (row end);
+ (row 13) 
+ (col 0): Net interest result G.08. (col 1): -73.2 (col 2): 9.4 (row end);
+ (row 14) 
+ (col 0): Other financial result G.09. (col 1): -334.4 (col 2): 93.7 (row end);
+ (row 15) 
+ (col 0): Share of profit or loss of associates (row end);
+ (row 16) 
+ (col 0): accounted for using the equity method D.03.e) (col 1): -86.7 (col 2): -99.7 (row end);
+ (row 17) 
+ (col 0): Earnings before income taxes (col 1): -1,388.5 (col 2): -663.4 (row end);
+ (row 18) 
+ (col 0): Income taxes G.10. (col 1): 14.2 (col 2): -26.5 (row end);
+ (row 19) 
+ (col 0): Net loss for the period from (row end);
+ (row 20) 
+ (col 0): continuing operations (col 1): -1,402.7 (col 2): -689.9 (row end);
+ (row 21) 
+ (col 0): Net income for the period from (row end);
+ (row 22) 
+ (col 0): discontinued operations (col 2): 920.2 (row end);
+ (row 23) 
+ (col 0): Net result (col 1): -1,402.7 (col 2): 230.2 (row end);
+
+[0]: Delivery Hero 2 | Annual Report 2020
+[1]: CONSOLIDATED STATEMENT OF PROFIT
+OR LOSS AND OTHER COMPREHENSIVE INCOME
+[2]: for the period from January 1 to December 31, 2020
+[4]: ©
+@
+©
+@)
+©
+[5]: Company | Combined Management Report | Consolidated Financial Statements | Further Information
+[7]: OTHER COMPREHENSIVE INCOME (NET)
+[8]: Items not reclassified to profit or loss:
+[9]: Remeasurement of net liability (asset) arising
+[10]: table: (row 0) 
+ (col 0): on defined benefit pension plans F.10.d) (col 1): -2.5 (col 2): -1.3 (row end);
+ (row 1) 
+ (col 0): Items reclassified to profit or loss in the future: (row end);
+ (row 2) 
+ (col 0): Effect of movements in exchange rates F.10.d) (col 1): 48.2 (col 2): 27.4 (row end);
+ (row 3) 
+ (col 0): Other comprehensive income (col 1): -50.8 (col 2): -28.7 (row end);
+ (row 4) 
+ (col 0): Total comprehensive income for the period (col 1): -1,453.5 (col 2): 201.5 (row end);
+ (row 5) 
+ (col 0): Net result for the period attributable to: (row end);
+ (row 6) 
+ (col 0): Shareholders of the parent (col 1): -1,404.6 (col 2): 231.4 (row end);
+ (row 7) 
+ (col 0): Non-controlling interests (col 1): 1.9 (col 2): -1.1 (row end);
+ (row 8) 
+ (col 0): Total comprehensive income attributable to: (row end);
+ (row 9) 
+ (col 0): Shareholders of the parent (col 1): -1,459.2 (col 2): 202.7 (row end);
+ (row 10) 
+ (col 0): Non-controlling interests (col 1): 5.8 (col 2): -1.1 (row end);
+ (row 11) 
+ (col 0): Diluted and basic earnings per share from (row end);
+ (row 12) 
+ (col 0): continuing operations in EUR (col 1): -7.00 (col 2): -3.62 (row end);
+ (row 13) 
+ (col 0): Diluted and basic earnings per share from (row end);
+ (row 14) 
+ (col 0): continued and discontinued operations in EUR (col 1): -7.00 (col 2): 1.22 (row end);
+
+[6]: table: (row 0) 
+ (col 0): EUR million Note (col 1): 2020 (col 2): 2019 (row end);
+
+
+                    ","(main question): 2471.9
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2020-12-31
+(meta3): 12
+Sources: [2],[0]
+
+(main question): 1237.6
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2019-12-31
+(meta3): 12
+Sources: [3]"
+912b2634f1ca842bc797e7f515a3268e0c2c5f93ff96bab80e72ce096dbdc619,65f95cc2e34036446ee85a00,revenues,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What are the total revenues of the company?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION. In the answer please first provide the meta ID (for the main question use 'main question' instead) in brackets and then the answer. If there are several possible answers to the question (with different meta values), structure your answer into multiple answer blocks of the same format, one after the other separated by new lines.
+(meta0): What is the unit?  possible values (separated by $ symbols): $ none $, $ thousands $, $ millions $, $ billions $
+(meta1): What is the currency?  possible values (separated by $ symbols): $ EUR $, $ USD $, $ Other $
+(meta2): As per the end of date? The end date of the respective period possible values: date in the format: YYYY-MM-DD
+(meta3): What is the duration of the period in months?  possible values: positive integer 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    One possible answer block could be (there can be more than one in your response): (main question): 123
+(meta0): $ none $
+(meta1): $ EUR $
+(meta2): 2023-11-24
+(meta3): 123
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[6]: table: (row 0) 
+ (col 1): 2020 (col 2): 2021 (row end);
+ (row 1) 
+ (col 0): Revenue? (col 1): 15,464 (col 2): 18,860 (row end);
+ (row 2) 
+ (col 0): Other operating income (col 1): 422 (col 2): 414 (row end);
+ (row 3) 
+ (col 0): Changes in inventories and work performed and capitalised (col 1): 20 (col 2): 37 (row end);
+ (row 4) 
+ (col 0): Materials expense? (col 1): -7,687 (col 2): -9,583 (row end);
+ (row 5) 
+ (col 0): Staff costs (col 1): -5,528 (col 2): -5,838 (row end);
+ (row 6) 
+ (col 0): Depreciation, amortisation and impairment losses (col 1): -1,021 (col 2): -930 (row end);
+ (row 7) 
+ (col 0): Other operating expenses (col 1): -1,077 (col 2): -1,049 (row end);
+ (row 8) 
+ (col 0): Net income/loss from investments accounted for using the equity method (col 1): -1 (row end);
+ (row 9) 
+ (col 0): Profit from operating acti ies (EBIT) (col 1): 592 (col 2): 1,911 (row end);
+ (row 10) 
+ (col 0): Financial income (col 1): 85 (col 2): 30 (row end);
+ (row 11) 
+ (col 0): Finance costs (col 1): -207 (col 2): -178 (row end);
+ (row 12) 
+ (col 0): Foreign currency losses (col 1): -29 (col 2): -6 (row end);
+ (row 13) 
+ (col 0): Net finance costs (col 1): -151 (col 2): -154 (row end);
+ (row 14) 
+ (col 0): Profit before income taxes (col 1): 441 (col 2): 1,757 (row end);
+ (row 15) 
+ (col 0): Income taxes (col 1): -106 (col 2): -492 (row end);
+ (row 16) 
+ (col 0): Consolidated net profit for the period (col 1): 335 (col 2): 1,265 (row end);
+ (row 17) 
+ (col 0): attributable to Deutsche Post AG shareholders (col 1): 301 (col 2): 1,190 (row end);
+ (row 18) 
+ (col 0): attributable to non-controlling interests (col 1): 34 (col 2): 75 (row end);
+ (row 19) 
+ (col 0): Basic earnings per share (€) (col 1): 0.24 (col 2): 0.96 (row end);
+ (row 20) 
+ (col 0): Diluted earnings per share (€) (col 1): 0.24 (col 2): 0.94 (row end);
+
+[0]: @ @© SELECTED FINANCIAL INFORMATION
+[1]: INCOME
+[2]: STATEMENT
+[4]: to 31 March
+[5]: €m
+[8]: Prior-year figures adjusted, © Segment reporting.
+[9]: 9
+[10]: Deutsche Post DHL Group — Quarterly Statement as at 31 March 2021
+[7]: table: (row 0) 
+ (col 0): 1 (row end);
+
+[3]: table: (row 0) 
+ (col 0): 1 January (row end);
+
+
+                    ","(main question): 15464.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2020-12-31
+(meta3): 3
+Sources: [6]
+
+(main question): 18860.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2021-12-31
+(meta3): 3
+Sources: [6]"
+a7f677acf6972b2b6365cad3b16a30e3e53987f061f7fec83021c37e92d29cc8,65f95cc2e34036446ee85a00,revenues,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What are the total revenues of the company?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION. In the answer please first provide the meta ID (for the main question use 'main question' instead) in brackets and then the answer. If there are several possible answers to the question (with different meta values), structure your answer into multiple answer blocks of the same format, one after the other separated by new lines.
+(meta0): What is the unit?  possible values (separated by $ symbols): $ none $, $ thousands $, $ millions $, $ billions $
+(meta1): What is the currency?  possible values (separated by $ symbols): $ EUR $, $ USD $, $ Other $
+(meta2): As per the end of date? The end date of the respective period possible values: date in the format: YYYY-MM-DD
+(meta3): What is the duration of the period in months?  possible values: positive integer 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    One possible answer block could be (there can be more than one in your response): (main question): 123
+(meta0): $ none $
+(meta1): $ EUR $
+(meta2): 2023-11-24
+(meta3): 123
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[4]: table: (row 0) 
+ (col 2): For the three months (row end);
+ (row 1) 
+ (col 2): ended March 31, (row end);
+ (row 2) 
+ (col 0): Note (col 1): 2021 (col 2): 2020 (row end);
+ (row 3) 
+ (col 0): Revenue: (row end);
+ (row 4) 
+ (col 0): Health care services 2a (col 1): 3,325,459 (col 2): 3,594,663 (row end);
+ (row 5) 
+ (col 0): Health care products 2a (col 1): 884,666 (col 2): 893,133 (row end);
+ (row 6) 
+ (col 1): 4,210,125 (col 2): 4,487,796 (row end);
+ (row 7) 
+ (col 0): Costs of revenue: (row end);
+ (row 8) 
+ (col 0): Health care services (col 1): 2,568,382 (col 2): 2,707,649 (row end);
+ (row 9) 
+ (col 0): Health care products (col 1): 435,086 (col 2): 389,592 (row end);
+ (row 10) 
+ (col 1): 3,003,468 (col 2): 3,097,241 (row end);
+ (row 11) 
+ (col 0): Gross profit (col 1): 1,206,657 (col 2): 1,390,555 (row end);
+ (row 12) 
+ (col 0): Operating (income) expenses: (row end);
+ (row 13) 
+ (col 0): Selling, general and administrative (col 1): 711,515 (col 2): 809,917 (row end);
+ (row 14) 
+ (col 0): Research and development 2b (col 1): 48,645 (col 2): 45,917 (row end);
+ (row 15) 
+ (col 0): Income from equity method investees i (col 1): (27,756) (col 2): (20,409) (row end);
+ (row 16) 
+ (col 0): Operating income (col 1): 474,253 (col 2): 555,130 (row end);
+ (row 17) 
+ (col 0): Other (income) expense: (row end);
+ (row 18) 
+ (col 0): Interest income (col 1): (15,256) (col 2): (8,751) (row end);
+ (row 19) 
+ (col 0): Interest expense (col 1): 91,328 (col 2): 112,970 (row end);
+ (row 20) 
+ (col 0): Income before income taxes (col 1): 398,181 (col 2): 450,911 (row end);
+ (row 21) 
+ (col 0): Income tax expense (col 1): 93,847 (col 2): 100,542 (row end);
+ (row 22) 
+ (col 0): Net income : (col 1): 304,334 (col 2): 350,369 (row end);
+ (row 23) 
+ (col 0): Net income attributable to noncontrolling interests . (col 1): 55,388 (col 2): 67,650 (row end);
+ (row 24) 
+ (col 0): Net income attributable to shareholders of FMC-AG & Co. KGaA (col 1): 248,946 (col 2): 282,719 (row end);
+ (row 25) 
+ (col 0): Basic earnings per share 2c (col 1): 0.85 (col 2): 0.95 (row end);
+ (row 26) 
+ (col 0): Diluted earnings per share 2c (col 1): 0.85 (col 2): 0.95 (row end);
+
+[0]: FRESENIUS MEDICAL CARE AG & Co. KGaA
+Financial statements
+Consolidated statements of income
+[1]: (unaudited)
+[2]: Consolidated statements of income
+in € thousands (“THOUS”) , except per share
+[3]: data
+[5]: See accompanying notes to unaudited consolidated financial statements.
+[6]: 27
+
+                    ","(main question): 4210125.0
+(meta0): $ thousands $
+(meta1): $ EUR $
+(meta2): 2021-03-31
+(meta3): 3
+Sources: [2],[0],[0],[0]
+
+(main question): 4487796.0
+(meta0): $ thousands $
+(meta1): $ EUR $
+(meta2): 2020-03-31
+(meta3): 3
+Sources: [2],[0],[0],[0]"
+e728768d8ebb9cea4e96406352bed0838534a0080621519cd2cc8147828f9f18,65f95cc2e34036446ee85a00,revenues,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What are the total revenues of the company?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION. In the answer please first provide the meta ID (for the main question use 'main question' instead) in brackets and then the answer. If there are several possible answers to the question (with different meta values), structure your answer into multiple answer blocks of the same format, one after the other separated by new lines.
+(meta0): What is the unit?  possible values (separated by $ symbols): $ none $, $ thousands $, $ millions $, $ billions $
+(meta1): What is the currency?  possible values (separated by $ symbols): $ EUR $, $ USD $, $ Other $
+(meta2): As per the end of date? The end date of the respective period possible values: date in the format: YYYY-MM-DD
+(meta3): What is the duration of the period in months?  possible values: positive integer 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    One possible answer block could be (there can be more than one in your response): (main question): 123
+(meta0): $ none $
+(meta1): $ EUR $
+(meta2): 2023-11-24
+(meta3): 123
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[12]: table: (row 0) 
+ (col 7): +/- (row end);
+ (row 1) 
+ (col 0): in million euros (col 2): 2017 (col 3): 2018 (col 4): 2019 (col 5): 2020 (col 6): 2021 (col 7): 2020-2021 (row end);
+ (row 2) 
+ (col 0): Sales (col 2): 20,029 (col 3): 19,899 (col 4): 20,114 (col 5): 19,250 (col 6): 20,066 (col 7): 4.2% (row end);
+ (row 3) 
+ (col 0): Operating profit (EBIT) (col 2): 3,055 (col 3): 3,116 (col 4): 2,899 (col 5): 2,019 (col 6): 2,213 (col 7): 9.6% (row end);
+ (row 4) 
+ (col 0): Adjusted’ operating profit (col 2): 3,461 (col 3): 3,496 (col 4): 3,220 (col 5): 2,579 (col 6): 2,686 (col 7): 4.2% (row end);
+ (row 5) 
+ (col 0): Return on sales (EBIT margin) (col 2): 15.3% (col 3): 15.7% (col 4): 14.4% (col 5): 10.5% (col 6): 11.0% (col 7): O.5pp (row end);
+ (row 6) 
+ (col 0): Adjusted’ return on sales (col 2): 17.3% (col 3): 17.6% (col 4): 16.0% (col 5): 13.4% (col 6): 13.4% (col 7): 0.0pp (row end);
+ (row 7) 
+ (col 0): Net income (col 2): 2,541 (col 3): 2,330 (col 4): 2,103 (col 5): 1,424 (col 6): 1,629 (col 7): 14.5% (row end);
+ (row 8) 
+ (col 0): Attributable to (col 2): 22 (col 3): 16 (col 4): 18 (col 5): 16 (col 6): 5 (col 7): - (row end);
+ (row 9) 
+ (col 0): Attributable (col 1): of (row end);
+ (row 10) 
+ (col 0): Henkel AG & Co. KGaA (col 2): 2,519 (col 3): 2,314 (col 4): 2,085 (col 5): 1,408 (col 6): 1,634 (col 7): 16.1% (row end);
+ (row 11) 
+ (col 0): Earnings per preferred share (col 1): (EPS) (col 2): 5.81 (col 3): 5.34 (col 4): 4.81 (col 5): 3.25 (col 6): 3.78 (col 7): 16.3% (row end);
+ (row 12) 
+ (col 0): Adjusted’ earnings per (col 1): share (row end);
+ (row 13) 
+ (col 0): (adjusted EPS) (col 2): 5.85 (col 3): 6.01 (col 4): 5.43 (col 5): 4.26 (col 6): 4.56 (col 7): 7.0% (row end);
+ (row 14) 
+ (col 0): Return on capital employed (col 2): 16.3% (col 3): 15.5% (col 4): 13.5% (col 5): 9.6% (col 6): 11.0% (col 7): 14pp (row end);
+ (row 15) 
+ (col 0): Dividend per ordinary share (col 2): 177 (col 3): 1.83 (col 4): 1.83 (col 5): 1.83 (col 6): 1.83? (row end);
+ (row 16) 
+ (col 0): Dividend per preferred share (col 2): 1.79 (col 3): 1.85 (col 4): 1.85 (col 5): 1.85 (col 6): 1.857 (row end);
+ (row 17) 
+ (col 0): Pp = percentage points (row end);
+ (row 18) 
+ (col 0): Sales by business unit (col 1): 2021 (col 3): Sales (col 4): 2021 (row end);
+
+[0]: Henkel Annual Report 2021
+[1]: = Contents
+[2]: Fiscal
+[3]: 2021
+[4]: at
+[5]: a
+[6]: glance
+[7]: The Company
+[8]: Shares and bonds
+[9]: Corporate governance
+[10]: Key financials
+[11]: Combined management report
+[13]: Consolidated financial statements
+[14]: Further information
+[15]: (adjusted
+[16]: Credits
+[17]: (adjusted
+[18]: Contacts
+[19]: non-controlling
+to shareholders
+[20]: Financial calendar
+[21]: preferred
+[22]: (ROCE)
+[23]: 1%
+[24]: = Adhesive Technologies
+= Beauty Care
+Laundry & Home Care
+Corporate
+[25]: 33%
+[27]: we
+18%
+[28]: ' Adjusted for one-time expenses and income, and for restructuring expenses.
+? Proposal to shareholders for the Annual General Meeting on April 4, 2022.
+3 Sales and services not assignable to the individual business units.
+* Eastern Europe, Africa/Middle East, Latin America, Asia (excluding Japan) .
+[29]: Organic
+sales growth
+[30]: 7.8%
+[31]: Adjusted’
+EBIT margin
+[32]: 13.4%
+[33]: Adjusted
+EPS
+[34]: 4.56
+[35]: Development of adjusted’
+EPS at constant exchange
+[36]: rates
+[37]: 3% 1%
+[38]: 9.2%
+[39]: = Emerging markets*
+= Western Europe
+North America
+[40]: 25%
+[41]: 41%
+[42]: Japan/Australia/
+New Zealand
+[43]: —_
+[44]: Dividend per preferred
+share?
+[45]: = Corporate
+[46]: «1.85
+[26]: table: (row 0) 
+ (col 0): 48% (row end);
+
+
+                    ","(main question): 20066.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2021-12-31
+(meta3): 12
+Sources: [12]
+
+(main question): 19250.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2020-12-31
+(meta3): 12
+Sources: [12]
+
+(main question): 20029
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2017-12-31
+(meta3): 12
+Sources: [12]
+
+(main question): 19899
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2018-12-31
+(meta3): 12
+Sources: [12]
+
+(main question): 20114
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2019-12-31
+(meta3): 12
+Sources: [12]"
+b392facd72f6b3f79e012c0a8d86e970c3a93597f10dde1fdc41a13f47a91085,65f95cc2e34036446ee85a00,revenues,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What are the total revenues of the company?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION. In the answer please first provide the meta ID (for the main question use 'main question' instead) in brackets and then the answer. If there are several possible answers to the question (with different meta values), structure your answer into multiple answer blocks of the same format, one after the other separated by new lines.
+(meta0): What is the unit?  possible values (separated by $ symbols): $ none $, $ thousands $, $ millions $, $ billions $
+(meta1): What is the currency?  possible values (separated by $ symbols): $ EUR $, $ USD $, $ Other $
+(meta2): As per the end of date? The end date of the respective period possible values: date in the format: YYYY-MM-DD
+(meta3): What is the duration of the period in months?  possible values: positive integer 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    One possible answer block could be (there can be more than one in your response): (main question): 123
+(meta0): $ none $
+(meta1): $ EUR $
+(meta2): 2023-11-24
+(meta3): 123
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[5]: table: (row 0) 
+ (col 0): for profit attributable to shareholders of Mercedes-Benz Group AG (col 1): 37 (row end);
+
+[3]: table: (row 0) 
+ (col 2): 2021 (col 3): 2020 (row end);
+ (row 1) 
+ (col 0): In millions of euros (row end);
+ (row 2) 
+ (col 0): Revenue (col 2): 133,893 (col 3): 121,778 (row end);
+ (row 3) 
+ (col 0): Cost of sales (col 2): -103,218 (col 3): -101,592 (row end);
+ (row 4) 
+ (col 0): Gross profit (col 2): 30,675 (col 3): 20,186 (row end);
+ (row 5) 
+ (col 0): Selling expenses (col 2): -9,194 (col 3): -8,966 (row end);
+ (row 6) 
+ (col 0): General administrative expenses (col 2): -2,808 (col 3): -2,507 (row end);
+ (row 7) 
+ (col 0): Research and non-capitalised development costs (col 2): -5,467 (col 3): -4,839 (row end);
+ (row 8) 
+ (col 0): Other operating income (col 2): 2,888 (col 3): 2,384 (row end);
+ (row 9) 
+ (col 0): Other operating expense (col 2): -1,735 (col 3): -591 (row end);
+ (row 10) 
+ (col 0): Profit on equity-method investments, net (col 1): 14 (col 2): 1,352 (col 3): 747 (row end);
+ (row 11) 
+ (col 0): Other financial income/expense, net (col 2): 317 (col 3): -323 (row end);
+ (row 12) 
+ (col 0): Earnings before interest and taxes (EBIT) (col 1): 35 (col 2): 16,028 (col 3): 6,091 (row end);
+ (row 13) 
+ (col 0): Interest income (col 2): 212 (col 3): 224 (row end);
+ (row 14) 
+ (col 0): Interest expense (col 2): -429 (col 3): -358 (row end);
+ (row 15) 
+ (col 0): Profit of continuing operations, before taxes (col 2): 15,811 (col 3): 5,957 (row end);
+ (row 16) 
+ (col 0): Income taxes (col 1): 10 (col 2): -4,761 (col 3): -1,926 (row end);
+ (row 17) 
+ (col 0): Profit of continuing operations (col 2): 11,050 (col 3): 4,031 (row end);
+ (row 18) 
+ (col 0): Profit/loss of discontinued operations, after taxes (col 2): 12,346 (col 3): -22 (row end);
+ (row 19) 
+ (col 0): Net profit (col 2): 23,396 (col 3): 4,009 (row end);
+ (row 20) 
+ (col 0): thereof profit attributable to non-controlling interests (col 2): 390 (col 3): 382 (row end);
+ (row 21) 
+ (col 0): thereof profit attributable to shareholders of Mercedes-Benz Group AG (col 2): 23,006 (col 3): 3,627 (row end);
+ (row 22) 
+ (col 0): thereof continuing operations (col 2): 10,695 (col 3): 3,656 (row end);
+ (row 23) 
+ (col 0): thereof discontinued operations (col 2): 12,341 (col 3): -29 (row end);
+
+[0]: Consolidated
+[1]: Statement
+[2]: D.O1
+[4]: Earnings per share (in euros)
+[7]: The accompanying notes are an integral part of these Consolidated Financial Statements.
+[8]: of Income
+[9]: Note
+[6]: table: (row 0) 
+ (col 0): Basic (col 1): 21.50 (col 2): 3.39 (row end);
+ (row 1) 
+ (col 0): thereof continuing operations (col 1): 10.00 (col 2): 3.42 (row end);
+ (row 2) 
+ (col 0): thereof discontinued operations (col 1): 11.50 (col 2): -0.03 (row end);
+ (row 3) 
+ (col 0): Diluted (col 1): 21.50 (col 2): 3.39 (row end);
+ (row 4) 
+ (col 0): thereof continuing operations (col 1): 10.00 (col 2): 3.42 (row end);
+ (row 5) 
+ (col 0): thereof discontinued operations (col 1): 11.50 (col 2): -0.03 (row end);
+
+
+                    ","(main question): 133893.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2021-12-31
+(meta3): 12
+Sources: [3]
+
+(main question): 121778.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2020-12-31
+(meta3): 12
+Sources: [3]"
+c0714507ec87406229facbf5aa0f3cf3ac305b9162c39a9dc5f5780babadfc10,65f95cc2e34036446ee85a00,revenues,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What are the total revenues of the company?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION. In the answer please first provide the meta ID (for the main question use 'main question' instead) in brackets and then the answer. If there are several possible answers to the question (with different meta values), structure your answer into multiple answer blocks of the same format, one after the other separated by new lines.
+(meta0): What is the unit?  possible values (separated by $ symbols): $ none $, $ thousands $, $ millions $, $ billions $
+(meta1): What is the currency?  possible values (separated by $ symbols): $ EUR $, $ USD $, $ Other $
+(meta2): As per the end of date? The end date of the respective period possible values: date in the format: YYYY-MM-DD
+(meta3): What is the duration of the period in months?  possible values: positive integer 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    One possible answer block could be (there can be more than one in your response): (main question): 123
+(meta0): $ none $
+(meta1): $ EUR $
+(meta2): 2023-11-24
+(meta3): 123
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[4]: table: (row 0) 
+ (col 0): € million (col 1): 2021 (col 2): 2020 (col 3): € million (col 4): % (row end);
+ (row 1) 
+ (col 0): Net sales (col 1): 19,687 (col 2): 17,534 (col 3): 2,152 (col 4): 12.3% (row end);
+ (row 2) 
+ (col 0): Operating result (EBIT) * (col 1): 4,179 (col 2): 2,985 (col 3): 1,194 (col 4): 40.0% (row end);
+ (row 3) 
+ (col 0): Margin (% of net sales) * (col 1): 21.2% (col 2): 17.0% (row end);
+ (row 4) 
+ (col 0): EBITDA? (col 1): 5,946 (col 2): 4,923 (col 3): 1,023 (col 4): 20.8% (row end);
+ (row 5) 
+ (col 0): Margin (% of net sales) * (col 1): 30.2% (col 2): 28.1% (row end);
+ (row 6) 
+ (col 0): EBITDA pre* (col 1): 6,103 (col 2): 5,201 (col 3): 901 (col 4): 17.3% (row end);
+ (row 7) 
+ (col 0): Margin (% of net sales) * (col 1): 31.0% (col 2): 29.7% (row end);
+ (row 8) 
+ (col 0): Profit after tax (col 1): 3,065 (col 2): 1,994 (col 3): 1,071 (col 4): 53.7% (row end);
+ (row 9) 
+ (col 0): Earnings per share (in €) (col 1): 7.03 (col 2): 4.57 (col 3): 2.46 (col 4): 53.8% (row end);
+ (row 10) 
+ (col 0): Earnings per share pre (€) ! (col 1): 8.72 (col 2): 6.70 (col 3): 2.02 (col 4): 30.1% (row end);
+ (row 11) 
+ (col 0): Operating cash flow (col 1): 4,616 (col 2): 3,477 (col 3): 1,138 (col 4): 32.7% (row end);
+
+[9]: table: (row 0) 
+ (col 0): 39,687 (col 1): 2021 (row end);
+ (row 1) 
+ (col 0): > (col 1): 2020 (row end);
+ (row 2) 
+ (col 0): — Ce (col 1): 2019 (row end);
+ (row 3) 
+ (col 0): > Ca (col 1): 2018 (row end);
+ (row 4) 
+ (col 0): + (col 1): 2017 (row end);
+
+[0]: KEY
+[1]: FIGURES
+[2]: 202)
+[3]: Merck Group
+[5]: + Not defined by International
+2 Not defined by International
+[6]: Financial Reporting Standards (IFRS) .
+Financial Reporting Standards (IFRS) ; EBITDA corresponds to operating result (EBIT) adjusted by depreciation, amortization,
+impairment losses, and reversals of impairment losses.
+[7]: Merck Group
+[8]: Net sales
+€ million
+[11]: Change
+[12]: Merck Group
+[13]: EBITDA pret
+€ million
+[14]: 603
+>
+—
+Se 3800
+— Ck
+[15]: ‘Not defined by International Financial Reporting Standards (IFRS) .
+[10]: table: (row 0) 
+ (col 0): 2021 (row end);
+ (row 1) 
+ (col 0): 2020 (row end);
+ (row 2) 
+ (col 0): 2019 (row end);
+ (row 3) 
+ (col 0): 2018 (row end);
+ (row 4) 
+ (col 0): 2017 (row end);
+
+
+                    ","(main question): 19687.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2021-12-31
+(meta3): 12
+Sources: [4],[0]
+
+(main question): 17534.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2020-12-31
+(meta3): 12
+Sources: [4],[0]"
+dc21f9866c3c66b5b00cfde313cfb3a4df2e72df5d58f57ee33ae45a041aa2e5,65f95cc2e34036446ee85a00,revenues,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What are the total revenues of the company?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION. In the answer please first provide the meta ID (for the main question use 'main question' instead) in brackets and then the answer. If there are several possible answers to the question (with different meta values), structure your answer into multiple answer blocks of the same format, one after the other separated by new lines.
+(meta0): What is the unit?  possible values (separated by $ symbols): $ none $, $ thousands $, $ millions $, $ billions $
+(meta1): What is the currency?  possible values (separated by $ symbols): $ EUR $, $ USD $, $ Other $
+(meta2): As per the end of date? The end date of the respective period possible values: date in the format: YYYY-MM-DD
+(meta3): What is the duration of the period in months?  possible values: positive integer 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    One possible answer block could be (there can be more than one in your response): (main question): 123
+(meta0): $ none $
+(meta1): $ EUR $
+(meta2): 2023-11-24
+(meta3): 123
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[2]: table: (row 0) 
+ (col 0): in € million (unless stated otherwise) (col 1): 2021 (col 2): 2020 (col 3): in% (row end);
+ (row 1) 
+ (col 0): Revenue and earnings (row end);
+ (row 2) 
+ (col 0): Revenue (col 1): 4,188 (col 2): 3,977 (col 3): 5.3 (row end);
+ (row 3) 
+ (col 0): thereof: commercial engine business"" (col 1): 1,066 (col 2): 1,052 (col 3): 1.3 (row end);
+ (row 4) 
+ (col 0): thereof: military engine business” (col 1): 482 (col 2): 483 (col 3): -0.2 (row end);
+ (row 5) 
+ (col 0): thereof: commercial maintenance business"" (col 1): 2,741 (col 2): 2,522 (col 3): 8.7 (row end);
+ (row 6) 
+ (col 0): Gross profit (col 1): 586 (col 2): 492 (col 3): 19.1 (row end);
+ (row 7) 
+ (col 0): Earnings before interest and taxes (EBIT) (col 1): 355 (col 2): 262 (col 3): 35.4 (row end);
+ (row 8) 
+ (col 0): Net income (col 1): 231 (col 2): 147 (col 3): 56.9 (row end);
+ (row 9) 
+ (col 0): Adjusted earnings (row end);
+ (row 10) 
+ (col 0): Adjusted earnings before interest and taxes (adjusted EBIT) (col 1): 468 (col 2): 416 (col 3): 12.6 (row end);
+ (row 11) 
+ (col 0): Adjusted EBIT margin (in %) (col 1): 11.2 (col 2): 10.5 (row end);
+ (row 12) 
+ (col 0): Net income (col 1): 342 (col 2): 294 (col 3): 16.0 (row end);
+ (row 13) 
+ (col 0): Balance sheet (row end);
+ (row 14) 
+ (col 0): Total assets (col 1): 8,304 (col 2): 8,104 (col 3): 2.5 (row end);
+ (row 15) 
+ (col 0): Equity (col 1): 2,760 (col 2): 2,635 (col 3): 4.8 (row end);
+ (row 16) 
+ (col 0): Equity ratio (in %) (col 1): 33.2 (col 2): 32.5 (row end);
+ (row 17) 
+ (col 0): Net financial debt (col 1): 673 (col 2): 781 (col 3): -13.8 (row end);
+ (row 18) 
+ (col 0): Cash flow (row end);
+ (row 19) 
+ (col 0): Cash flow from operating activities (col 1): 567 (col 2): 386 (col 3): 47.1 (row end);
+ (row 20) 
+ (col 0): Cash flow from investing activities (col 1): -345 (col 2): -245 (col 3): -40.9 (row end);
+ (row 21) 
+ (col 0): Free cash flow (col 1): 240 (col 2): 105 (col 3): 7100 (row end);
+ (row 22) 
+ (col 0): Cash flow from financing activities (col 1): -276 (col 2): 504 (col 3): <100 (row end);
+ (row 23) 
+ (col 0): Number of employees at year end (row end);
+ (row 24) 
+ (col 0): Commercial and military engine business (col 1): 6,497 (col 2): 6,409 (col 3): 1.4 (row end);
+ (row 25) 
+ (col 0): Commercial maintenance business (col 1): 4,011 (col 2): 3,904 (col 3): 2.7 (row end);
+ (row 26) 
+ (col 0): Total number of employees (col 1): 10,508 (col 2): 10,313 (col 3): 1.9 (row end);
+ (row 27) 
+ (col 0): Share indicators (row end);
+ (row 28) 
+ (col 0): Earnings per share (in €) (row end);
+ (row 29) 
+ (col 0): Basic earnings per share (col 1): 4.17 (col 2): 2.63 (col 3): 58.5 (row end);
+ (row 30) 
+ (col 0): Diluted earnings per share (col 1): 4.09 (col 2): 2.59 (col 3): 57.9 (row end);
+
+[0]: Key facts and figures with year-on-year comparison
+[1]: [T1] Selected consolidated financial information and key figures at a glance
+[3]: "") Before consolidation.
+[4]: Change against
+previous year
+
+                    ","(main question): 4188.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2021-12-31
+(meta3): 12
+Sources: [2]
+
+(main question): 3977.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2020-12-31
+(meta3): 12
+Sources: [2]"
+e6770bda9a6943b6b13e083e1641b1bb030aa59fdfb3b1323b6cc69c938c3df9,65f95cc2e34036446ee85a00,revenues,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What are the total revenues of the company?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION. In the answer please first provide the meta ID (for the main question use 'main question' instead) in brackets and then the answer. If there are several possible answers to the question (with different meta values), structure your answer into multiple answer blocks of the same format, one after the other separated by new lines.
+(meta0): What is the unit?  possible values (separated by $ symbols): $ none $, $ thousands $, $ millions $, $ billions $
+(meta1): What is the currency?  possible values (separated by $ symbols): $ EUR $, $ USD $, $ Other $
+(meta2): As per the end of date? The end date of the respective period possible values: date in the format: YYYY-MM-DD
+(meta3): What is the duration of the period in months?  possible values: positive integer 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    One possible answer block could be (there can be more than one in your response): (main question): 123
+(meta0): $ none $
+(meta1): $ EUR $
+(meta2): 2023-11-24
+(meta3): 123
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[2]: table: (row 0) 
+ (col 0): € million (col 1): Qt 2021 (col 2): Q1 2020 (col 3): Change (row end);
+ (row 1) 
+ (col 0): Net sales (col 1): 4,631 (col 2): 4,370 (col 3): 6.0% (row end);
+ (row 2) 
+ (col 0): Operating result (EBIT) * (col 1): 1,043 (col 2): 716 (col 3): 45.7% (row end);
+ (row 3) 
+ (col 0): Margin (% of net sales) ! (col 1): 22.5% (col 2): 16.4% (row end);
+ (row 4) 
+ (col 0): EBITDA! (col 1): 1,467 (col 2): 1,148 (col 3): 27.8% (row end);
+ (row 5) 
+ (col 0): Margin (% of net sales) "" (col 1): 31.7% (col 2): 26.3% (row end);
+ (row 6) 
+ (col 0): EBITDA pre (col 1): 1,511 (col 2): 1,181 (col 3): 27.9% (row end);
+ (row 7) 
+ (col 0): Margin (% of net sales) ! (col 1): 32.6% (col 2): 27.0% (row end);
+ (row 8) 
+ (col 0): Profit after tax (col 1): 748 (col 2): 458 (col 3): 63.3% (row end);
+ (row 9) 
+ (col 0): Earnings per share (€) (col 1): 1.72 (col 2): 1.05 (col 3): 63.8% (row end);
+ (row 10) 
+ (col 0): Earnings per share pre (€) ! (col 1): 2.18 (col 2): 1.50. (col 3): 45.3% (row end);
+ (row 11) 
+ (col 0): Operating cash flow (col 1): 1,216 (col 2): 516 (col 3): > 100.0% (row end);
+
+[0]: MERCK
+[1]: — IN BRIEF
+[3]: € million
+[4]: @sETTTTTT)
+[6]: ?
+[7]: CEE
+[8]: ®
+[9]: CED
+[10]: a)
+[11]: * Not defined by International Financial Reporting Standards (IFRS) .
+[5]: table: (row 0) 
+ (col 0): ¥ CED (col 1): (ao) (row end);
+ (row 1) 
+ (col 1): (200 (row end);
+
+
+                    ","(main question): 4631.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): n/a
+(meta3): 3
+Sources: [2]
+
+(main question): 4370.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): n/a
+(meta3): 3
+Sources: [2]"
+52797846fd59351e0d8dac987efb1ef0b69bcc4276e601e17d16f1045ba427a3,65f95cc2e34036446ee85a00,revenues,"You are supposed to answer a question based on text fragments that are provided. The fragments start with a number and then the actual text. The lower the number of the fragment, the earlier the fragment appeared in the document (reading from left to right, top to bottom). Please respond as concise as possible. 
+
+
+                    The question is: What are the total revenues of the company?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION. In the answer please first provide the meta ID (for the main question use 'main question' instead) in brackets and then the answer. If there are several possible answers to the question (with different meta values), structure your answer into multiple answer blocks of the same format, one after the other separated by new lines.
+(meta0): What is the unit?  possible values (separated by $ symbols): $ none $, $ thousands $, $ millions $, $ billions $
+(meta1): What is the currency?  possible values (separated by $ symbols): $ EUR $, $ USD $, $ Other $
+(meta2): As per the end of date? The end date of the respective period possible values: date in the format: YYYY-MM-DD
+(meta3): What is the duration of the period in months?  possible values: positive integer 
+
+                    
+                    Please at the end of each answer also provide the numbers of the text fragments you used to answer in square brackets. 
+
+
+                    One possible answer block could be (there can be more than one in your response): (main question): 123
+(meta0): $ none $
+(meta1): $ EUR $
+(meta2): 2023-11-24
+(meta3): 123
+Sources: [241],[423] 
+
+                    
+                    This is the available data to fulfill the task:
+
+                     (For the following data, if tables have empty cells, they are omitted)
+[3]: table: (row 0) 
+ (col 1): Q1 2021 (col 2): Q1 2020 (col 3): Change % (col 4): FY 2020 (row end);
+ (row 1) 
+ (col 0): Revenue and earnings a (row end);
+ (row 2) 
+ (col 0): Net revenue (col 1): 26,390 (col 2): 19,943 (col 3): 32.3 (col 4): 100,999 (row end);
+ (row 3) 
+ (col 0): Of which: domestic % (col 1): 23.6 (col 2): 30.3 (col 4): 24.5 (row end);
+ (row 4) 
+ (col 0): Of which: international % (col 1): 76.4 (col 2): 69.7 (col 4): 75.5 (row end);
+ (row 5) 
+ (col 0): Profit (loss) from operations (EBIT) (col 1): 3,519 (col 2): 2,511 (col 3): 40.1 (col 4): 12,804 (row end);
+ (row 6) 
+ (col 0): Net profit (loss) (col 1): 936 (col 2): 916 (col 3): 2.2 (col 4): 4,158 (row end);
+ (row 7) 
+ (col 0): Net profit (loss) (adjusted for special factors) (col 1): 1,201 (col 2): 1,284 (col 3): (6.5) (col 4): 5,715 (row end);
+ (row 8) 
+ (col 0): EBITDA (col 1): 10,361 (col 2): 6,940 (col 3): 49.3 (col 4): 38,633 (row end);
+ (row 9) 
+ (col 0): EBITDA AL (col 1): 8,798 (col 2): 5,921 (col 3): 48.6 (col 4): 33,178 (row end);
+ (row 10) 
+ (col 0): EBITDA (adjusted for special factors) (col 1): 10,698 (col 2): 7,563 (col 3): 41.5 (col 4): 40,374 (row end);
+ (row 11) 
+ (col 0): EBITDA AL (adjusted for special factors) (col 1): 9,245 (col 2): 6,544 (col 3): 41.3 (col 4): 35,017 (row end);
+ (row 12) 
+ (col 0): EBITDA AL margin (adjusted for special factors) % (col 1): 35.0 (col 2): 32.8 (col 4): 34.7 (row end);
+ (row 13) 
+ (col 0): Earnings per share (basic/diluted) € (col 1): 0.20 (col 2): 0.19 (col 3): 5.3 (col 4): 0.88 (row end);
+ (row 14) 
+ (col 0): Adjusted earnings per share (basic/diluted) € (col 1): 0.25 (col 2): 0.27 (col 3): (7.4) (col 4): 1.20 (row end);
+ (row 15) 
+ (col 0): Statement of financial position (row end);
+ (row 16) 
+ (col 0): Total assets (col 1): 273,901 (col 2): 173,646 (col 3): 57.7 (col 4): 264,917 (row end);
+ (row 17) 
+ (col 0): Shareholders’ equity (col 1): 77,484 (col 2): 45,878 (col 3): 68.9 (col 4): 72,550 (row end);
+ (row 18) 
+ (col 0): Equity ratio % (col 1): 28.3 (col 2): 26.4 (col 4): 27.4 (row end);
+ (row 19) 
+ (col 0): Net debt (col 1): 129,530 (col 2): 77,394 (col 3): 67.4 (col 4): 120,227 (row end);
+ (row 20) 
+ (col 0): Cash flow a (row end);
+ (row 21) 
+ (col 0): Net cash from operating activities (col 1): 8,307 (col 2): 3,960 (col 3): n.a. (col 4): 23,743 (row end);
+ (row 22) 
+ (col 0): Cash capex (col 1): (12,272) (col 2): (3,570) (col 3): n.a. (col 4): (18,694) (row end);
+ (row 23) 
+ (col 0): Cash capex (before spectrum investment) (col 1): (4,283) (col 2): (3,353) (col 3): (27.7) (col 4): (16,980) (row end);
+ (row 24) 
+ (col 0): Free cash flow (before dividend payments and spectrum investment) b (col 1): 4,072 (col 2): 2,294 (col 3): 77.5 (col 4): 10,756 (row end);
+ (row 25) 
+ (col 0): Free cash flow AL (before dividend payments and spectrum investment) b (col 1): 2,585 (col 2): 1,287 (col 3): n.a. (col 4): 6,288 (row end);
+ (row 26) 
+ (col 0): Net cash used in investing activities (col 1): (12,373) (col 2): (2,706) (col 3): n.a. (col 4): (22,649) (row end);
+ (row 27) 
+ (col 0): Net cash from (used in) financing activities (col 1): 588 (col 2): (2,562) (col 3): n.a. (col 4): 7,561 (row end);
+
+[1]: Selected financial data of the Group
+[2]: millions of €
+[4]: a Sprint has been included in Deutsche Telekom’s consolidated financial statements as a fully consolidated subsidiary since April 1, 2020. This transaction affects the comparability of the
+figures for the current period with the prior-year figures. For further information on the transaction, please refer to the section “Changes in the composition of the Group and other
+transactions” in the interim consolidated financial statements.
+b Before interest payments for zero-coupon bonds in the first quarter of 2020.
+[5]: millions
+[7]: Mar. 31, 2021
+[8]: a Sprint has been included in Deutsche Telekom’s consolidated financial statements as a fully consolidated subsidiary since April 1, 2020. This transaction affects the comparability of the
+figures for the current period with the prior-year figures. For further information on the transaction, please refer to the section “Changes in the composition of the Group and other
+transactions” in the interim consolidated financial statements.
+b Including T-Mobile US wholesale customers.
+c Excluding wholesale.
+The figures shown in this report were rounded in accordance with standard business rounding principles. As a result, the total indicated may not be equal to the precise sum of the individual
+figures. Changes were calculated on the basis of millions for greater precision.
+[6]: table: (row 0) 
+ (col 3): Mar. 31, 2021/ (col 6): Mar. 31, 2021/ (row end);
+ (row 1) 
+ (col 3): 31, (col 4): 2020 (col 6): 31, 2020 (row end);
+ (row 2) 
+ (col 0): Mar. 31, (col 1): 2021 (col 2): 2020 (col 4): % (col 5): 2020 (col 6): % (row end);
+ (row 3) 
+ (col 0): Fixed-network and mobile customers (row end);
+ (row 4) 
+ (col 0): Mobile customers a, b (col 1): 242.9 (col 2): 241.5 (col 4): 0.6 (col 5): 185.2 (col 6): 31.1 (row end);
+ (row 5) 
+ (col 0): Fixed-network lines (col 1): 27.4 (col 2): 27.4 (col 4): 0.1 (col 5): 27.4 (col 6): (0.2) (row end);
+ (row 6) 
+ (col 0): Broadband customers c (col 1): 21.9 (col 2): 21.7 (col 4): 0.5 (col 5): 21.2 (col 6): 3.2 (row end);
+
+[9]: Change
+[10]: Change
+[11]: Deutsche Telekom. Interim Group Report Q1 2021.
+[0]: table: (row 0) 
+ (col 0): = p q (col 1): 3 (row end);
+
+
+                    ","(main question): 26390.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2021-03-31
+(meta3): 3
+Sources: [2],[0],[0]
+
+(main question): 19943.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2020-03-31
+(meta3): 3
+Sources: [2],[0],[0]
+
+(main question): 100999.0
+(meta0): $ millions $
+(meta1): $ EUR $
+(meta2): 2020-12-31
+(meta3): 12
+Sources: [2],[0]"
