@@ -1,6 +1,6 @@
 # Parsee.ai Datasets
 
-Datasets, case studies and benchmarks for extracting structured information, created by the Parsee.ai team.
+Datasets, case studies and benchmarks for extracting structured information from PDFs, HTML files or images, created by the Parsee.ai team.
 
 ## Document Loader Comparisons
 * [Parsee.ai Loader vs. langchain PyPDF loader for invoices](./datasets/invoices/README.md)
