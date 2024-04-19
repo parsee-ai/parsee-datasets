@@ -27,7 +27,7 @@ The Selection-text dataset contains only the tables that actually contain the 20
 
 #### Selection-image
 The Selection-image dataset is similar to the Selection-text dataset in the sense that it only contains the relevant table for answering the questions, with the difference being that this dataset is not text-based but rather made for multimodal models that are supposed to answer the questions based on the prompt (which is adapted for the image-case) and the image of the table.
-As such, in the sub-folder [data/selection-image/images] there are 1116 images of the tables in JPEG format.
+As such, in the [data/selection-image/images](sub-folder) there are 1116 images of the tables in JPEG format.
 
 ### Prompts
 For creating the prompts, we are asking essentially the same question in 6 different ways, some with the same expected output, some with a different expected output.
