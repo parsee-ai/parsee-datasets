@@ -38,7 +38,7 @@ Now, since an annual report typically contains more than just one revenue number
 For this reason we are asking for 4 of the 6 questions from the models to just return the revenue number of a specific year.
 The years we are interested in are 2023 and 2022 (both times the 12 month period since we are dealing with annual reports).
 
-The questions we are asking (note: these are not the full prompts, as these are created with the [parsee-core library](https://github.com/parsee-ai/parsee-core)) in this case are the following (each question has an ID, which will be also the folder name of the sub-datasets):
+The questions we are asking (note: these are not the full prompts, as these are created with the [parsee-core library](https://github.com/parsee-ai/parsee-core)) in this case are the following (each question has an ID, which is used in various places to identify the question, e.g. in the CSV files or as folder name):
 
 * What are the revenues for the 12 month period ending december 2023 (in thousand USD)? (id: rev23_thousands_no_hint)
 * What are the revenues for the 12 month period ending december 2023 (in thousand USD)? Hint: Please double check your answer and make sure the unit of the number is in thousands, format the number if necessary (add or remove digits). (id: rev23_thousands_hint)
