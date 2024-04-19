@@ -29,6 +29,9 @@ The Selection-text dataset contains only the tables that actually contain the 20
 The Selection-image dataset is similar to the Selection-text dataset in the sense that it only contains the relevant table for answering the questions, with the difference being that this dataset is not text-based but rather made for multimodal models that are supposed to answer the questions based on the prompt (which is adapted for the image-case) and the image of the table.
 As such, in the sub-folder [data/selection-image/images](data/selection-image/images) there are 1116 images of the tables in JPEG format.
 
+### Note about table formatting and chunking for RAG-text and Selection-text datasets
+Converting the tables to simple strings and chunking is done with the parsee-core library. Each cell in table is not just a dictionary (the keys being the column headers, which is what some libraries are doing), as some cells have colspans that are bigger than 1 and headers might span multiple columns and rows. The table strings are still easily readable such that a human for example can understand the table and find the right information. For details please refer to the parsee-core library.
+
 ### Prompts
 For creating the prompts, we are asking essentially the same question in 6 different ways, some with the same expected output, some with a different expected output.
 
