@@ -10,7 +10,7 @@ from parsee.converters.image_creation import DiskImageReader
 
 
 """
-requires the following variables set in .env:
+requires the following variables set in .env in order to re-run the evaluation (for new files, if not the cached answers are being used):
 PARSEE_API_KEY -> api key for parsee cloud
 OPENAI_KEY -> openai api key
 REPLICATE_API_TOKEN -> api key for replicate.com
