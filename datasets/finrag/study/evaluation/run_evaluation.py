@@ -14,6 +14,10 @@ We are using this custom evaluation function for the results,
 where we basically multiply all results with their units and then check if the values deviate not more than 0.1%
 """
 def results_compare_function(answer1: ParseeAnswer, answer2: ParseeAnswer) -> bool:
+    if answer1.class_value == "n/a" and answer2.class_value == "n/a":
+        return True
+    elif answer1.class_value == "n/a" or answer2.class_value == "n/a":
+        return False
     mults = {
         "none": 1,
         "thousands": 1000,
@@ -51,7 +55,7 @@ def run_eval_by_file(csv_file_path: str, writer_path: Optional[str], multimodal:
             together_config(os.getenv("TOGETHER_KEY") if not use_cached_only else "n/a", "mistralai/Mixtral-8x22B-Instruct-v0.1", token_limit),
             mistral_api_config(os.getenv("MISTRAL_KEY"), "mistral-large-latest", token_limit),
             together_config(os.getenv("TOGETHER_KEY") if not use_cached_only else "n/a", "databricks/dbrx-instruct", token_limit),
-            together_config(os.getenv("TOGETHER_KEY") if not use_cached_only else "n/a", "Snowflake/snowflake-arctic-instruct", token_limit),
+            #together_config(os.getenv("TOGETHER_KEY") if not use_cached_only else "n/a", "Snowflake/snowflake-arctic-instruct", 3500),
             cohere_config(os.getenv("COHERE_KEY") if not use_cached_only else "n/a", "command-r-plus", token_limit),
         ]
     else:
@@ -62,7 +66,7 @@ def run_eval_by_file(csv_file_path: str, writer_path: Optional[str], multimodal:
         custom_storage = InMemoryStorageManager(models, DiskImageReader(images_dir))
 
     cloud = ParseeCloud(os.getenv('PARSEE_API_KEY') if not use_cached_only else None)
-    template = cloud.get_template("661bd24fb129ff2526f2af09")
+    template = cloud.get_template("662a37cb080aaf6db5499923")
     reader = SimpleCsvDiskReader(csv_file_path)
     writer = None
     writer_file_name = None
