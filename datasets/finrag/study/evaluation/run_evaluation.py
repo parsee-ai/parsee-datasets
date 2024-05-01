@@ -52,7 +52,7 @@ def run_eval_by_file(csv_file_path: str, writer_path: Optional[str], multimodal:
             mistral_api_config(os.getenv("MISTRAL_KEY"), "mistral-large-latest", token_limit),
             together_config(os.getenv("TOGETHER_KEY") if not use_cached_only else "n/a", "databricks/dbrx-instruct", token_limit),
             together_config(os.getenv("TOGETHER_KEY") if not use_cached_only else "n/a", "Snowflake/snowflake-arctic-instruct", token_limit),
-            cohere_config(os.getenv("COHERE_KEY"), "command-r-plus", token_limit),
+            cohere_config(os.getenv("COHERE_KEY") if not use_cached_only else "n/a", "command-r-plus", token_limit),
         ]
     else:
         models = [
