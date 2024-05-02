@@ -1,5 +1,7 @@
 import os
 
+import pandas as pd
+
 from parsee.datasets.evaluation.main import *
 from parsee.cloud.api import ParseeCloud
 from parsee.datasets.readers.disk_reader import SimpleCsvDiskReader
@@ -39,31 +41,10 @@ def results_compare_function(answer1: ParseeAnswer, answer2: ParseeAnswer) -> bo
 """
 requires the following variables set in .env in order to re-run the evaluation (for new files, if not the cached answers are being used):
 PARSEE_API_KEY -> api key for parsee cloud
-OPENAI_KEY -> openai api key
-REPLICATE_API_TOKEN -> api key for replicate.com
-TOGETHER_KEY -> api key for together.xyz
 """
-def run_eval_by_file(csv_file_path: str, writer_path: Optional[str], multimodal: bool, token_limit: int = 4000, use_cached_only: bool = False, images_dir: Optional[str] = None):
+def run_eval_by_file(csv_file_path: str, writer_path: Optional[str], models: List[MlModelSpecification], use_cached_only: bool = False, images_dir: Optional[str] = None):
 
-    custom_storage = None
-    if not multimodal:
-        models = [
-            anthropic_config(os.getenv("ANTHROPIC_API_KEY") if not use_cached_only else "n/a", "claude-3-opus-20240229", token_limit),
-            gpt_config(os.getenv("OPENAI_KEY") if not use_cached_only else "n/a", token_limit, "gpt-4-1106-preview"),
-            replicate_config(os.getenv("REPLICATE_API_TOKEN") if not use_cached_only else "n/a", "meta/meta-llama-3-70b-instruct", token_limit),
-            replicate_config(os.getenv("REPLICATE_API_TOKEN") if not use_cached_only else "n/a", "meta/meta-llama-3-8b-instruct", token_limit),
-            together_config(os.getenv("TOGETHER_KEY") if not use_cached_only else "n/a", "mistralai/Mixtral-8x22B-Instruct-v0.1", token_limit),
-            mistral_api_config(os.getenv("MISTRAL_KEY"), "mistral-large-latest", token_limit),
-            together_config(os.getenv("TOGETHER_KEY") if not use_cached_only else "n/a", "databricks/dbrx-instruct", token_limit),
-            #together_config(os.getenv("TOGETHER_KEY") if not use_cached_only else "n/a", "Snowflake/snowflake-arctic-instruct", 3500),
-            cohere_config(os.getenv("COHERE_KEY") if not use_cached_only else "n/a", "command-r-plus", token_limit),
-        ]
-    else:
-        models = [
-            anthropic_config(os.getenv("ANTHROPIC_API_KEY") if not use_cached_only else "n/a", "claude-3-opus-20240229", token_limit, True, 1),
-            gpt_config(os.getenv("OPENAI_KEY") if not use_cached_only else "n/a", token_limit, "gpt-4-1106-vision-preview", True, 1),
-        ]
-        custom_storage = InMemoryStorageManager(models, DiskImageReader(images_dir))
+    custom_storage = None if not models[0].multimodal else InMemoryStorageManager(models, DiskImageReader(images_dir))
 
     cloud = ParseeCloud(os.getenv('PARSEE_API_KEY') if not use_cached_only else None)
     template = cloud.get_template("662a37cb080aaf6db5499923")
@@ -73,5 +54,40 @@ def run_eval_by_file(csv_file_path: str, writer_path: Optional[str], multimodal:
     if writer_path is not None and not use_cached_only:
         writer = CsvDiskWriter(writer_path, False)
         writer_file_name = os.path.basename(csv_file_path).split(".")[0] + "_with_answers"
-    performance = evaluate_llm_performance(template, reader, models, custom_storage, writer, True, writer_file_name, {"rev_meta": results_compare_function, "rev23_meta": results_compare_function, "rev22_meta": results_compare_function}, ["unit"])
+    performance = evaluate_llm_performance(template, reader, models, custom_storage, writer, True, writer_file_name, {"rev_meta": results_compare_function, "rev23_meta": results_compare_function, "rev22_meta": results_compare_function}, ["unit"], not use_cached_only)
     return performance
+
+
+def make_df(folder_path: str, models: List[MlModelSpecification]) -> Tuple[pd.DataFrame, List[str]]:
+    all_files = [x for x in os.listdir(folder_path) if x.endswith(".csv")]
+    all_dataset_names = [x.replace("_with_answers.csv", "") for x in all_files]
+    relevant_keys = {"total_correct_percent", "total_correct_meta_found_percent", "total_correct_percent_ex_missing", "total_correct_meta_found_percent_ex_missing", "total"}
+    # collect all results
+    all_results = {}
+    total_by_model = {}
+    for file_idx, file in enumerate(all_files):
+        full_path = os.path.join(folder_path, file)
+        stats = run_eval_by_file(full_path, None, models, use_cached_only=True)
+        dataset_name = all_dataset_names[file_idx]
+
+        for model_name, results in stats.items():
+            results["total"] = results["total_correct_percent"] if results["total_correct_meta_found_percent"] is None else (
+                        (results["total_correct_percent"] + results["total_correct_meta_found_percent"]) / 2)
+
+            if model_name not in all_results:
+                all_results[model_name] = {}
+                total_by_model[model_name] = 0
+            for key in relevant_keys:
+                final_key = f"{dataset_name}_{key}"
+                all_results[model_name][final_key] = results[key]
+                if key == "total":
+                    total_by_model[model_name] += results[key]
+
+    arr = []
+    for model_name, values in all_results.items():
+        if model_name != "assigned":
+            values = {"model": model_name, "total": total_by_model[model_name] / len(all_files), **values}
+            arr.append(values)
+
+    df = pd.DataFrame(arr)
+    return df, all_dataset_names
