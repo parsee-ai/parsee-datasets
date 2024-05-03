@@ -58,6 +58,16 @@ def run_eval_by_file(csv_file_path: str, writer_path: Optional[str], models: Lis
     return performance
 
 
+def make_df_single_dataset(dataset_path: str, models: List[MlModelSpecification]) -> pd.DataFrame:
+    stats = run_eval_by_file(dataset_path, None, models, use_cached_only=True)
+    all_values = []
+    for model, values in stats.items():
+        if model != "assigned":
+            values = {"model": model, **values}
+            all_values.append(values)
+    return pd.DataFrame(all_values)
+
+
 def make_df(folder_path: str, models: List[MlModelSpecification]) -> Tuple[pd.DataFrame, List[str]]:
     all_files = [x for x in os.listdir(folder_path) if x.endswith(".csv")]
     all_dataset_names = [x.replace("_with_answers.csv", "") for x in all_files]
@@ -71,8 +81,9 @@ def make_df(folder_path: str, models: List[MlModelSpecification]) -> Tuple[pd.Da
         dataset_name = all_dataset_names[file_idx]
 
         for model_name, results in stats.items():
+            # we are putting a weight to the meta info of 1/4 (3/4 to the 'main' question) as the actual numbers are more important
             results["total"] = results["total_correct_percent"] if results["total_correct_meta_found_percent"] is None else (
-                        (results["total_correct_percent"] + results["total_correct_meta_found_percent"]) / 2)
+                        (results["total_correct_percent"]*3 + results["total_correct_meta_found_percent"]) / 4)
 
             if model_name not in all_results:
                 all_results[model_name] = {}
