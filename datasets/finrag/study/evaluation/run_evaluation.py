@@ -42,12 +42,12 @@ def results_compare_function(answer1: ParseeAnswer, answer2: ParseeAnswer) -> bo
 requires the following variables set in .env in order to re-run the evaluation (for new files, if not the cached answers are being used):
 PARSEE_API_KEY -> api key for parsee cloud
 """
-def run_eval_by_file(csv_file_path: str, writer_path: Optional[str], models: List[MlModelSpecification], use_cached_only: bool = False, images_dir: Optional[str] = None):
+def run_eval_by_file(template_id: str, csv_file_path: str, writer_path: Optional[str], models: List[MlModelSpecification], use_cached_only: bool = False, images_dir: Optional[str] = None):
 
     custom_storage = None if not models[0].multimodal else InMemoryStorageManager(models, DiskImageReader(images_dir))
 
     cloud = ParseeCloud(os.getenv('PARSEE_API_KEY') if not use_cached_only else None)
-    template = cloud.get_template("662a37cb080aaf6db5499923")
+    template = cloud.get_template(template_id)
     reader = SimpleCsvDiskReader(csv_file_path)
     writer = None
     writer_file_name = None
@@ -58,8 +58,8 @@ def run_eval_by_file(csv_file_path: str, writer_path: Optional[str], models: Lis
     return performance
 
 
-def make_df_single_dataset(dataset_path: str, models: List[MlModelSpecification]) -> pd.DataFrame:
-    stats = run_eval_by_file(dataset_path, None, models, use_cached_only=True)
+def make_df_single_dataset(template_id: str, dataset_path: str, models: List[MlModelSpecification]) -> pd.DataFrame:
+    stats = run_eval_by_file(template_id, dataset_path, None, models, use_cached_only=True)
     all_values = []
     for model, values in stats.items():
         if model != "assigned":
@@ -68,7 +68,7 @@ def make_df_single_dataset(dataset_path: str, models: List[MlModelSpecification]
     return pd.DataFrame(all_values)
 
 
-def make_df(folder_path: str, models: List[MlModelSpecification]) -> Tuple[pd.DataFrame, List[str]]:
+def make_df(template_id: str, folder_path: str, models: List[MlModelSpecification]) -> Tuple[pd.DataFrame, List[str]]:
     all_files = [x for x in os.listdir(folder_path) if x.endswith(".csv")]
     all_dataset_names = [x.replace("_with_answers.csv", "") for x in all_files]
     relevant_keys = {"total_correct_percent", "total_correct_meta_found_percent", "total_correct_percent_ex_missing", "total_correct_meta_found_percent_ex_missing", "total"}
@@ -77,7 +77,7 @@ def make_df(folder_path: str, models: List[MlModelSpecification]) -> Tuple[pd.Da
     total_by_model = {}
     for file_idx, file in enumerate(all_files):
         full_path = os.path.join(folder_path, file)
-        stats = run_eval_by_file(full_path, None, models, use_cached_only=True)
+        stats = run_eval_by_file(template_id, full_path, None, models, use_cached_only=True)
         dataset_name = all_dataset_names[file_idx]
 
         for model_name, results in stats.items():

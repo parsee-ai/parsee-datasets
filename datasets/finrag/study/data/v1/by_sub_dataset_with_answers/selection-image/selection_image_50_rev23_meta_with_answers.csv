@@ -1,0 +1,1373 @@
+source_identifier,template_id,element_identifier,ANSWER_assigned,ANSWER_claude-3-opus-20240229,ANSWER_gpt-4-1106-vision-preview,FEATURE_full_prompt,FEATURE_page_indexes
+0874c4448032a9b6ddb50c172dfe67499ae21c52270eda884603f14ab0e5b99c,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""67954.0"", ""currency"": ""USD"", ""unit"": ""millions""}], ""sources"": [406]}","{""answers"": [{""main_question"": 26793, ""currency"": ""USD"", ""unit"": ""millions""}]}","```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""67954"",
+      ""currency"": ""USD"",
+      ""unit"": ""millions""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",40
+d1ba9d1f2f6bfe865dee78ee0faf256431d635612612d449b8588de9ed4ce9d1,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""29771.0"", ""currency"": ""USD"", ""unit"": ""millions""}], ""sources"": [758]}","{""answers"": [{""main_question"": ""29771"", ""currency"": ""USD"", ""unit"": ""millions""}]}","```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""29971"",
+      ""currency"": ""USD"",
+      ""unit"": ""millions""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",60
+e48a52839565b42da09053207fd9bdd11bd57f87806c492f5eeba566c8457ff5,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""224962.0"", ""currency"": ""USD"", ""unit"": ""thousands""}], ""sources"": [237]}","{""answers"": [{""main_question"": 224902, ""currency"": ""USD"", ""unit"": ""thousands""}]}","```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""224,962"",
+      ""currency"": ""USD"",
+      ""unit"": ""thousands""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",38
+f15ce7b57fb650459e9e07d5bc5bca32aae09b0792fa3712a733f2900085f969,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""3283.0"", ""currency"": ""USD"", ""unit"": ""millions""}], ""sources"": [440]}","{""answers"": [{""main_question"": ""3283.0"", ""currency"": ""USD"", ""unit"": ""millions""}]}","```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""2383.0"",
+      ""currency"": ""USD"",
+      ""unit"": ""millions""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",57
+2b5da51d15c30fffee3c5b040cbb06f05da94464c4d80d1acd19b4bf8f6218e6,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""45006.0"", ""currency"": ""USD"", ""unit"": ""millions""}], ""sources"": [942]}","{""answers"": [{""main_question"": ""45055"", ""currency"": ""USD"", ""unit"": ""millions""}]}","```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""45006"",
+      ""currency"": ""USD"",
+      ""unit"": ""millions""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",72
+a4405135c432342e1b4153889293ad253e43d146cdae711e6571352343b8c2f5,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""8544.0"", ""currency"": ""USD"", ""unit"": ""millions""}], ""sources"": [456]}","{""answers"": [{""main_question"": 8544, ""currency"": ""USD"", ""unit"": ""millions""}]}","```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""8544"",
+      ""currency"": ""USD"",
+      ""unit"": ""millions""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",58
+0cfc70b459846319793717e6a62d9752db57bda263c40b8da9fa3fd2669ed46e,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""12140147.0"", ""currency"": ""USD"", ""unit"": ""thousands""}], ""sources"": [1234]}","{""answers"": [{""main_question"": ""11,618,797"", ""currency"": ""USD"", ""unit"": ""thousands""}]}","```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""12164047"",
+      ""currency"": ""USD"",
+      ""unit"": ""thousands""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",86
+904c92c467159ea0ecebc8fb7f24386ca91b2160e8754b446e7a58af0f174c62,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""9654419.0"", ""currency"": ""USD"", ""unit"": ""thousands""}], ""sources"": [792]}","{""answers"": [{""main_question"": ""9654419"", ""currency"": ""USD"", ""unit"": ""thousands""}]}","```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""9654419"",
+      ""currency"": ""USD"",
+      ""unit"": ""thousands""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",57
+8af618843ebbf356dfe67437235ba166ab832d8eb2f730eee50173a459707b64,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""9677.0"", ""currency"": ""USD"", ""unit"": ""millions""}], ""sources"": [293]}","{""answers"": [{""main_question"": ""7647"", ""currency"": ""USD"", ""unit"": ""millions""}]}","```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""9677"",
+      ""currency"": ""USD"",
+      ""unit"": ""millions""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",49
+d1734341df9c07f9b38146316ed169e11c846b8852c24c7bf3c964bf483e3209,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""9237064.0"", ""currency"": ""USD"", ""unit"": ""thousands""}], ""sources"": [441]}","{""answers"": [{""main_question"": 9237.064, ""currency"": ""USD"", ""unit"": ""thousands""}]}","```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""9237.064"",
+      ""currency"": ""USD"",
+      ""unit"": ""millions""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",84
+a4f7007176ea3c885f30225c9125a20f2d6545ec7976162d5bcea9d3be17ae8a,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""14663.0"", ""currency"": ""USD"", ""unit"": ""millions""}], ""sources"": [907]}","{""answers"": [{""main_question"": 10835, ""currency"": ""USD"", ""unit"": ""millions""}]}","```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""14663"",
+      ""currency"": ""USD"",
+      ""unit"": ""millions""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",83
+04e6302080a5015852fccae9a6d1d6c3f10d9ea7330528a6612524cccd2a8c5c,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""8188136.0"", ""currency"": ""USD"", ""unit"": ""thousands""}], ""sources"": [1339]}","{""answers"": [{""main_question"": ""8188136"", ""currency"": ""USD"", ""unit"": ""thousands""}]}","```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""818136"",
+      ""currency"": ""USD"",
+      ""unit"": ""thousands""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",92
+f845906a949460238e4d63b3d93f6c995fff1f0f36950822a2d6fc36e0dd5c16,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""26976.0"", ""currency"": ""USD"", ""unit"": ""thousands""}], ""sources"": [2055]}","{""answers"": [{""main_question"": ""14463"", ""currency"": ""USD"", ""unit"": ""thousands""}]}","```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""26976"",
+      ""currency"": ""USD"",
+      ""unit"": ""thousands""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",145
+2e21788d3501f470ed724fdcd83c7d753ba430ea902de1cef636fde9f0abe35f,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""1544165.0"", ""currency"": ""USD"", ""unit"": ""thousands""}], ""sources"": [964]}","{""answers"": [{""main_question"": ""513412"", ""currency"": ""USD"", ""unit"": ""thousands""}]}","```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""1544165"",
+      ""currency"": ""USD"",
+      ""unit"": ""thousands""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",64
+8752c460aca5cfb8288d9ea6ea1797f7db2cd51961397dca04eb9dbc2f5df55d,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""797.2"", ""currency"": ""USD"", ""unit"": ""millions""}], ""sources"": [538]}","{""answers"": [{""main_question"": 336.9, ""currency"": ""USD"", ""unit"": ""millions""}]}","```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""797.2"",
+      ""currency"": ""USD"",
+      ""unit"": ""millions""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",49
+233618b07c39f6ace9cab395de58af8eb5b991d8c1e239b4066c33dde7db27dd,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""3589.0"", ""currency"": ""USD"", ""unit"": ""millions""}], ""sources"": [868]}","{""answers"": [{""main_question"": ""2060"", ""currency"": ""USD"", ""unit"": ""millions""}]}","```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""3589"",
+      ""currency"": ""USD"",
+      ""unit"": ""millions""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",87
+d3064fcf7dace79325aa0a2fdd7f82b92743d21409fdcba9811c12b0a113fb88,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""5465.0"", ""currency"": ""USD"", ""unit"": ""millions""}], ""sources"": [544]}","{""answers"": [{""main_question"": 5465, ""currency"": ""USD"", ""unit"": ""millions""}]}","```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""5465"",
+      ""currency"": ""USD"",
+      ""unit"": ""millions""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",42
+ac12720f0c6fbe69a7011bdba780a48a669ae8ac83eed4dd390192462aae338a,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""23890.0"", ""currency"": ""USD"", ""unit"": ""millions""}], ""sources"": [906]}","{""answers"": [{""main_question"": ""24802"", ""currency"": ""USD"", ""unit"": ""millions""}]}","```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""28990"",
+      ""currency"": ""USD"",
+      ""unit"": ""millions""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",62
+6fa6a52fd45296e0bc85ebe89e41341db3f1a5c243a54f7a9bb0687a01d61736,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""34124.1"", ""currency"": ""USD"", ""unit"": ""millions""}], ""sources"": [447]}","{""answers"": [{""main_question"": ""34124.1"", ""currency"": ""USD"", ""unit"": ""millions""}]}","```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""34124.1"",
+      ""currency"": ""USD"",
+      ""unit"": ""millions""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",56
+e6a4b94e6740f146e8491eff1890befb295c234c8aa429c4257eea63d5f0f76a,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""747718.0"", ""currency"": ""USD"", ""unit"": ""thousands""}], ""sources"": [1129]}","{""answers"": [{""main_question"": ""747718"", ""currency"": ""USD"", ""unit"": ""thousands""}]}","```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""747718"",
+      ""currency"": ""USD"",
+      ""unit"": ""thousands""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",78
+6fb2efd7574d0e2c4e781c72d6538604ef741ed33ddbe343473be9c2ce8a43a6,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""442888.0"", ""currency"": ""USD"", ""unit"": ""thousands""}], ""sources"": [242]}","{""answers"": [{""main_question"": ""442888"", ""currency"": ""USD"", ""unit"": ""thousands""}]}","```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""442888"",
+      ""currency"": ""USD"",
+      ""unit"": ""thousands""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",61
+ff9f69f4b5be85aede158d8033e42f0d804eb173c86139c75b0c396fa8cdd9bb,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""3489242.0"", ""currency"": ""USD"", ""unit"": ""thousands""}], ""sources"": [1047]}","{""answers"": [{""main_question"": ""2776222"", ""currency"": ""USD"", ""unit"": ""thousands""}]}","```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""3489422"",
+      ""currency"": ""USD"",
+      ""unit"": ""thousands""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",60
+98ae25b5606a191ee91ec61ddac9bff1e43e2a87f1e87faf95bf2c5cebb467fb,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""24428.0"", ""currency"": ""USD"", ""unit"": ""millions""}], ""sources"": [1285]}","{""answers"": [{""main_question"": ""24428"", ""currency"": ""USD"", ""unit"": ""millions""}]}","```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""24428"",
+      ""currency"": ""USD"",
+      ""unit"": ""millions""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",92
+babec6684b06b529986dc867a7b85b6386461389e5f98c5f102c5273764e22a4,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""554458.0"", ""currency"": ""USD"", ""unit"": ""thousands""}], ""sources"": [698]}","{""answers"": [{""main_question"": ""554,458"", ""currency"": ""USD"", ""unit"": ""thousands""}]}","```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""554,458"",
+      ""currency"": ""USD"",
+      ""unit"": ""thousands""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",57
+6301536379e208ecaadb4239b0909269c2422369679fe56d67eb320ce0b0c348,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""6177.8"", ""currency"": ""USD"", ""unit"": ""millions""}], ""sources"": [398]}","{""answers"": [{""main_question"": ""6177.8"", ""currency"": ""USD"", ""unit"": ""millions""}]}","```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""6177.8"",
+      ""currency"": ""USD"",
+      ""unit"": ""millions""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",33
+883d4182842fce8dc370e1f4548a1b19a657bb3bfc50311005eb73c84c435195,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""6664058.0"", ""currency"": ""USD"", ""unit"": ""thousands""}], ""sources"": [1093]}","{""answers"": [{""main_question"": ""6664058"", ""currency"": ""USD"", ""unit"": ""thousands""}]}","```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""6664058"",
+      ""currency"": ""USD"",
+      ""unit"": ""thousands""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",94
+908d10dff452e207b1aa712683e508c45aec08fc7e28f78d69db9490604108ec,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""6667.0"", ""currency"": ""USD"", ""unit"": ""millions""}], ""sources"": [2108]}","{""answers"": [{""main_question"": ""3028"", ""currency"": ""USD"", ""unit"": ""millions""}]}","```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""6667"",
+      ""currency"": ""USD"",
+      ""unit"": ""millions""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",105
+c51410ff294abcb7e7cf4e19acc95965ffca028b63059a0a2d4218455d4e226a,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""63533.0"", ""currency"": ""USD"", ""unit"": ""thousands""}], ""sources"": [522]}","{""answers"": [{""main_question"": ""63533"", ""currency"": ""USD"", ""unit"": ""thousands""}]}","```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""63353"",
+      ""currency"": ""USD"",
+      ""unit"": ""thousands""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",97
+d1123e9d3efe138570005ec0bf105271f8eec01d4bb9916858ea78e7758ce0e5,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""884068.0"", ""currency"": ""USD"", ""unit"": ""thousands""}], ""sources"": [478]}",n/a,"To provide an accurate answer, I will need to transcribe the relevant data from the image provided. Please wait while I process the image.
+
+After processing the image, here is the relevant information formatted as a JSON object:
+
+```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""31532000"",
+      ""currency"": ""USD"",
+      ""unit"": ""thousands""
+    }
+  ]
+}
+```
+
+The revenue for the 12-month period ending December 2023 is $31,532,000, the currency is USD, and the unit is in thousands.","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",63
+2803f1b115dadc0a7769a721fa241c8f1ffb35b7dd065a96f78abacf560a6ad1,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""1058651.0"", ""currency"": ""USD"", ""unit"": ""thousands""}], ""sources"": [699]}","{""answers"": [{""main_question"": ""1058651"", ""currency"": ""USD"", ""unit"": ""thousands""}]}","To answer the question, I will need to analyze the content of the image provided. Please wait while I process the image.
+
+After processing the image, here is the information extracted relevant to the question:
+
+The revenues for the 12-month period ending December 2023 for Addus HomeCare Corporation are listed under ""Net service revenues"" and the amount is $1,058,651.
+
+The currency is represented with a dollar sign ($), which typically denotes USD.
+
+The amounts are stated in thousands, as indicated by the text ""amounts and shares in thousands, except per share data.""
+
+Based on this information, the JSON object with the answers would be:
+
+```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""1058651"",
+      ""currency"": ""USD"",
+      ""unit"": ""thousands""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",70
+6a1d176fadb8fac3b0463ef34e18798dc1d62b57a5d566e888d1697d4bf500cf,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""3799269.0"", ""currency"": ""USD"", ""unit"": ""thousands""}], ""sources"": [953]}","{""answers"": [{""main_question"": ""3,799,269"", ""currency"": ""USD"", ""unit"": ""thousands""}]}","```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""3799269"",
+      ""currency"": ""USD"",
+      ""unit"": ""thousands""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",76
+ac4a765896ce8c15c89536a9b8975a627d5241f8766315532ecaa5fef3bcb833,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""11758.0"", ""currency"": ""USD"", ""unit"": ""thousands""}], ""sources"": [589]}","{""answers"": [{""main_question"": ""11758"", ""currency"": ""USD"", ""unit"": ""thousands""}]}","```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""-200068"",
+      ""currency"": ""USD"",
+      ""unit"": ""thousands""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",156
+0ad9fa2934667db0c6fcb263620ec888dd5a68f1ca1d72d2b13fd34f752e31e9,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""15258.0"", ""currency"": ""USD"", ""unit"": ""millions""}], ""sources"": [585]}","{""answers"": [{""main_question"": 10791, ""currency"": ""USD"", ""unit"": ""millions""}]}","```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""15258"",
+      ""currency"": ""USD"",
+      ""unit"": ""millions""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",47
+fc4e5aa6a0bba204ca2bab4b052600b876b73b6b212a3739f699dc31ce268717,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""1131455.0"", ""currency"": ""USD"", ""unit"": ""thousands""}], ""sources"": [375]}","{""answers"": [{""main_question"": ""1263878"", ""currency"": ""USD"", ""unit"": ""thousands""}]}","```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""1131455"",
+      ""currency"": ""USD"",
+      ""unit"": ""thousands""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",37
+483cff7ce36fb5b8ef2ff8f3cf6e28f932a97425e3946e1de37449f39eef6e95,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""881662.0"", ""currency"": ""USD"", ""unit"": ""thousands""}], ""sources"": [524]}","{""answers"": [{""main_question"": ""881,662"", ""currency"": ""USD"", ""unit"": ""thousands""}]}","```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""881662"",
+      ""currency"": ""USD"",
+      ""unit"": ""thousands""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",56
+ffb4f7b2cabce1a596b9aa9ba43816f30f4d2756af6d96e1ad7d7cc29a6ceb89,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""28823.0"", ""currency"": ""USD"", ""unit"": ""millions""}], ""sources"": [546]}","{""answers"": [{""main_question"": ""28823"", ""currency"": ""USD"", ""unit"": ""millions""}]}","```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""28223"",
+      ""currency"": ""USD"",
+      ""unit"": ""millions""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",82
+eb96ba7e1d554af37be9b253435e3b51d44b356eecd75f65bc39cf676931b81e,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""1303046.0"", ""currency"": ""USD"", ""unit"": ""thousands""}], ""sources"": [348]}","{""answers"": [{""main_question"": ""1303046"", ""currency"": ""USD"", ""unit"": ""thousands""}]}","```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""1303046"",
+      ""currency"": ""USD"",
+      ""unit"": ""thousands""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",47
+1665186aaf35d39b0ec45f5aa6f187a68d26be500817288f814003a2e6685bb7,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""8000342.0"", ""currency"": ""USD"", ""unit"": ""thousands""}], ""sources"": [160]}","{""answers"": [{""main_question"": ""8000342"", ""currency"": ""USD"", ""unit"": ""thousands""}]}","```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""8000342"",
+      ""currency"": ""USD"",
+      ""unit"": ""thousands""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",31
+4f24b2140f77496a21b5c984c0465bcb77d344d69d9d2d3ee2623f0fe6548e90,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""794632.0"", ""currency"": ""USD"", ""unit"": ""thousands""}], ""sources"": [853]}","{""answers"": [{""main_question"": ""794632"", ""currency"": ""USD"", ""unit"": ""thousands""}]}","```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""794632"",
+      ""currency"": ""USD"",
+      ""unit"": ""thousands""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",58
+fffbdbde47eb99e2ddd38ec2e46a33a19d4a0139f4c9d9c12b5314e933cf6719,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""1777710.0"", ""currency"": ""USD"", ""unit"": ""thousands""}], ""sources"": [428]}","{""answers"": [{""main_question"": 1309687, ""currency"": ""USD"", ""unit"": ""thousands""}]}","```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""1777105"",
+      ""currency"": ""USD"",
+      ""unit"": ""thousands""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",39
+6b6101d7c5965809652d8e49f68b1c338b29b6c221f1563dd3bc420d1c6aa387,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""992452.0"", ""currency"": ""USD"", ""unit"": ""thousands""}], ""sources"": [340]}","{""answers"": [{""main_question"": ""992452"", ""currency"": ""USD"", ""unit"": ""thousands""}]}","```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""992452"",
+      ""currency"": ""USD"",
+      ""unit"": ""thousands""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",61
+20e19c655fbeb318afce661d0608658b12b0a32ab6c2772e424248db61cf2bae,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""310463.0"", ""currency"": ""USD"", ""unit"": ""thousands""}], ""sources"": [1283]}","{""answers"": [{""main_question"": ""391866"", ""currency"": ""USD"", ""unit"": ""thousands""}]}","```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""310463"",
+      ""currency"": ""USD"",
+      ""unit"": ""thousands""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",93
+fba3450c2f35ddc70bf3bd1bba034d2701ae444bfdf5e9495e275618c2df884e,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""14805.9"", ""currency"": ""USD"", ""unit"": ""millions""}], ""sources"": [569]}","{""answers"": [{""main_question"": ""14093.3"", ""currency"": ""USD"", ""unit"": ""millions""}]}","```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""14805.9"",
+      ""currency"": ""USD"",
+      ""unit"": ""millions""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",43
+3d747582753be5a1217b6cedaf3bfc24b01540cade24097d29d924dd906c4c89,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""769365.0"", ""currency"": ""USD"", ""unit"": ""thousands""}], ""sources"": [192]}","{""answers"": [{""main_question"": 69627, ""currency"": ""USD"", ""unit"": ""thousands""}]}","```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""594,387"",
+      ""currency"": ""USD"",
+      ""unit"": ""thousands""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",27
+d16359aa04eed50f147890e6e1ff9d428c5ee529050c581ef2993bfda4f2dbd1,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""361051.0"", ""currency"": ""USD"", ""unit"": ""thousands""}], ""sources"": [1061]}","{""answers"": [{""main_question"": 361051, ""currency"": ""USD"", ""unit"": ""thousands""}]}","```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""361051"",
+      ""currency"": ""USD"",
+      ""unit"": ""thousands""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",87
+ce916b7bf29e050c3268af56f2a360f4bfadd516c436a85102b627549904eedd,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""343376.0"", ""currency"": ""USD"", ""unit"": ""thousands""}], ""sources"": [1272]}","{""answers"": [{""main_question"": ""343,376"", ""currency"": ""USD"", ""unit"": ""thousands""}]}","```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""343376"",
+      ""currency"": ""USD"",
+      ""unit"": ""thousands""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",97
+53803872892694d9969c467e61cf834dfff770a3f44bf0228ca3a4859d16cd6d,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""15444.0"", ""currency"": ""USD"", ""unit"": ""millions""}], ""sources"": [973]}","{""answers"": [{""main_question"": ""15054"", ""currency"": ""USD"", ""unit"": ""millions""}]}","The image provided is a financial statement from KENWUE INC. showing the consolidated statements of operations for the fiscal twelve months ended December 31, 2023, January 1, 2023, and January 2, 2022. The revenues for the 12 month period ending December 31, 2023, are represented by ""Net sales,"" which amount to $15,444 (in millions). The currency is in dollars, as indicated by the dollar sign ($) and the statement title mentioning ""Dollars in Millions."" The unit is in millions, as indicated by the title of the financial statement.
+
+Here is the information formatted as a JSON object:
+
+```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""15444"",
+      ""currency"": ""USD"",
+      ""unit"": ""millions""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",83
+71fde5e58c32201e937670c58fe225bd4be3282a48f9343ca7f9d1b3bbcaa506,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""90122.0"", ""currency"": ""USD"", ""unit"": ""thousands""}], ""sources"": [761]}","{""answers"": [{""main_question"": ""90,122"", ""currency"": ""USD"", ""unit"": ""thousands""}]}","```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""90122"",
+      ""currency"": ""USD"",
+      ""unit"": ""thousands""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",57
+b01d109bcbebcc5f432c4012b7e1f53d6b14e6b3fc8b2362e6d421d07889f17b,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""1932.0"", ""currency"": ""USD"", ""unit"": ""thousands""}], ""sources"": [626]}","{""answers"": [{""main_question"": 1932, ""currency"": ""USD"", ""unit"": ""thousands""}]}","```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""1932"",
+      ""currency"": ""USD"",
+      ""unit"": ""thousands""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",43
+7a85298835180e85cf5f7fb5efe17ee90f77c1922d55186e690df3f309a5b745,661bd24fb129ff2526f2af09,rev23_meta,"{""answers"": [{""main_question"": ""126325.0"", ""currency"": ""USD"", ""unit"": ""thousands""}], ""sources"": [448]}","{""answers"": [{""main_question"": ""126325"", ""currency"": ""USD"", ""unit"": ""thousands""}]}","```json
+{
+  ""answers"": [
+    {
+      ""main_question"": ""126.325"",
+      ""currency"": ""USD"",
+      ""unit"": ""millions""
+    }
+  ]
+}
+```","You are supposed to answer a question based on one or several images that are provided below. 
+
+
+                    The question is: What are the revenues for the 12 month period ending december 2023?  possible values: any number (positive or negative, including decimals)
+ We also want to retrieve some meta information. In the following we will present the meta item ID and then the additional question to be answered, format: (META_ID): QUESTION.
+(currency): What is the currency  possible values (select one from json array): ['USD', 'EUR', 'Other']
+(unit): What is the unit?  possible values (select one from json array): ['none', 'thousands', 'millions', 'billions'] 
+
+                    
+                     
+
+
+                    Your answer should be formatted as a JSON object. Under the key 'answers' can be one or more JSON object(s), with key value pairs for the main question and the meta items. For the main question use the key 'main_question', for the meta items use their ID as key.  For example your answer could look like this: {""answers"": [{""main_question"": ""123"", ""currency"": ""USD"", ""unit"": ""none""}]} 
+
+                    
+                    
+                    ",107
