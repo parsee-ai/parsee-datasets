@@ -54,7 +54,7 @@ def run_eval_by_file(template_id: str, csv_file_path: str, writer_path: Optional
     if writer_path is not None and not use_cached_only:
         writer = CsvDiskWriter(writer_path, False)
         writer_file_name = os.path.basename(csv_file_path).split(".")[0] + "_with_answers"
-    performance = evaluate_llm_performance(template, reader, models, custom_storage, writer, True, writer_file_name, {"rev_meta": results_compare_function, "rev23_meta": results_compare_function, "rev22_meta": results_compare_function}, ["unit"], not use_cached_only)
+    performance = evaluate_llm_performance(template, reader, models, custom_storage, writer, True, writer_file_name, {"rev_meta": results_compare_function, "rev23_meta": results_compare_function, "rev22_meta": results_compare_function , "rev23_thousands_no_hint": results_compare_function, "rev22_millions_no_hint": results_compare_function, "rev23_thousands_hint": results_compare_function, "rev23_millions_no_hint": results_compare_function}, ["unit"], not use_cached_only)
     return performance
 
 
