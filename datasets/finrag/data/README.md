@@ -11,3 +11,5 @@ We wanted to investigate how good the current state of the art (M)LLMs are at so
 [“Selection-image”](selection-image): this dataset is similar to the “Selection-text” dataset in the sense that we feed to the models only an image of the relevant profit & loss statement, that contains all the necessary information to solve the problem.
 
 The datasets contain a combined total of 10,404 rows, 37,536,847 tokens and 1,156 images.
+
+A study looking at the performance of 8 state of the art LLMs on a subset of this dataset can be found here: https://www.parsee.ai/en/blog/finrag-dataset-and-study/
