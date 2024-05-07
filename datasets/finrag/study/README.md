@@ -15,7 +15,7 @@ We selected the following models for our study:
 * Mixtral-8x22B-instruct-v0.1 by Mistral (hosted on together.ai)
 * dbrx-instruct by Databricks (hosted on together.ai)
 * Command R by Cohere
-* Snowflake Arctic  (hosted on together.ai)
+* Snowflake Arctic (hosted on together.ai)
 
 We believe this selection is as of the date of the study a selection of the most capable instruct models available.
 
