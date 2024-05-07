@@ -29,5 +29,5 @@ Converting the tables to simple strings and chunking is done with the [parsee-co
 ### Prompts Explanation
 For an in-depth explanation of our methodology please check out the [finRAG study](https://www.parsee.ai/en/blog/finrag-dataset-and-study/). 
 
-# finRAG Study
+## finRAG Study
 The finRAG study is looking at a subset of 100 filings chosen from the 1156 reports and has its [own readme](study/README.md).
